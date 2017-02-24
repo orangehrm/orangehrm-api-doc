@@ -1,144 +1,6 @@
 define({ "api": [
   {
     "type": "get",
-    "url": "/employee/:id/contact-detail",
-    "title": "Employee Contact detail",
-    "name": "GetEmployeeContactDetails",
-    "group": "Employee",
-    "parameter": {
-      "fields": {
-        "Parameter": [
-          {
-            "group": "Parameter",
-            "type": "Number",
-            "optional": false,
-            "field": "employee",
-            "description": "<p>id</p>"
-          }
-        ]
-      }
-    },
-    "success": {
-      "fields": {
-        "Success 200": [
-          {
-            "group": "Success 200",
-            "type": "String",
-            "optional": false,
-            "field": "address",
-            "description": "<p>address of the employee.</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "String",
-            "optional": false,
-            "field": "email",
-            "description": "<p>email of the employee.</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "String",
-            "optional": false,
-            "field": "phone",
-            "description": "<p>phone of the employee.</p>"
-          }
-        ]
-      },
-      "examples": [
-        {
-          "title": "Success-Response:",
-          "content": "HTTP/1.1 200 OK\n\n  {\n    \"data\":\n    {\n        \"id\": \"001\",\n        \"fullName\": \"John Doe\",\n        \"telephone\": \"03131238\",\n        \"email\": \"test@example.com\",\n        \"address\": \"17 Clifford Rd, Wellington\",\n        \"country\": \"New Zealand\"\n    },\n  \"rels\": {\n  }\n}",
-          "type": "json"
-        }
-      ]
-    },
-    "error": {
-      "fields": {
-        "Error 4xx": [
-          {
-            "group": "Error 4xx",
-            "optional": false,
-            "field": "UserNotFound",
-            "description": "<p>The id of the employee was not found.</p>"
-          }
-        ]
-      },
-      "examples": [
-        {
-          "title": "Error-Response:",
-          "content": "HTTP/1.1 404 Not Found\n{\n  \"error\": \"EmployeeNotFound\"\n}",
-          "type": "json"
-        }
-      ]
-    },
-    "version": "0.0.0",
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/employee-contact-end-point.php",
-    "groupTitle": "Employee"
-  },
-  {
-    "type": "get",
-    "url": "/employee/:id/supervisor",
-    "title": "Employee Contact detail",
-    "name": "GetEmployeeContactDetails",
-    "group": "Employee",
-    "parameter": {
-      "fields": {
-        "Parameter": [
-          {
-            "group": "Parameter",
-            "type": "Number",
-            "optional": false,
-            "field": "employee",
-            "description": "<p>id</p>"
-          }
-        ]
-      }
-    },
-    "success": {
-      "fields": {
-        "Success 200": [
-          {
-            "group": "Success 200",
-            "type": "Object",
-            "optional": false,
-            "field": "supervisors",
-            "description": "<p>employee Supervisors</p>"
-          }
-        ]
-      },
-      "examples": [
-        {
-          "title": "Success-Response:",
-          "content": "HTTP/1.1 200 OK\n\n  {\n    \"data\": [\n      {\n        \"Id\": \"001\",\n        \"fullName\": \"John Doe\",\n        \"reportingMethod\": \"direct\"\n      },\n      {\n        \"Id\": \"002\",\n        \"fullName\": \"John Max\",\n        \"reportingMethod\": \"Indirect\"\n      },\n   ],\n  \"rels\": {\n  }\n}",
-          "type": "json"
-        }
-      ]
-    },
-    "error": {
-      "fields": {
-        "Error 4xx": [
-          {
-            "group": "Error 4xx",
-            "optional": false,
-            "field": "UserNotFound",
-            "description": "<p>The id of the employee was not found.</p>"
-          }
-        ]
-      },
-      "examples": [
-        {
-          "title": "Error-Response:",
-          "content": "HTTP/1.1 404 Not Found\n{\n  \"error\": \"EmployeeNotFound\"\n}",
-          "type": "json"
-        }
-      ]
-    },
-    "version": "0.0.0",
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/employee-supervisor-end-point.php",
-    "groupTitle": "Employee"
-  },
-  {
-    "type": "get",
     "url": "/employee/:id/dependent",
     "title": "Employee Dependents",
     "name": "GetEmployeeDependents",
@@ -202,7 +64,7 @@ define({ "api": [
   {
     "type": "get",
     "url": "/employee/:id",
-    "title": "Employee detail",
+    "title": "Employee Detail",
     "name": "GetEmployeeDetail",
     "group": "Employee",
     "version": "0.1.0",
@@ -285,7 +147,7 @@ define({ "api": [
   {
     "type": "get",
     "url": "/employee/:id/job-detail",
-    "title": "Employee Job detail",
+    "title": "Employee Job Detail",
     "name": "GetEmployeeJobDetails",
     "group": "Employee",
     "parameter": {
@@ -375,7 +237,7 @@ define({ "api": [
   {
     "type": "post",
     "url": "/employee/:id/job-detail",
-    "title": "Save Employee Job detail",
+    "title": "Save Employee Job Detail",
     "name": "SaveEmployeeJobDetails",
     "group": "Employee",
     "parameter": {
@@ -602,7 +464,7 @@ define({ "api": [
   {
     "type": "put",
     "url": "/employee/:id",
-    "title": "Update Employee detail",
+    "title": "Update Employee Detail",
     "name": "UpdateEmployeeDetails",
     "group": "Employee",
     "version": "0.1.0",
@@ -769,6 +631,159 @@ define({ "api": [
     "groupTitle": "Employee"
   },
   {
+    "type": "get",
+    "url": "/employee/:id/contact-detail",
+    "title": "Employee Contact Detail",
+    "name": "getEmployeeContactDetails",
+    "group": "Employee",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Employee number</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "fullName",
+            "description": "<p>Employee full name.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Employee id.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "empNumber",
+            "description": "<p>Employee number.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "addressStreet1",
+            "description": "<p>Address street 1 of the employee.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "addressStreet2",
+            "description": "<p>Address street 2 of the employee.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "city",
+            "description": "<p>City of the employee.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "state",
+            "description": "<p>State of the employee.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "zip",
+            "description": "<p>Zip code of the employee.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "country",
+            "description": "<p>Country of the employee.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "homeTelephone",
+            "description": "<p>Home telephone number of the employee.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "mobile",
+            "description": "<p>Mobile number of the employee.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "workTelephone",
+            "description": "<p>Work telephone number of the employee.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "workEmail",
+            "description": "<p>Work email of the employee.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "otherEmail",
+            "description": "<p>Other email of the employee.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n\n  {\n    \"data\":\n    {\n        \"id\": \"001\",\n        \"empNumber\": \"1\",\n        \"fullName\": \"Nina Jane Lewis\",\n        \"addressStreet1\": \"No 35 Park street ,Devmore canada\",\n        \"addressStreet2\": \"No 40 River view Devmore\",\n        \"city\": \"Devmore\",\n        \"state\": \"Western\",\n        \"zip\": \"15224\",\n        \"country\": \"Canada\",\n        \"homeTelephone\": \"154475426\",\n        \"workTelephone\": \"01244545144545\",\n        \"mobile\": \"1204415552\",\n        \"workEmail\": \"nina@orangehrmlive.com\",\n        \"otherEmail\": \"ninalewis@yahoo.com\"\n    },\n  \"rels\": {\n  }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "UserNotFound",
+            "description": "<p>The id of the employee was not found.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n  \"error\": \"EmployeeNotFound\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/employee-contact-end-point.php",
+    "groupTitle": "Employee"
+  },
+  {
     "type": "post",
     "url": "/employee/:id",
     "title": "Save Employee",
@@ -861,7 +876,7 @@ define({ "api": [
   {
     "type": "post",
     "url": "/employee/:id/contact-detail",
-    "title": "Save Employee Contact detail",
+    "title": "Save Employee Contact Detail",
     "name": "saveEmployeeContactDetails",
     "group": "Employee",
     "parameter": {
@@ -871,29 +886,85 @@ define({ "api": [
             "group": "Parameter",
             "type": "Number",
             "optional": false,
-            "field": "employee",
-            "description": "<p>id</p>"
+            "field": "id",
+            "description": "<p>Employee number</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
-            "field": "address",
-            "description": "<p>Optional address of the employee.</p>"
+            "field": "addressStreet1",
+            "description": "<p>Address street 1 of the employee.</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
-            "field": "email",
-            "description": "<p>Optional email of the employee.</p>"
+            "field": "addressStreet2",
+            "description": "<p>Address street 2 of the employee.</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
-            "field": "phone",
-            "description": "<p>Optional phone of the employee.</p>"
+            "field": "city",
+            "description": "<p>City of the employee.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "state",
+            "description": "<p>State of the employee.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "zip",
+            "description": "<p>Zip code of the employee.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "country",
+            "description": "<p>Country of the employee.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "homeTelephone",
+            "description": "<p>Home telephone number of the employee.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "mobile",
+            "description": "<p>Mobile number of the employee.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "workTelephone",
+            "description": "<p>Work telephone number of the employee.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "workEmail",
+            "description": "<p>Work email of the employee.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "otherEmail",
+            "description": "<p>Other email of the employee.</p>"
           }
         ]
       }
@@ -1039,7 +1110,7 @@ define({ "api": [
   {
     "type": "post",
     "url": "employee/:id/action/terminate",
-    "title": "Terminate employment",
+    "title": "Terminate Employment",
     "name": "terminateEmployee",
     "group": "Employee",
     "version": "0.1.0",
@@ -1120,7 +1191,7 @@ define({ "api": [
   {
     "type": "put",
     "url": "/employee/:id/contact-detail",
-    "title": "Update Employee Contact detail",
+    "title": "Update Employee Contact Detail",
     "name": "updateEmployeeContactDetails",
     "group": "Employee",
     "parameter": {
@@ -1130,29 +1201,85 @@ define({ "api": [
             "group": "Parameter",
             "type": "Number",
             "optional": false,
-            "field": "employee",
-            "description": "<p>id</p>"
+            "field": "id",
+            "description": "<p>Employee number</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
-            "field": "address",
-            "description": "<p>Optional address of the employee.</p>"
+            "field": "addressStreet1",
+            "description": "<p>Address street 1 of the employee.</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
-            "field": "email",
-            "description": "<p>Optional email of the employee.</p>"
+            "field": "addressStreet2",
+            "description": "<p>Address street 2 of the employee.</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
-            "field": "phone",
-            "description": "<p>Optional phone of the employee.</p>"
+            "field": "city",
+            "description": "<p>City of the employee.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "state",
+            "description": "<p>State of the employee.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "zip",
+            "description": "<p>Zip code of the employee.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "country",
+            "description": "<p>Country of the employee.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "homeTelephone",
+            "description": "<p>Home telephone number of the employee.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "mobile",
+            "description": "<p>Mobile number of the employee.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "workTelephone",
+            "description": "<p>Work telephone number of the employee.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "workEmail",
+            "description": "<p>Work email of the employee.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "otherEmail",
+            "description": "<p>Other email of the employee.</p>"
           }
         ]
       }
@@ -1184,7 +1311,7 @@ define({ "api": [
             "group": "Error 4xx",
             "optional": false,
             "field": "Bad-Response",
-            "description": "<p>Saving failed.</p>"
+            "description": "<p>Updating failed.</p>"
           }
         ]
       },
@@ -1298,7 +1425,7 @@ define({ "api": [
   {
     "type": "put",
     "url": "/employee/:id/job-detail",
-    "title": "Update Employee Job detail",
+    "title": "Update Employee Job Detail",
     "name": "updateEmployeeJobDetails",
     "group": "Employee",
     "parameter": {
