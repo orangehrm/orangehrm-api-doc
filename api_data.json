@@ -12,8 +12,8 @@
             "group": "Parameter",
             "type": "Number",
             "optional": false,
-            "field": "employee",
-            "description": "<p>id</p>"
+            "field": "id",
+            "description": "<p>Employee id</p>"
           }
         ]
       }
@@ -25,8 +25,29 @@
             "group": "Success 200",
             "type": "Object",
             "optional": false,
-            "field": "employee",
-            "description": "<p>dependents.</p>"
+            "field": "name",
+            "description": "<p>Name of the dependent.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "relationship",
+            "description": "<p>Relationship of the dependent.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "dob",
+            "description": "<p>Date of birth of the dependent.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "seqNumber",
+            "description": "<p>Sequence number of the dependent.</p>"
           }
         ]
       },
@@ -88,36 +109,127 @@
             "group": "Success 200",
             "type": "String",
             "optional": false,
-            "field": "firstname",
+            "field": "firstName",
             "description": "<p>First name of the employee.</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
             "optional": false,
-            "field": "lastname",
-            "description": "<p>Last name of the employee.</p>"
+            "field": "middleName",
+            "description": "<p>Middle name of the employee.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "lastName",
+            "description": "<p>Last Name of the employee.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Int",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Id of the employee.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "code",
+            "description": "<p>Employee code.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "fullName",
+            "description": "<p>Full Name of the employee.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "status",
+            "description": "<p>Status of the employee.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "dob",
+            "description": "<p>DOB of the employee.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "driversLicenseNumber",
+            "description": "<p>Employee driver's license number.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "licenseExpiryDare",
+            "description": "<p>Employee driver's license expiry date</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "maritalStatus",
+            "description": "<p>Employee marital status.</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
             "optional": false,
             "field": "gender",
-            "description": "<p>gender of the employee.</p>"
+            "description": "<p>Gender of the employee.</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
             "optional": false,
-            "field": "title",
-            "description": "<p>title of the employee.</p>"
+            "field": "otherId",
+            "description": "<p>Employee other id.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "nationality",
+            "description": "<p>Nationality of the employee.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "jobTitle",
+            "description": "<p>Employee job title.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "unit",
+            "description": "<p>Employee sub unit.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "supervisor",
+            "description": "<p>Employee supervisor details.</p>"
           }
         ]
       },
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "HTTP/1.1 200 OK\n\n  {\n    \"data\":\n    {\n        \"id\": \"001\",\n        \"firstName\": \"John\",\n        \"lastName\": \"Doe\",\n        \"middleName\": \"\",\n        \"fullName\": \"John Doe\",\n        \"status\": \"active\",\n        \"jobtitle\": \"web developer\",\n        \"supervisor\": \"Mike com\",\n        \"supervisorId\": \"2\",\n        \"dob\": \"1989-09-7\",\n        \"unit\": \"development\",\n        \"gender\": \"M\"\n    },\n  \"rels\": {\n    \"contact-detail\": \"/employee/:id/contact-detail\",\n    \"supervisor\": \"/employee/:id/supervisor\",\n    \"job-detail\": \"/employee/:id/job-detail\",\n    \"dependent\": \"/employee/:id/dependent\"\n  }\n}",
+          "content": "HTTP/1.1 200 OK\n\n  {\n    \"data\":\n    {\n        \"firstName\": \"Nina\",\n        \"middleName\": \"Jane\",\n         \"lastName\": \"Lewis\",\n         \"code\": \"0014\",\n         \"id\": \"1\",\n         \"fullName\": \"Nina Jane Lewis (Past Employee)\",\n         \"status\": \"Active\",\n         \"dob\": \"2016-05-04\",\n         \"driversLicenseNumber\": \"444555124223\",\n         \"licenseExpiryDate\": \"2017-02-09\",\n         \"maritalStatus\": \"Married\",\n         \"gender\": \"2\",\n         \"otherId\": \"4646522\",\n         \"nationality\": \"Armenian\",\n         \"unit\": \"Marketing Unit\",\n         \"jobTitle\": \"marketing\",\n\n       \"supervisor\": [\n                       []\n                      ]\n    },\n  \"rels\": {\n    \"contact-detail\": \"/employee/:id/contact-detail\",\n    \"supervisor\": \"/employee/:id/supervisor\",\n    \"job-detail\": \"/employee/:id/job-detail\",\n    \"dependent\": \"/employee/:id/dependent\"\n  }\n}",
           "type": "json"
         }
       ]
@@ -157,8 +269,8 @@
             "group": "Parameter",
             "type": "Number",
             "optional": false,
-            "field": "employee",
-            "description": "<p>id</p>"
+            "field": "id",
+            "description": "<p>Employee id</p>"
           }
         ]
       }
@@ -179,6 +291,27 @@
             "optional": false,
             "field": "category",
             "description": "<p>Job category.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "status",
+            "description": "<p>Employee job status.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "subunit",
+            "description": "<p>Subunit of the employee.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "location",
+            "description": "<p>Job location of the employee.</p>"
           },
           {
             "group": "Success 200",
@@ -206,7 +339,7 @@
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "HTTP/1.1 200 OK\n\n  {\n    \"data\":\n    {\n        \"title\": \"Web Developer\",\n        \"category\": \"Engineering\",\n        \"joinedDate\": \"2001-01-12\",\n        \"startDate\": \"2001-02-01\",\n        \"endDate\": \"2005-02-01\"\n    },\n  \"rels\": {\n  }\n}",
+          "content": "HTTP/1.1 200 OK\n\n  {\n    \"data\":\n    {\n        \"title\": \"Web Developer\",\n        \"category\": \"Engineering\",\n        \"status\": \"Active\",\n        \"joinedDate\": \"2001-01-12\",\n        \"subunit\": \"Marketing Unit\",\n        \"location\": Eng Dept,\n        \"startDate\": \"2001-02-01\",\n        \"endDate\": \"2005-02-01\"\n    },\n  \"rels\": {\n  }\n}",
           "type": "json"
         }
       ]
@@ -247,36 +380,64 @@
             "group": "Parameter",
             "type": "Number",
             "optional": false,
-            "field": "employee",
-            "description": "<p>id</p>"
+            "field": "id",
+            "description": "<p>Employee id</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "title",
-            "description": "<p>Optional Job title name.</p>"
+            "description": "<p>Job title name .</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "category",
-            "description": "<p>Optional Job category.</p>"
+            "description": "<p>Job category.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "status",
+            "description": "<p>Employee job status.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "subunit",
+            "description": "<p>Subunit of the employee.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "location",
+            "description": "<p>Job location of the employee.</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "joinedDate",
-            "description": "<p>Optional Employee joined date.</p>"
+            "description": "<p>Employee joined date.</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "startDate",
-            "description": "<p>Optional Employee contract start date.</p>"
+            "description": "<p>Employee contract start date.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "endDate",
+            "description": "<p>Employee contract end date.</p>"
           }
         ]
       }
@@ -289,7 +450,7 @@
             "type": "String",
             "optional": false,
             "field": "Object",
-            "description": "<p>Optional data success response.</p>"
+            "description": "<p>data success response.</p>"
           }
         ]
       },
@@ -343,70 +504,70 @@
             "type": "String",
             "optional": true,
             "field": "name",
-            "description": "<p>employee name</p>"
+            "description": "<p>employee name.</p>"
           },
           {
             "group": "Parameter",
             "type": "Number",
             "optional": true,
             "field": "id",
-            "description": "<p>employee Id</p>"
+            "description": "<p>employee Id.</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": true,
             "field": "status",
-            "description": "<p>employee status</p>"
+            "description": "<p>employee status.</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": true,
             "field": "supervisor",
-            "description": "<p>supervisor name</p>"
+            "description": "<p>supervisor name.</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": true,
             "field": "jobtitle",
-            "description": "<p>employee job title</p>"
+            "description": "<p>employee job title.</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": true,
             "field": "unit",
-            "description": "<p>Employee Unit</p>"
+            "description": "<p>Employee Unit.</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": true,
             "field": "dob",
-            "description": "<p>employee birth day</p>"
+            "description": "<p>employee birth day.</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": true,
             "field": "gender",
-            "description": "<p>employee gender</p>"
+            "description": "<p>employee gender.</p>"
           },
           {
             "group": "Parameter",
             "type": "Number",
             "optional": true,
             "field": "limit",
-            "description": "<p>record limit</p>"
+            "description": "<p>record limit.</p>"
           },
           {
             "group": "Parameter",
             "type": "Number",
             "optional": true,
             "field": "page",
-            "description": "<p>pagination number</p>"
+            "description": "<p>pagination number.</p>"
           }
         ]
       }
@@ -419,7 +580,7 @@
             "type": "Object",
             "optional": false,
             "field": "data",
-            "description": "<p>Matching Employee list</p>"
+            "description": "<p>Matching Employee list.</p>"
           },
           {
             "group": "Success 200",
@@ -483,28 +644,84 @@
             "type": "String",
             "optional": false,
             "field": "firstName",
-            "description": "<p>First Name.</p>"
+            "description": "<p>First name of the employee.</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "middleName",
-            "description": "<p>Middle Name.</p>"
+            "description": "<p>Middle name of the employee.</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "lastName",
-            "description": "<p>LastName.</p>"
+            "description": "<p>Last Name of the employee.</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
-            "field": "startDate",
-            "description": "<p>Employee contract start date.</p>"
+            "field": "code",
+            "description": "<p>Employee code.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "fullName",
+            "description": "<p>Full Name of the employee.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "dob",
+            "description": "<p>DOB of the employee.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "driversLicenseNumber",
+            "description": "<p>Employee driver's license number.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "licenseExpiryDare",
+            "description": "<p>Employee driver's license expiry date</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "maritalStatus",
+            "description": "<p>Employee marital status.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "gender",
+            "description": "<p>Gender of the employee.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "otherId",
+            "description": "<p>Employee other id.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "nationality",
+            "description": "<p>Nationality of the employee.</p>"
           }
         ]
       }
@@ -569,8 +786,8 @@
             "group": "Parameter",
             "type": "Number",
             "optional": false,
-            "field": "employee",
-            "description": "<p>id</p>"
+            "field": "id",
+            "description": "<p>Employee number</p>"
           },
           {
             "group": "Parameter",
@@ -590,7 +807,7 @@
             "type": "Object",
             "optional": false,
             "field": "data",
-            "description": "<p>success response</p>"
+            "description": "<p>success response.</p>"
           }
         ]
       },
@@ -670,7 +887,7 @@
             "group": "Success 200",
             "type": "String",
             "optional": false,
-            "field": "empNumber",
+            "field": "code",
             "description": "<p>Employee number.</p>"
           },
           {
@@ -812,7 +1029,7 @@
             "type": "String",
             "optional": false,
             "field": "middleName",
-            "description": "<p>Optional Middle name of the employee.</p>"
+            "description": "<p>Middle name of the employee.</p>"
           },
           {
             "group": "Parameter",
@@ -825,8 +1042,8 @@
             "group": "Parameter",
             "type": "String",
             "optional": false,
-            "field": "id",
-            "description": "<p>employee number.</p>"
+            "field": "code",
+            "description": "<p>Employee code.</p>"
           }
         ]
       }
@@ -846,7 +1063,7 @@
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "HTTP/1.1 200 OK\n\n {\n   \"success\": \"Successfully saved\"\n }",
+          "content": "HTTP/1.1 200 OK\n\n {\n   \"success\": \"Successfully saved\",\n   \"id\": \"0011\"\n }",
           "type": "json"
         }
       ]
@@ -1025,8 +1242,8 @@
             "group": "Parameter",
             "type": "Number",
             "optional": false,
-            "field": "employee",
-            "description": "<p>id</p>"
+            "field": "id",
+            "description": "<p>Employee id</p>"
           },
           {
             "group": "Parameter",
@@ -1047,14 +1264,7 @@
             "type": "String",
             "optional": false,
             "field": "dob",
-            "description": "<p>Optional date of birth of dependent.</p>"
-          },
-          {
-            "group": "Parameter",
-            "type": "String",
-            "optional": false,
-            "field": "type",
-            "description": "<p>Optional relationship type.</p>"
+            "description": "<p>DOB of dependent.</p>"
           }
         ]
       }
@@ -1074,7 +1284,7 @@
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "HTTP/1.1 200 OK\n\n {\n   \"success\": \"Successfully saved\"\n }",
+          "content": "HTTP/1.1 200 OK\n\n {\n   \"success\": \"Successfully saved\",\n   \"sequenceNumber\": 1\n }",
           "type": "json"
         }
       ]
@@ -1128,15 +1338,22 @@
             "group": "Parameter",
             "type": "String",
             "optional": false,
-            "field": "Mandatory",
-            "description": "<p>termination date.</p>"
+            "field": "TerminationDate",
+            "description": "<p>Mandatory termination date.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "Reason",
+            "description": "<p>Mandatory termination reason.</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "note",
-            "description": "<p>Optional termination note.</p>"
+            "description": "<p>Termination note.</p>"
           }
         ]
       }
@@ -1149,7 +1366,7 @@
             "type": "Object",
             "optional": false,
             "field": "data",
-            "description": "<p>success response</p>"
+            "description": "<p>success response.</p>"
           }
         ]
       },
@@ -1340,36 +1557,36 @@
             "group": "Parameter",
             "type": "Number",
             "optional": false,
-            "field": "employee",
-            "description": "<p>id</p>"
+            "field": "id",
+            "description": "<p>Employee id</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "name",
-            "description": "<p>Mandatory name of the dependent.</p>"
+            "description": "<p>Name of the dependent.</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "relationship",
-            "description": "<p>Mandatory relationship of the dependent.</p>"
+            "description": "<p>relationship of the dependent.</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "dob",
-            "description": "<p>Optional date of birth of dependent.</p>"
+            "description": "<p>DOB of dependent.</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
-            "field": "type",
-            "description": "<p>Optional relationship type.</p>"
+            "field": "sequenceNumber",
+            "description": "<p>Mandatory sequence number.</p>"
           }
         ]
       }
@@ -1435,36 +1652,64 @@
             "group": "Parameter",
             "type": "Number",
             "optional": false,
-            "field": "employee",
-            "description": "<p>id</p>"
+            "field": "id",
+            "description": "<p>Employee id</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "title",
-            "description": "<p>Job Optional title name.</p>"
+            "description": "<p>Job title name.</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "category",
-            "description": "<p>Optional Job category.</p>"
+            "description": "<p>Job category.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "status",
+            "description": "<p>Employee job status.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "subunit",
+            "description": "<p>Subunit of the employee.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "location",
+            "description": "<p>Job location of the employee.</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "joinedDate",
-            "description": "<p>Optional Employee joined date.</p>"
+            "description": "<p>Employee joined date.</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "startDate",
-            "description": "<p>Optional Employee contract start date.</p>"
+            "description": "<p>Employee contract start date.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "endDate",
+            "description": "<p>Employee contract end date.</p>"
           }
         ]
       }
