@@ -2,7 +2,7 @@
   {
     "type": "get",
     "url": "/employee/:id/dependent",
-    "title": "Employee Dependents",
+    "title": "09.Employee Dependents",
     "name": "GetEmployeeDependents",
     "group": "Employee",
     "parameter": {
@@ -79,13 +79,13 @@
       ]
     },
     "version": "0.0.0",
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/employee-dependent-end-point.php",
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/9-employee-dependent-end-point.php",
     "groupTitle": "Employee"
   },
   {
     "type": "get",
     "url": "/employee/:id",
-    "title": "Employee Detail",
+    "title": "02.Employee Detail",
     "name": "GetEmployeeDetail",
     "group": "Employee",
     "version": "0.1.0",
@@ -259,7 +259,7 @@
   {
     "type": "get",
     "url": "/employee/:id/job-detail",
-    "title": "Employee Job Detail",
+    "title": "13.Employee Job Detail",
     "name": "GetEmployeeJobDetails",
     "group": "Employee",
     "parameter": {
@@ -364,13 +364,13 @@
       ]
     },
     "version": "0.0.0",
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/employee-job-detail-end-point.php",
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/13-employee-job-detail-end-point.php",
     "groupTitle": "Employee"
   },
   {
     "type": "post",
     "url": "/employee/:id/job-detail",
-    "title": "Save Employee Job Detail",
+    "title": "14.Save Employee Job Detail",
     "name": "SaveEmployeeJobDetails",
     "group": "Employee",
     "parameter": {
@@ -476,13 +476,13 @@
       ]
     },
     "version": "0.0.0",
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/save-employee-job-detail-end-point.php",
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/14-save-employee-job-detail-end-point.php",
     "groupTitle": "Employee"
   },
   {
     "type": "get",
     "url": "/employee/search",
-    "title": "Employee Search",
+    "title": "05.Employee Search",
     "name": "SearchEmployee",
     "group": "Employee",
     "parameter": {
@@ -587,13 +587,13 @@
       ]
     },
     "version": "0.0.0",
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/employee-search-end-point.php",
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/5.employee-search-end-point.php",
     "groupTitle": "Employee"
   },
   {
     "type": "put",
     "url": "/employee/:id",
-    "title": "Update Employee Detail",
+    "title": "03.Update Employee Detail",
     "name": "UpdateEmployeeDetails",
     "group": "Employee",
     "version": "0.1.0",
@@ -737,7 +737,7 @@
   {
     "type": "del",
     "url": "/employee/:id/dependent",
-    "title": "Delete Employee Dependents",
+    "title": "10.Delete Employee Dependents",
     "name": "deleteEmployeeDependents",
     "group": "Employee",
     "parameter": {
@@ -805,13 +805,13 @@
       ]
     },
     "version": "0.0.0",
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/delete-employee-dependents-end-point.php",
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/10-delete-employee-dependents-end-point.php",
     "groupTitle": "Employee"
   },
   {
     "type": "del",
     "url": "/employee/:id/supervisor",
-    "title": "Delete Supervisor Details",
+    "title": "18.Delete Supervisor Details",
     "name": "deleteEmployeeSupervisor",
     "group": "Employee",
     "version": "0.1.0",
@@ -886,13 +886,13 @@
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/delete-employee-supervisor-detail-end-point.php",
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/18-delete-employee-supervisor-detail-end-point.php",
     "groupTitle": "Employee"
   },
   {
     "type": "get",
     "url": "/employee/:id/contact-detail",
-    "title": "Employee Contact Detail",
+    "title": "06.Employee Contact Detail",
     "name": "getEmployeeContactDetails",
     "group": "Employee",
     "parameter": {
@@ -1039,13 +1039,13 @@
       ]
     },
     "version": "0.0.0",
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/employee-contact-end-point.php",
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/6-employee-contact-end-point.php",
     "groupTitle": "Employee"
   },
   {
     "type": "get",
     "url": "/employee/:id/supervisor",
-    "title": "Supervisor Details",
+    "title": "16.Supervisor Details",
     "name": "getEmployeeSupervisor",
     "group": "Employee",
     "version": "0.1.0",
@@ -1129,13 +1129,13 @@
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/get-employee-supervisor-detail-end-point.php",
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/16-get-employee-supervisor-detail-end-point.php",
     "groupTitle": "Employee"
   },
   {
     "type": "post",
     "url": "/employee/:id",
-    "title": "Save Employee",
+    "title": "01.Save Employee",
     "name": "saveEmployee",
     "group": "Employee",
     "version": "0.1.0",
@@ -1225,7 +1225,7 @@
   {
     "type": "post",
     "url": "/employee/:id/contact-detail",
-    "title": "Save Employee Contact Detail",
+    "title": "07.Save Employee Contact Detail",
     "name": "saveEmployeeContactDetails",
     "group": "Employee",
     "parameter": {
@@ -1358,13 +1358,13 @@
       ]
     },
     "version": "0.0.0",
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/save-employee-contact-end-point.php",
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/7-save-employee-contact-end-point.php",
     "groupTitle": "Employee"
   },
   {
     "type": "post",
     "url": "/employee/:id/supervisor",
-    "title": "Save Supervisor Details",
+    "title": "17.Save Supervisor Details",
     "name": "saveEmployeeSupervisor",
     "group": "Employee",
     "version": "0.1.0",
@@ -1439,13 +1439,13 @@
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/save-employee-supervisor-detail-end-point.php",
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/17-save-employee-supervisor-detail-end-point.php",
     "groupTitle": "Employee"
   },
   {
     "type": "post",
     "url": "/employee/:id/dependent",
-    "title": "Save Employee Dependent",
+    "title": "12.Save Employee Dependent",
     "name": "saveEmployee_dependents",
     "group": "Employee",
     "parameter": {
@@ -1527,13 +1527,13 @@
       ]
     },
     "version": "0.0.0",
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/save-employee-dependents-end-point.php",
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/12-save-employee-dependents-end-point.php",
     "groupTitle": "Employee"
   },
   {
     "type": "post",
     "url": "employee/:id/action/terminate",
-    "title": "Terminate Employment",
+    "title": "04.Terminate Employment",
     "name": "terminateEmployee",
     "group": "Employee",
     "version": "0.1.0",
@@ -1621,7 +1621,7 @@
   {
     "type": "put",
     "url": "/employee/:id/contact-detail",
-    "title": "Update Employee Contact Detail",
+    "title": "08.Update Employee Contact Detail",
     "name": "updateEmployeeContactDetails",
     "group": "Employee",
     "parameter": {
@@ -1754,13 +1754,13 @@
       ]
     },
     "version": "0.0.0",
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/update-employee-contact-details-end-point.php",
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/8-update-employee-contact-details-end-point.php",
     "groupTitle": "Employee"
   },
   {
     "type": "put",
     "url": "/employee/:id/dependent",
-    "title": "Update Employee Dependents",
+    "title": "11.Update Employee Dependents",
     "name": "updateEmployeeDependents",
     "group": "Employee",
     "parameter": {
@@ -1849,13 +1849,13 @@
       ]
     },
     "version": "0.0.0",
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/update-employee-dependents-end-point.php",
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/11-update-employee-dependents-end-point.php",
     "groupTitle": "Employee"
   },
   {
     "type": "put",
     "url": "/employee/:id/job-detail",
-    "title": "Update Employee Job Detail",
+    "title": "15.Update Employee Job Detail",
     "name": "updateEmployeeJobDetails",
     "group": "Employee",
     "parameter": {
@@ -1972,13 +1972,13 @@
       ]
     },
     "version": "0.0.0",
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/update-employee-job-detail-end-point.php",
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/15-update-employee-job-detail-end-point.php",
     "groupTitle": "Employee"
   },
   {
     "type": "put",
     "url": "/employee/:id/supervisor",
-    "title": "Update Supervisor Details",
+    "title": "19.Update Supervisor Details",
     "name": "updateEmployeeSupervisor",
     "group": "Employee",
     "version": "0.1.0",
@@ -2060,13 +2060,13 @@
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/update-employee-supervisor-detail-end-point.php",
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/19-update-employee-supervisor-detail-end-point.php",
     "groupTitle": "Employee"
   },
   {
     "type": "get",
     "url": "/api/v1/leave/type",
-    "title": "Get Employee Leave Requests",
+    "title": "2.Get Employee Leave Requests",
     "name": "employeeLeaveRequest",
     "group": "Leave",
     "version": "0.1.0",
@@ -2181,7 +2181,7 @@
   {
     "type": "get",
     "url": "/api/v1/leave/type",
-    "title": "Leave Types",
+    "title": "1.Leave Types",
     "name": "leaveTypes",
     "group": "Leave",
     "version": "0.1.0",
@@ -2237,7 +2237,7 @@
   {
     "type": "get",
     "url": "/api/v1/leave/type",
-    "title": "Search Leave Requests",
+    "title": "3.Search Leave Requests",
     "name": "searchLeaveRequest",
     "group": "Leave",
     "version": "0.1.0",
