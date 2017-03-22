@@ -2065,6 +2065,121 @@ define({ "api": [
   },
   {
     "type": "get",
+    "url": "/api/v1/employee/:id/entitlement",
+    "title": "4.Get Employee Leave Entitlement",
+    "name": "employeeLeaveEntitlement",
+    "group": "Leave",
+    "version": "0.1.0",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "leaveType",
+            "description": "<p>Leave type.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Date",
+            "optional": true,
+            "field": "fromDate",
+            "description": "<p>From date.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Date",
+            "optional": true,
+            "field": "toDate",
+            "description": "<p>To date.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Entitlement id.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "type",
+            "description": "<p>Number of Days.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Date",
+            "optional": false,
+            "field": "validFrom",
+            "description": "<p>Valid from date.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Date",
+            "optional": false,
+            "field": "validTo",
+            "description": "<p>Valid to date.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "days",
+            "description": "<p>Entitled days.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n\n\n   {\n   \"data\": [\n   {\n   \"id\": \"2\",\n   \"type\": \"1\",\n   \"validFrom\": \"2017-01-01 00:00:00\",\n   \"validTo\": \"2018-02-28 00:00:00\",\n   \"days\": \"10.0\"\n   }\n   ],\n   \"rels\": []\n   }",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "No-Records",
+            "description": "<p>Found.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "Employee",
+            "description": "<p>Not Found.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Record Not Found\n{\n  \"error\": [\"No Records Found\"]\n}",
+          "type": "json"
+        },
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Employee Not Found\n{\n  \"error\": [\"Employee Not Found\"]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/employee-leave-entitlement-end-point.php",
+    "groupTitle": "Leave"
+  },
+  {
+    "type": "get",
     "url": "/api/v1/leave/type",
     "title": "2.Get Employee Leave Requests",
     "name": "employeeLeaveRequest",
@@ -2140,7 +2255,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "HTTP/1.1 200 OK\n\n {\n      \"type\": \"Annual\",\n      \"id\": \"2\",\n      \"date\": \"2017-03-31\",\n      \"$leaveBalance\": 9,\n      \"numberOfDays\": \"1.00\",\n      \"status\": 2,\n      \"comments\": {},\n      \"action\": null\n }",
+          "content": "HTTP/1.1 200 OK\n\n {\n      \"type\": \"Annual\",\n      \"id\": \"2\",\n      \"date\": \"2017-03-31\",\n      \"$leaveBalance\": 9,\n      \"numberOfDays\": \"1.00\",\n      \"status\": 2,\n      \"comments\": [\n               {\n               \"commentId\": \"3\",\n               \"author\": \"Admin\",\n               \"date\": \"2017-03-16\",\n               \"time\": \"14:20:27\",\n               \"comment\": \"Test\"\n               },\n               {\n               \"commentId\": \"1\",\n               \"author\": \"Admin\",\n               \"date\": \"2017-03-16\",\n               \"time\": \"14:18:10\",\n               \"comment\": \"Test\"\n               }\n      \"action\": null\n }",
           "type": "json"
         }
       ]
@@ -2232,6 +2347,83 @@ define({ "api": [
       ]
     },
     "filename": "symfony/plugins/orangehrmRESTPlugin/doc/leave-types-end-point.php",
+    "groupTitle": "Leave"
+  },
+  {
+    "type": "post",
+    "url": "/api/v1/employee/:id/entitlement",
+    "title": "5.Save Employee Leave Entitlement",
+    "name": "saveEmployeeLeaveEntitlement",
+    "group": "Leave",
+    "version": "0.1.0",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "leaveType",
+            "description": "<p>Leave type.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Date",
+            "optional": false,
+            "field": "fromDate",
+            "description": "<p>From date.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Date",
+            "optional": false,
+            "field": "toDate",
+            "description": "<p>To date.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "days",
+            "description": "<p>Number of days.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n\n {\n   \"success\": \"Successfully Saved\"\n }",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "Bad-Response",
+            "description": "<p>Saving Failed.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 400 Bad Request\n{\n  \"error\": [\"Saving Failed\"]\n}",
+          "type": "json"
+        },
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 202 Invalid Parameter\n{\n  \"error\": [\"Invalid Parameter\"]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/save-employee-leave-entitlement-end-point.php",
     "groupTitle": "Leave"
   },
   {
