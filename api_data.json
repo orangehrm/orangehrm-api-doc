@@ -1,6 +1,85 @@
 [
   {
     "type": "get",
+    "url": "/user",
+    "title": "1.Get Users",
+    "name": "getUsers",
+    "group": "Admin",
+    "version": "0.1.0",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "userName",
+            "description": "<p>User Name.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "employeeId",
+            "description": "<p>Employee id.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "userType",
+            "description": "<p>User type id.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "offset",
+            "description": "<p>Page number.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "limit",
+            "description": "<p>Number of results per page.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n\n\t\t{\n\t\t    \"data\":[\n\t\t\t{\n\t\t\t    \"userName\":\"hameesh\",\n\t\t\t    \"userRole\":\"ESS\",\n\t\t\t    \"status\":\"1\",\n\t\t\t    \"employeeName\":\"Hameesh Von Johnson\"\n\t\t\t},\n\t\t\t{\n\t\t\t    \"userName\":\"nina123\",\n\t\t\t    \"userRole\":\"ESS\",\n\t\t\t    \"status\":\"1\",\n\t\t\t    \"employeeName\":\"Nina Jane Lewis\"\n\t\t\t},\n\t\t\t{\n\t\t\t    \"userName\":\"shawn\",\n\t\t\t    \"userRole\":\"ESS\",\n\t\t\t    \"status\":\"1\",\n\t\t\t    \"employeeName\":\"Shawn haffman\"\n\t\t\t}\n\t\t    ],\n\t\t    \"rels\":[\n\n\t\t    ]\n\t\t}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "No-Records",
+            "description": "<p>Found.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Record Not Found\n{\n  \"error\": [\"No Users Found\"]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/get-users-end-point.php",
+    "groupTitle": "Admin"
+  },
+  {
+    "type": "get",
     "url": "/employee/:id/dependent",
     "title": "09.Employee Dependents",
     "name": "GetEmployeeDependents",
@@ -1532,7 +1611,7 @@
   },
   {
     "type": "post",
-    "url": "employee/:id/action/terminate",
+    "url": "/employee/:id/action/terminate",
     "title": "04.Terminate Employment",
     "name": "terminateEmployee",
     "group": "Employee",
@@ -2065,7 +2144,7 @@
   },
   {
     "type": "get",
-    "url": "/api/v1/employee/:id/entitlement",
+    "url": "/employee/:id/entitlement",
     "title": "4.Get Employee Leave Entitlement",
     "name": "employeeLeaveEntitlement",
     "group": "Leave",
@@ -2180,7 +2259,7 @@
   },
   {
     "type": "get",
-    "url": "/api/v1/leave/type",
+    "url": "/leave/type",
     "title": "2.Get Employee Leave Requests",
     "name": "employeeLeaveRequest",
     "group": "Leave",
@@ -2295,7 +2374,45 @@
   },
   {
     "type": "get",
-    "url": "/api/v1/leave/type",
+    "url": "/leave/period",
+    "title": "7.Get Leave Period",
+    "name": "getLeavePeriods",
+    "group": "Leave",
+    "version": "0.1.0",
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n\n       {\n        \"data\": [\n       [\n\n       \"2017-01-01\",\n       \"2018-02-28\"\n\n       ],\n       [\n\n       \"2018-03-01\",\n       \"2019-02-28\"\n\n       ]\n       ],\n       \"rels\": []\n       }",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "No-Records",
+            "description": "<p>Found.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n  \"error\": \"No Leave Periods Found\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/get-leave-period-end-point.php",
+    "groupTitle": "Leave"
+  },
+  {
+    "type": "get",
+    "url": "/leave/type",
     "title": "1.Leave Types",
     "name": "leaveTypes",
     "group": "Leave",
@@ -2351,7 +2468,7 @@
   },
   {
     "type": "post",
-    "url": "/api/v1/employee/:id/entitlement",
+    "url": "/employee/:id/entitlement",
     "title": "5.Save Employee Leave Entitlement",
     "name": "saveEmployeeLeaveEntitlement",
     "group": "Leave",
@@ -2427,8 +2544,240 @@
     "groupTitle": "Leave"
   },
   {
+    "type": "post",
+    "url": "/employee/:id/leave-request",
+    "title": "6.Save Leave Request",
+    "name": "saveLeaveRequest",
+    "group": "Leave",
+    "version": "0.1.0",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "empId",
+            "description": "<p>Employee id.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "type",
+            "description": "<p>Mandatory leave type name.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "fromDate",
+            "description": "<p>Leave start date.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "toDate",
+            "description": "<p>Leave end date.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "comment",
+            "description": "<p>Leave comment.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "partialOption",
+            "description": "<p>Partial day option ('all','start','end' ).</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "singleType",
+            "description": "<p>Single day leave applying type ('half_day','full_day','specify_time').</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "singleAMPM",
+            "description": "<p>Half day morning or evening ( 'AM','PM').</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "singleFromTime",
+            "description": "<p>Single day from time for specify time.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "singleToTime",
+            "description": "<p>Single day to time for specify time.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "startType",
+            "description": "<p>Start day leave applying type ('half_day','full_day','specify_time').</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "startAMPM",
+            "description": "<p>Half day morning or evening ( 'AM','PM').</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "startFromTime",
+            "description": "<p>Start day from time for specify time.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "startToTime",
+            "description": "<p>Start day to time for specify time.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "endDayType",
+            "description": "<p>End day leave applying type ('half_day','full_day','specify_time').</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "endDayAMPM",
+            "description": "<p>Half day morning or evening ( 'AM','PM').</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "endDayFromTime",
+            "description": "<p>End day from time for specify time.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "endDayToTime",
+            "description": "<p>End day to time for specify time.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n\n {\n   \"success\": \"Successfully Saved\"\n }",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "Bad-Response",
+            "description": "<p>Saving Failed.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 400 Bad Request\n{\n  \"error\": [\"Saving Failed\"]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/save-leave-request-end-point.php",
+    "groupTitle": "Leave"
+  },
+  {
+    "type": "post",
+    "url": "/leave/type",
+    "title": "6.Save Leave Type",
+    "name": "saveLeaveType",
+    "group": "Leave",
+    "version": "0.1.0",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "name",
+            "description": "<p>Mandatory leave type name.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n\n {\n   \"success\": \"Successfully Saved\"\n }",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "No-Records",
+            "description": "<p>Found.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "Bad-Response",
+            "description": "<p>Saving Failed.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Record Not Found\n{\n  \"error\": [\"No Leave Types Available\"]\n}",
+          "type": "json"
+        },
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 400 Bad Request\n{\n  \"error\": [\"Saving Failed\"]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/save-leave-type-end-point.php",
+    "groupTitle": "Leave"
+  },
+  {
     "type": "get",
-    "url": "/api/v1/leave/type",
+    "url": "/leave/type",
     "title": "3.Search Leave Requests",
     "name": "searchLeaveRequest",
     "group": "Leave",
@@ -2490,28 +2839,14 @@
             "type": "String",
             "optional": true,
             "field": "pastEmployee",
-            "description": "<p>Past Employee results ( 'true' /'false').</p>"
+            "description": "<p>Past employee results ( 'true' /'false').</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": true,
             "field": "subunit",
-            "description": "<p>Employee Subunit.</p>"
-          },
-          {
-            "group": "Parameter",
-            "type": "Number",
-            "optional": true,
-            "field": "page",
-            "description": "<p>Page number.</p>"
-          },
-          {
-            "group": "Parameter",
-            "type": "Number",
-            "optional": true,
-            "field": "limit",
-            "description": "<p>Number of records per page.</p>"
+            "description": "<p>Employee subunit.</p>"
           }
         ]
       }
@@ -2573,7 +2908,7 @@
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "HTTP/1.1 200 OK\n\n {\n      \"type\": \"Annual\",\n      \"id\": \"2\",\n      \"date\": \"2017-03-31\",\n      \"$leaveBalance\": 9,\n      \"numberOfDays\": \"1.00\",\n      \"status\": 2,\n      \"comments\": {},\n      \"action\": null\n }",
+          "content": "HTTP/1.1 200 OK\n\n {\n      \"type\": \"Annual\",\n      \"id\": \"2\",\n      \"date\": \"2017-03-31\",\n      \"$leaveBalance\": 9,\n      \"numberOfDays\": \"1.00\",\n      \"status\": 2,\n      \"comments\": [\n               {\n               \"commentId\": \"3\",\n               \"author\": \"Admin\",\n               \"date\": \"2017-03-16\",\n               \"time\": \"14:20:27\",\n               \"comment\": \"Test\"\n               },\n               {\n               \"commentId\": \"1\",\n               \"author\": \"Admin\",\n               \"date\": \"2017-03-16\",\n               \"time\": \"14:18:10\",\n               \"comment\": \"Test\"\n               }\n      \"action\": null\n }",
           "type": "json"
         }
       ]
