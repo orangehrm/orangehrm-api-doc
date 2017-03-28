@@ -2259,7 +2259,7 @@ define({ "api": [
   },
   {
     "type": "get",
-    "url": "/leave/type",
+    "url": "/employee/:id/leave-request",
     "title": "2.Get Employee Leave Requests",
     "name": "employeeLeaveRequest",
     "group": "Leave",
@@ -2555,7 +2555,7 @@ define({ "api": [
         "Parameter": [
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "Number",
             "optional": false,
             "field": "empId",
             "description": "<p>Employee id.</p>"
@@ -2569,14 +2569,14 @@ define({ "api": [
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "Date",
             "optional": false,
             "field": "fromDate",
             "description": "<p>Leave start date.</p>"
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "Date",
             "optional": false,
             "field": "toDate",
             "description": "<p>Leave end date.</p>"
