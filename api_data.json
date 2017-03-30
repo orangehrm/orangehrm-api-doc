@@ -84,6 +84,7 @@
     "title": "09.Employee Dependents",
     "name": "GetEmployeeDependents",
     "group": "Employee",
+    "version": "0.1.0",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -157,7 +158,6 @@
         }
       ]
     },
-    "version": "0.0.0",
     "filename": "symfony/plugins/orangehrmRESTPlugin/doc/9-employee-dependent-end-point.php",
     "groupTitle": "Employee"
   },
@@ -341,6 +341,7 @@
     "title": "13.Employee Job Detail",
     "name": "GetEmployeeJobDetails",
     "group": "Employee",
+    "version": "0.1.0",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -442,7 +443,6 @@
         }
       ]
     },
-    "version": "0.0.0",
     "filename": "symfony/plugins/orangehrmRESTPlugin/doc/13-employee-job-detail-end-point.php",
     "groupTitle": "Employee"
   },
@@ -452,6 +452,7 @@
     "title": "14.Save Employee Job Detail",
     "name": "SaveEmployeeJobDetails",
     "group": "Employee",
+    "version": "0.1.0",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -554,7 +555,6 @@
         }
       ]
     },
-    "version": "0.0.0",
     "filename": "symfony/plugins/orangehrmRESTPlugin/doc/14-save-employee-job-detail-end-point.php",
     "groupTitle": "Employee"
   },
@@ -564,6 +564,7 @@
     "title": "05.Employee Search",
     "name": "SearchEmployee",
     "group": "Employee",
+    "version": "0.1.0",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -665,7 +666,6 @@
         }
       ]
     },
-    "version": "0.0.0",
     "filename": "symfony/plugins/orangehrmRESTPlugin/doc/5.employee-search-end-point.php",
     "groupTitle": "Employee"
   },
@@ -819,6 +819,7 @@
     "title": "10.Delete Employee Dependents",
     "name": "deleteEmployeeDependents",
     "group": "Employee",
+    "version": "0.1.0",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -883,7 +884,6 @@
         }
       ]
     },
-    "version": "0.0.0",
     "filename": "symfony/plugins/orangehrmRESTPlugin/doc/10-delete-employee-dependents-end-point.php",
     "groupTitle": "Employee"
   },
@@ -974,6 +974,7 @@
     "title": "06.Employee Contact Detail",
     "name": "getEmployeeContactDetails",
     "group": "Employee",
+    "version": "0.1.0",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -1117,7 +1118,6 @@
         }
       ]
     },
-    "version": "0.0.0",
     "filename": "symfony/plugins/orangehrmRESTPlugin/doc/6-employee-contact-end-point.php",
     "groupTitle": "Employee"
   },
@@ -1307,6 +1307,7 @@
     "title": "07.Save Employee Contact Detail",
     "name": "saveEmployeeContactDetails",
     "group": "Employee",
+    "version": "0.1.0",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -1436,7 +1437,6 @@
         }
       ]
     },
-    "version": "0.0.0",
     "filename": "symfony/plugins/orangehrmRESTPlugin/doc/7-save-employee-contact-end-point.php",
     "groupTitle": "Employee"
   },
@@ -1527,6 +1527,7 @@
     "title": "12.Save Employee Dependent",
     "name": "saveEmployee_dependents",
     "group": "Employee",
+    "version": "0.1.0",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -1605,7 +1606,6 @@
         }
       ]
     },
-    "version": "0.0.0",
     "filename": "symfony/plugins/orangehrmRESTPlugin/doc/12-save-employee-dependents-end-point.php",
     "groupTitle": "Employee"
   },
@@ -1703,6 +1703,7 @@
     "title": "08.Update Employee Contact Detail",
     "name": "updateEmployeeContactDetails",
     "group": "Employee",
+    "version": "0.1.0",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -1832,7 +1833,6 @@
         }
       ]
     },
-    "version": "0.0.0",
     "filename": "symfony/plugins/orangehrmRESTPlugin/doc/8-update-employee-contact-details-end-point.php",
     "groupTitle": "Employee"
   },
@@ -1842,6 +1842,7 @@
     "title": "11.Update Employee Dependents",
     "name": "updateEmployeeDependents",
     "group": "Employee",
+    "version": "0.1.0",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -1927,7 +1928,6 @@
         }
       ]
     },
-    "version": "0.0.0",
     "filename": "symfony/plugins/orangehrmRESTPlugin/doc/11-update-employee-dependents-end-point.php",
     "groupTitle": "Employee"
   },
@@ -1937,6 +1937,7 @@
     "title": "15.Update Employee Job Detail",
     "name": "updateEmployeeJobDetails",
     "group": "Employee",
+    "version": "0.1.0",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -2050,7 +2051,6 @@
         }
       ]
     },
-    "version": "0.0.0",
     "filename": "symfony/plugins/orangehrmRESTPlugin/doc/15-update-employee-job-detail-end-point.php",
     "groupTitle": "Employee"
   },
@@ -2375,7 +2375,7 @@
   {
     "type": "get",
     "url": "/leave/period",
-    "title": "7.Get Leave Period",
+    "title": "8.Get Leave Period",
     "name": "getLeavePeriods",
     "group": "Leave",
     "version": "0.1.0",
@@ -2432,7 +2432,7 @@
             "type": "Number",
             "optional": true,
             "field": "id",
-            "description": "<p>Leave id.</p>"
+            "description": "<p>Leave type id.</p>"
           }
         ]
       },
@@ -2546,7 +2546,7 @@
   {
     "type": "post",
     "url": "/employee/:id/leave-request",
-    "title": "6.Save Leave Request",
+    "title": "Save Leave Request",
     "name": "saveLeaveRequest",
     "group": "Leave",
     "version": "0.1.0",
@@ -2716,7 +2716,7 @@
   {
     "type": "post",
     "url": "/leave/type",
-    "title": "6.Save Leave Type",
+    "title": "5.Save Leave Type",
     "name": "saveLeaveType",
     "group": "Leave",
     "version": "0.1.0",
@@ -2777,7 +2777,7 @@
   },
   {
     "type": "get",
-    "url": "/leave/type",
+    "url": "/leave/search",
     "title": "3.Search Leave Requests",
     "name": "searchLeaveRequest",
     "group": "Leave",
