@@ -465,38 +465,38 @@ define({ "api": [
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "Number",
             "optional": false,
             "field": "title",
-            "description": "<p>Job title name.</p>"
+            "description": "<p>Job title id.</p>"
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "Number",
             "optional": false,
             "field": "category",
-            "description": "<p>Job category.</p>"
+            "description": "<p>Job category id.</p>"
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "Number",
             "optional": false,
             "field": "status",
-            "description": "<p>Employee job status.</p>"
+            "description": "<p>Employee job status id.</p>"
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "Number",
             "optional": false,
             "field": "subunit",
-            "description": "<p>Subunit of the employee.</p>"
+            "description": "<p>Subunit id of the employee.</p>"
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "Number",
             "optional": false,
             "field": "location",
-            "description": "<p>Job location of the employee.</p>"
+            "description": "<p>Job location id of the employee.</p>"
           },
           {
             "group": "Parameter",
@@ -584,10 +584,10 @@ define({ "api": [
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "Number",
             "optional": true,
             "field": "status",
-            "description": "<p>Employee status.</p>"
+            "description": "<p>Employee status id.</p>"
           },
           {
             "group": "Parameter",
@@ -598,17 +598,17 @@ define({ "api": [
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "Number",
             "optional": true,
             "field": "jobTitle",
-            "description": "<p>Employee job title.</p>"
+            "description": "<p>Employee job title id.</p>"
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "Number",
             "optional": true,
             "field": "unit",
-            "description": "<p>Employee Unit.</p>"
+            "description": "<p>Employee Unit id.</p>"
           },
           {
             "group": "Parameter",
@@ -1950,38 +1950,38 @@ define({ "api": [
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "Number",
             "optional": false,
             "field": "title",
-            "description": "<p>Job title name.</p>"
+            "description": "<p>Job title id.</p>"
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "Number",
             "optional": false,
             "field": "category",
-            "description": "<p>Job category.</p>"
+            "description": "<p>Job category id.</p>"
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "Number",
             "optional": false,
             "field": "status",
-            "description": "<p>Employee job status.</p>"
+            "description": "<p>Employee job status id.</p>"
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "Number",
             "optional": false,
             "field": "subunit",
-            "description": "<p>Subunit of the employee.</p>"
+            "description": "<p>Subunit id of the employee.</p>"
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "Number",
             "optional": false,
             "field": "location",
-            "description": "<p>Job location of the employee.</p>"
+            "description": "<p>Job location id of the employee.</p>"
           },
           {
             "group": "Parameter",
@@ -2152,6 +2152,13 @@ define({ "api": [
     "parameter": {
       "fields": {
         "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Employee id.</p>"
+          },
           {
             "group": "Parameter",
             "type": "String",
@@ -2341,7 +2348,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "HTTP/1.1 200 OK\n\n {\n      \"employeeName\" : \"Shane Warne\",\n      \"employeeId\"   :'34',\n      \"type\": \"Annual\",\n      \"id\": \"2\",\n      \"date\": \"2017-03-31\",\n      \"$leaveBalance\": 9,\n      \"numberOfDays\": \"1.00\",\n      \"status\": Annual,\n      \"comments\": [\n               {\n               \"author\": \"Admin\",\n               \"date\": \"2017-03-16\",\n               \"time\": \"14:20:27\",\n               \"comment\": \"Test\"\n               },\n               {\n               \"author\": \"Admin\",\n               \"date\": \"2017-03-16\",\n               \"time\": \"14:18:10\",\n               \"comment\": \"Test\"\n               }\n           }",
+          "content": "HTTP/1.1 200 OK\n\n {\n      \"employeeName\" : \"Shane Warne\",\n      \"employeeId\"   :'34',\n      \"type\": \"Annual\",\n      \"id\": \"2\",\n      \"date\": \"2017-03-31\",\n      \"leaveBalance\": 9,\n      \"numberOfDays\": \"1.00\",\n      \"status\": Annual,\n      \"comments\": [\n               {\n               \"author\": \"Admin\",\n               \"date\": \"2017-03-16\",\n               \"time\": \"14:20:27\",\n               \"comment\": \"Test\"\n               },\n               {\n               \"author\": \"Admin\",\n               \"date\": \"2017-03-16\",\n               \"time\": \"14:18:10\",\n               \"comment\": \"Test\"\n               }\n           }",
           "type": "json"
         }
       ]
@@ -2420,7 +2427,7 @@ define({ "api": [
   {
     "type": "get",
     "url": "/leave/type",
-    "title": "Leave Types",
+    "title": "Get Leave Types",
     "name": "leaveTypes",
     "group": "Leave",
     "version": "0.1.0",
@@ -2430,14 +2437,14 @@ define({ "api": [
           {
             "group": "Success 200",
             "type": "String",
-            "optional": true,
+            "optional": false,
             "field": "type",
             "description": "<p>Leave type.</p>"
           },
           {
             "group": "Success 200",
             "type": "Number",
-            "optional": true,
+            "optional": false,
             "field": "id",
             "description": "<p>Leave type id.</p>"
           }
@@ -2483,6 +2490,13 @@ define({ "api": [
     "parameter": {
       "fields": {
         "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Employee id.</p>"
+          },
           {
             "group": "Parameter",
             "type": "String",
@@ -2706,11 +2720,6 @@ define({ "api": [
       "examples": [
         {
           "title": "Error-Response:",
-          "content": "HTTP/1.1 404 Record Not Found\n{\n  \"error\": [\"No Leave Types Available\"]\n}",
-          "type": "json"
-        },
-        {
-          "title": "Error-Response:",
           "content": "HTTP/1.1 400 Bad Request\n{\n  \"error\": [\"Saving Failed\"]\n}",
           "type": "json"
         }
@@ -2769,7 +2778,7 @@ define({ "api": [
             "type": "String",
             "optional": false,
             "field": "partialOption",
-            "description": "<p>Partial day option ( required ) ('all','start','end',start_end ).</p>"
+            "description": "<p>Partial day option ( required ) ('all','start','end',start_end ). Note : If partial option is 'all'  start day fields must be filled. If partial option is 'end'  end day fields must be filed. If partial option is 'start'  start day fields must be filed. If partial option is 'start_end'  start and end day fields must be filed.</p>"
           },
           {
             "group": "Parameter",
@@ -2825,7 +2834,7 @@ define({ "api": [
             "type": "String",
             "optional": false,
             "field": "endDayToTime",
-            "description": "<p>End day to time for specify time (required for end day specifying time ).</p> <p>Note : If partial option is 'all'  start day fields must be filled. If partial option is 'end'  end day fields must be filed. If partial option is 'start'  start day fields must be filed. If partial option is 'start_end'  start and end day fields must be filed.</p>"
+            "description": "<p>End day to time for specify time (required for end day specifying time ).</p>"
           }
         ]
       }
@@ -2874,14 +2883,14 @@ define({ "api": [
           {
             "group": "Parameter",
             "type": "Date",
-            "optional": true,
+            "optional": false,
             "field": "fromDate",
             "description": "<p>From date.</p>"
           },
           {
             "group": "Parameter",
             "type": "Date",
-            "optional": true,
+            "optional": false,
             "field": "toDate",
             "description": "<p>To date.</p>"
           },
@@ -2929,10 +2938,10 @@ define({ "api": [
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "Number",
             "optional": true,
             "field": "subunit",
-            "description": "<p>Employee subunit.</p>"
+            "description": "<p>Employee subunit id.</p>"
           }
         ]
       }
@@ -2943,56 +2952,56 @@ define({ "api": [
           {
             "group": "Success 200",
             "type": "String",
-            "optional": true,
+            "optional": false,
             "field": "employeeName",
             "description": "<p>Employee name</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
-            "optional": true,
+            "optional": false,
             "field": "employeeId",
             "description": "<p>Employee id.</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
-            "optional": true,
+            "optional": false,
             "field": "type",
             "description": "<p>Leave type.</p>"
           },
           {
             "group": "Success 200",
             "type": "Number",
-            "optional": true,
+            "optional": false,
             "field": "id",
             "description": "<p>Leave id.</p>"
           },
           {
             "group": "Success 200",
             "type": "Date",
-            "optional": true,
+            "optional": false,
             "field": "date",
             "description": "<p>Leave date.</p>"
           },
           {
             "group": "Success 200",
             "type": "Number",
-            "optional": true,
+            "optional": false,
             "field": "leaveBalance",
             "description": "<p>Leave balance.</p>"
           },
           {
             "group": "Success 200",
             "type": "Number",
-            "optional": true,
+            "optional": false,
             "field": "numberOfDays",
             "description": "<p>Number of Days.</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
-            "optional": true,
+            "optional": false,
             "field": "comments",
             "description": "<p>Leave comments.</p>"
           }
@@ -3001,7 +3010,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "HTTP/1.1 200 OK\n\n {\n      \"employeeName\" : \"Shane Warne\",\n      \"employeeId\"   :'34',\n      \"type\": \"Annual\",\n      \"id\": \"2\",\n      \"date\": \"2017-03-31\",\n      \"$leaveBalance\": 9,\n      \"numberOfDays\": \"1.00\",\n      \"status\": Annual,\n      \"comments\": [\n               {\n               \"author\": \"Admin\",\n               \"date\": \"2017-03-16\",\n               \"time\": \"14:20:27\",\n               \"comment\": \"Test\"\n               },\n               {\n               \"author\": \"Admin\",\n               \"date\": \"2017-03-16\",\n               \"time\": \"14:18:10\",\n               \"comment\": \"Test\"\n               }\n      \"action\": null\n }",
+          "content": "HTTP/1.1 200 OK\n\n {\n      \"employeeName\" : \"Shane Warne\",\n      \"employeeId\"   :'34',\n      \"type\": \"Annual\",\n      \"id\": \"2\",\n      \"date\": \"2017-03-31\",\n      \"leaveBalance\": 9,\n      \"numberOfDays\": \"1.00\",\n      \"status\": Annual,\n      \"comments\": [\n               {\n               \"author\": \"Admin\",\n               \"date\": \"2017-03-16\",\n               \"time\": \"14:20:27\",\n               \"comment\": \"Test\"\n               },\n               {\n               \"author\": \"Admin\",\n               \"date\": \"2017-03-16\",\n               \"time\": \"14:18:10\",\n               \"comment\": \"Test\"\n               }\n      \"action\": null\n }",
           "type": "json"
         }
       ]
