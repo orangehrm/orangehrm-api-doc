@@ -1212,6 +1212,145 @@
     "groupTitle": "Employee"
   },
   {
+    "type": "get",
+    "url": "/employee/event",
+    "title": "20.Get Employee Events",
+    "name": "getEvents",
+    "group": "Employee",
+    "version": "0.1.0",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "employeeId",
+            "description": "<p>Employee id.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Date",
+            "optional": false,
+            "field": "fromDate",
+            "description": "<p>Event from date.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Date",
+            "optional": false,
+            "field": "toDate",
+            "description": "<p>Event to date.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "event",
+            "description": "<p>Event ( UPDATE | SAVE | DELETE ).</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "type",
+            "description": "<p>Event type ( employee | contact | jobDetail | supervisor | subordinate |dependent ).</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "employeeId",
+            "description": "<p>Employee id.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "employeeName",
+            "description": "<p>Employee full name.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "event",
+            "description": "<p>Event.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "type",
+            "description": "<p>Event type.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "createdBy",
+            "description": "<p>Created user.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "createdDate",
+            "description": "<p>Created date.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "note",
+            "description": "<p>Note.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "Data",
+            "description": "<p>Success response.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n\n\t{\n\t \"data\": [\n\t    {\n\t      \"employeeId\": \"3\",\n\t      \"employeeName\": \"Glen Maxwell\",\n\t      \"event\": \"UPDATE\",\n\t      \"type\": \"contact\",\n\t      \"createdBy\": \"Admin\",\n\t      \"createdDate\": \"2017-04-12 11:05:51\",\n\t      \"note\": \"Update Employee Contact Details\"\n\t    },\n\t    {\n\t      \"employeeId\": \"3\",\n\t      \"employeeName\": \"Glen Maxwell\",\n\t      \"event\": \"SAVE\",\n\t      \"type\": \"supervisor\",\n\t      \"createdBy\": \"Admin\"\n\t      \"createdDate\": \"2017-04-12 01:47:23\",\n\t      \"note\": \"Saving Employee Supervisor Details\"\n          }\n               ]\n      }",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "RecordNotFound",
+            "description": "<p>No Event Records Found.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n  \"error\": \"No Event Records Found\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/20-get-employee-envent-end-point.php",
+    "groupTitle": "Employee"
+  },
+  {
     "type": "post",
     "url": "/employee/:id",
     "title": "01.Save Employee",
@@ -2145,7 +2284,7 @@
   {
     "type": "get",
     "url": "/employee/:id/entitlement",
-    "title": "Get Employee Leave Entitlement",
+    "title": "5.Get Employee Leave Entitlement",
     "name": "employeeLeaveEntitlement",
     "group": "Leave",
     "version": "0.1.0",
@@ -2267,7 +2406,7 @@
   {
     "type": "get",
     "url": "/employee/:id/leave-request",
-    "title": "Get Employee Leave Requests",
+    "title": "9.Get Employee Leave Requests",
     "name": "employeeLeaveRequest",
     "group": "Leave",
     "version": "0.1.0",
@@ -2290,65 +2429,128 @@
           {
             "group": "Success 200",
             "type": "String",
-            "optional": true,
+            "optional": false,
             "field": "employeeName",
             "description": "<p>Employee name</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
-            "optional": true,
+            "optional": false,
             "field": "employeeId",
             "description": "<p>Employee id.</p>"
           },
           {
             "group": "Success 200",
+            "type": "Date",
+            "optional": false,
+            "field": "fromDate",
+            "description": "<p>From date.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Date",
+            "optional": false,
+            "field": "toDate",
+            "description": "<p>To date.</p>"
+          },
+          {
+            "group": "Success 200",
             "type": "String",
-            "optional": true,
+            "optional": false,
             "field": "type",
             "description": "<p>Leave type.</p>"
           },
           {
             "group": "Success 200",
             "type": "Number",
-            "optional": true,
+            "optional": false,
             "field": "id",
-            "description": "<p>Leave id.</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "Date",
-            "optional": true,
-            "field": "date",
-            "description": "<p>Leave date.</p>"
+            "description": "<p>Leave request id.</p>"
           },
           {
             "group": "Success 200",
             "type": "Number",
-            "optional": true,
+            "optional": false,
             "field": "leaveBalance",
             "description": "<p>Leave balance.</p>"
           },
           {
             "group": "Success 200",
             "type": "Number",
-            "optional": true,
+            "optional": false,
             "field": "numberOfDays",
             "description": "<p>Number of Days.</p>"
           },
           {
             "group": "Success 200",
-            "type": "String",
-            "optional": true,
+            "type": "Object",
+            "optional": false,
             "field": "comments",
-            "description": "<p>Leave comments.</p>"
+            "description": "<p>Leave request comments.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "user",
+            "description": "<p>User.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Date",
+            "optional": false,
+            "field": "date",
+            "description": "<p>Commented date.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Time",
+            "optional": false,
+            "field": "time",
+            "description": "<p>Commented time.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "comment",
+            "description": "<p>Comment .</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "days",
+            "description": "<p>Leave days.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "status",
+            "description": "<p>Leave status.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "duration",
+            "description": "<p>Leave duration.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "durationString",
+            "description": "<p>Leave duration as a String for specify time and half days.</p>"
           }
         ]
       },
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "HTTP/1.1 200 OK\n\n {\n      \"employeeName\" : \"Shane Warne\",\n      \"employeeId\"   :'34',\n      \"type\": \"Annual\",\n      \"id\": \"2\",\n      \"date\": \"2017-03-31\",\n      \"leaveBalance\": 9,\n      \"numberOfDays\": \"1.00\",\n      \"status\": Annual,\n      \"comments\": [\n               {\n               \"author\": \"Admin\",\n               \"date\": \"2017-03-16\",\n               \"time\": \"14:20:27\",\n               \"comment\": \"Test\"\n               },\n               {\n               \"author\": \"Admin\",\n               \"date\": \"2017-03-16\",\n               \"time\": \"14:18:10\",\n               \"comment\": \"Test\"\n               }\n           }",
+          "content": "HTTP/1.1 200 OK\n\n {\n      \"employeeName\" : \"Shane Warne\",\n      \"employeeId\"   :'34',\n      \"id\": \"2\",\n      \"fromDate\": \"2017-03-31\",\n      \"toDate\": \"2017-03-31\",\n      \"leaveBalance\": 9,\n      \"numberOfDays\": \"1.00\",\n          \"comments\": [\n               {\n               \"user\": \"Admin\",\n               \"date\": \"2017-03-16\",\n               \"time\": \"14:20:27\",\n               \"comment\": \"Casual leaves are granted\"\n               },\n               {\n               \"author\": \"Admin\",\n               \"date\": \"2017-03-16\",\n               \"time\": \"14:18:10\",\n               \"comment\": \"leaves granted\"\n               }\n                      ]\n    \"days\": [\n         {\n           \"date\": \"2017-05-25\",\n           \"status\": \"SCHEDULED\",\n           \"type\": \"Short Leave\",\n           \"duration\": \"8.00\",\n          \"comments\": [\n               {\n               \"user\": \"Admin\",\n               \"date\": \"2017-03-16\",\n               \"time\": \"14:20:27\",\n               \"comment\": \"Granted\"\n               },\n               {\n               \"author\": \"Admin\",\n               \"date\": \"2017-03-16\",\n               \"time\": \"14:18:10\",\n               \"comment\": \"Check the balance\"\n               }\n                      ]\n       },\n       {\n           \"date\": \"2017-05-24\",\n           \"status\": \"SCHEDULED\",\n           \"type\": \"Short Leave\",\n           \"duration\": \"8.00\",\n           \"comments\": \"\"\n       }\n           ]\n\n }",
           "type": "json"
         }
       ]
@@ -2389,7 +2591,7 @@
   {
     "type": "get",
     "url": "/leave/period",
-    "title": "Get Leave Period",
+    "title": "3.Get Leave Period",
     "name": "getLeavePeriods",
     "group": "Leave",
     "version": "0.1.0",
@@ -2427,7 +2629,7 @@
   {
     "type": "get",
     "url": "/leave/type",
-    "title": "Get Leave Types",
+    "title": "2.Get Leave Types",
     "name": "leaveTypes",
     "group": "Leave",
     "version": "0.1.0",
@@ -2483,7 +2685,7 @@
   {
     "type": "post",
     "url": "/employee/:id/entitlement",
-    "title": "Save Employee Leave Entitlement",
+    "title": "4.Save Employee Leave Entitlement",
     "name": "saveEmployeeLeaveEntitlement",
     "group": "Leave",
     "version": "0.1.0",
@@ -2567,7 +2769,7 @@
   {
     "type": "post",
     "url": "/employee/:id/leave-request",
-    "title": "Save Leave Single Day Request",
+    "title": "6.Save Leave Single Day Request",
     "name": "saveLeaveRequest",
     "group": "Leave",
     "version": "0.1.0",
@@ -2674,7 +2876,7 @@
   {
     "type": "post",
     "url": "/leave/type",
-    "title": "Save Leave Type",
+    "title": "1.Save Leave Type",
     "name": "saveLeaveType",
     "group": "Leave",
     "version": "0.1.0",
@@ -2731,7 +2933,7 @@
   {
     "type": "post",
     "url": "/employee/:id/leave-request",
-    "title": "Save Multiple Day Leave Request",
+    "title": "8.Save Multiple Day Leave Request",
     "name": "saveMultipleDayLeaveRequest",
     "group": "Leave",
     "version": "0.1.0",
@@ -2873,7 +3075,7 @@
   {
     "type": "get",
     "url": "/leave/search",
-    "title": "Search Leave Requests",
+    "title": "7.Search Leave Requests",
     "name": "searchLeaveRequest",
     "group": "Leave",
     "version": "0.1.0",
@@ -2965,6 +3167,20 @@
           },
           {
             "group": "Success 200",
+            "type": "Date",
+            "optional": false,
+            "field": "fromDate",
+            "description": "<p>From date.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Date",
+            "optional": false,
+            "field": "toDate",
+            "description": "<p>To date.</p>"
+          },
+          {
+            "group": "Success 200",
             "type": "String",
             "optional": false,
             "field": "type",
@@ -2975,14 +3191,7 @@
             "type": "Number",
             "optional": false,
             "field": "id",
-            "description": "<p>Leave id.</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "Date",
-            "optional": false,
-            "field": "date",
-            "description": "<p>Leave date.</p>"
+            "description": "<p>Leave request id.</p>"
           },
           {
             "group": "Success 200",
@@ -3000,17 +3209,73 @@
           },
           {
             "group": "Success 200",
-            "type": "String",
+            "type": "Object",
             "optional": false,
             "field": "comments",
-            "description": "<p>Leave comments.</p>"
+            "description": "<p>Leave request comments.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "user",
+            "description": "<p>User.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Date",
+            "optional": false,
+            "field": "date",
+            "description": "<p>Commented date.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Time",
+            "optional": false,
+            "field": "time",
+            "description": "<p>Commented time.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "comment",
+            "description": "<p>Comment .</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "days",
+            "description": "<p>Leave days.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "status",
+            "description": "<p>Leave status.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "duration",
+            "description": "<p>Leave duration.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "durationString",
+            "description": "<p>Leave duration as a String for specify time and half days.</p>"
           }
         ]
       },
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "HTTP/1.1 200 OK\n\n {\n      \"employeeName\" : \"Shane Warne\",\n      \"employeeId\"   :'34',\n      \"type\": \"Annual\",\n      \"id\": \"2\",\n      \"date\": \"2017-03-31\",\n      \"leaveBalance\": 9,\n      \"numberOfDays\": \"1.00\",\n      \"status\": Annual,\n      \"comments\": [\n               {\n               \"author\": \"Admin\",\n               \"date\": \"2017-03-16\",\n               \"time\": \"14:20:27\",\n               \"comment\": \"Test\"\n               },\n               {\n               \"author\": \"Admin\",\n               \"date\": \"2017-03-16\",\n               \"time\": \"14:18:10\",\n               \"comment\": \"Test\"\n               }\n      \"action\": null\n }",
+          "content": "HTTP/1.1 200 OK\n\n {\n      \"employeeName\" : \"Shane Warne\",\n      \"employeeId\"   :'34',\n      \"id\": \"2\",\n      \"fromDate\": \"2017-03-31\",\n      \"toDate\": \"2017-03-31\",\n      \"leaveBalance\": 9,\n      \"numberOfDays\": \"1.00\",\n          \"comments\": [\n               {\n               \"user\": \"Admin\",\n               \"date\": \"2017-03-16\",\n               \"time\": \"14:20:27\",\n               \"comment\": \"Test\"\n               },\n               {\n               \"author\": \"Admin\",\n               \"date\": \"2017-03-16\",\n               \"time\": \"14:18:10\",\n               \"comment\": \"Test\"\n               }\n    \"days\": [\n         {\n           \"date\": \"2017-05-25\",\n           \"status\": \"SCHEDULED\",\n           \"type\": \"Short Leave\",\n           \"duration\": \"8.00\",\n           \"comments\": \"\"\n       },\n       {\n           \"date\": \"2017-05-24\",\n           \"status\": \"SCHEDULED\",\n           \"type\": \"Short Leave\",\n           \"duration\": \"8.00\",\n           \"comments\": \"\"\n       }\n           ]\n\n }",
           "type": "json"
         }
       ]
