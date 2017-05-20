@@ -11,27 +11,6 @@ define({ "api": [
         "Parameter": [
           {
             "group": "Parameter",
-            "type": "String",
-            "optional": false,
-            "field": "userName",
-            "description": "<p>User Name.</p>"
-          },
-          {
-            "group": "Parameter",
-            "type": "Number",
-            "optional": false,
-            "field": "employeeId",
-            "description": "<p>Employee id.</p>"
-          },
-          {
-            "group": "Parameter",
-            "type": "Number",
-            "optional": false,
-            "field": "userType",
-            "description": "<p>User type.</p>"
-          },
-          {
-            "group": "Parameter",
             "type": "Number",
             "optional": false,
             "field": "offset",
@@ -43,11 +22,50 @@ define({ "api": [
             "optional": false,
             "field": "limit",
             "description": "<p>Number of results per page.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "userType",
+            "description": "<p>User type.</p>"
           }
         ]
       }
     },
     "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "userName",
+            "description": "<p>User Name.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "employeeName",
+            "description": "<p>Employee name.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "userRole",
+            "description": "<p>User role.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "status",
+            "description": "<p>User status</p>"
+          }
+        ]
+      },
       "examples": [
         {
           "title": "Success-Response:",
@@ -76,6 +94,108 @@ define({ "api": [
       ]
     },
     "filename": "symfony/plugins/orangehrmRESTPlugin/doc/get-users-end-point.php",
+    "groupTitle": "Admin"
+  },
+  {
+    "type": "get",
+    "url": "/login",
+    "title": "2.User Login",
+    "name": "userLogin",
+    "group": "Admin",
+    "version": "0.1.0",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "username",
+            "description": "<p>User Name.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "password",
+            "description": "<p>User password.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "login",
+            "description": "<p>User login ( true or false ).</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "userName",
+            "description": "<p>User Name.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "employeeName",
+            "description": "<p>Employee name.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "userRole",
+            "description": "<p>User role.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "status",
+            "description": "<p>User status.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n\n\t\t{\n\t\t  \"login\": true,\n\t\t  \"user\": {\n\t\t    \"userName\": \"Admin\",\n\t\t    \"userRole\": \"Admin\",\n\t\t    \"status\": \"Enabled\",\n\t\t    \"employeeName\": \"\"\n\t\t  }\n\t\t}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "InvalidParameter",
+            "description": "<p>Found.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Invalid Parameter\n{\n  \"error\": [\"Credentials Are Wrong Please Try Again\"]\n}",
+          "type": "json"
+        },
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 501 Bad Request\n{\n  \"error\": [\"Login Failed\"]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/user-login-end-point.php",
     "groupTitle": "Admin"
   },
   {
@@ -815,6 +935,79 @@ define({ "api": [
   },
   {
     "type": "del",
+    "url": "/employee/:id/custom-field",
+    "title": "31.Delete Employee Custom Field",
+    "name": "deleteEmployeeCustomField",
+    "group": "Employee",
+    "version": "0.1.0",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Employee id.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "Data",
+            "description": "<p>Success response.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "  HTTP/1.1 200 OK\n\n{\n\n\"success\":\"Successfully Deleted\",\n\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "UserNotFound",
+            "description": "<p>The id of the employee was not found.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "CustomFieldNotFound",
+            "description": "<p>The id of the custom field was not found.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n  \"error\": \"Employee Not Found\"\n}",
+          "type": "json"
+        },
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n  \"error\": \"Custom Field Not Found\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/31-delete-employee-custom-field-end-point.php",
+    "groupTitle": "Employee"
+  },
+  {
+    "type": "del",
     "url": "/employee/:id/dependent",
     "title": "10.Delete Employee Dependents",
     "name": "deleteEmployeeDependents",
@@ -885,6 +1078,75 @@ define({ "api": [
       ]
     },
     "filename": "symfony/plugins/orangehrmRESTPlugin/doc/10-delete-employee-dependents-end-point.php",
+    "groupTitle": "Employee"
+  },
+  {
+    "type": "del",
+    "url": "/employee/:id/education",
+    "title": "28.Delete Employee Education",
+    "name": "deleteEmployeeEducation",
+    "group": "Employee",
+    "version": "0.1.0",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Employee id.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "seqId",
+            "description": "<p>Education record id.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "  HTTP/1.1 200 OK\n\n{\n\n\"success\":\"Successfully Deleted\",\n\"seqId\":3\n\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "UserNotFound",
+            "description": "<p>The id of the employee was not found.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "RecordNotFound",
+            "description": "<p>The id of the record was not found.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n  \"error\": \"Employee Not Found\"\n}",
+          "type": "json"
+        },
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n  \"error\": \"Employee Education Record Not Found\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/27-delete-employee-education-end-point.php",
     "groupTitle": "Employee"
   },
   {
@@ -966,6 +1228,140 @@ define({ "api": [
       ]
     },
     "filename": "symfony/plugins/orangehrmRESTPlugin/doc/18-delete-employee-supervisor-detail-end-point.php",
+    "groupTitle": "Employee"
+  },
+  {
+    "type": "del",
+    "url": "/employee/:id/work-experience",
+    "title": "24.Delete Employee Work Experience",
+    "name": "deleteEmployeeWorkExperience",
+    "group": "Employee",
+    "version": "0.1.0",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Employee id.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "seqId",
+            "description": "<p>Work experience record id.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "  HTTP/1.1 200 OK\n\n{\n\n\"success\":\"Successfully Deleted\"\n\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "UserNotFound",
+            "description": "<p>The id of the employee was not found.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "RecordNotFound",
+            "description": "<p>The id of the record was not found.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n  \"error\": \"Employee Not Found\"\n}",
+          "type": "json"
+        },
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n  \"error\": \"Work Experience Record Not Found\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/24-delete-employee-work-Experience-end-point.php",
+    "groupTitle": "Employee"
+  },
+  {
+    "type": "get",
+    "url": "/custom-field",
+    "title": "32.Custom Field",
+    "name": "getCustomField",
+    "group": "Employee",
+    "version": "0.1.0",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Field id.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "name",
+            "description": "<p>Field name.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "type",
+            "description": "<p>Field type.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "screen",
+            "description": "<p>Applicable screen.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "extraData",
+            "description": "<p>Extra data.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "Data",
+            "description": "<p>Success response.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n\n\t\t{\n\t\t  \"data\": [\n\t\t    {\n\t\t      \"id\": \"4\",\n\t\t      \"name\": \"Course\",\n\t\t      \"type\": \"Drop Down\",\n\t\t      \"screen\": \"personal\",\n\t\t      \"extraData\": \"Bsc,Msc,PostGrad\"\n\t\t    },\n\t\t    {\n\t\t      \"id\": \"3\",\n\t\t      \"name\": \"GPA\",\n\t\t      \"type\": \"Text or Number\",\n\t\t      \"screen\": \"personal\",\n\t\t      \"extraData\": null\n\t\t    }\n\t\t  ]\n\t\t }",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/32-get-custom-field-end-point.php",
     "groupTitle": "Employee"
   },
   {
@@ -1123,6 +1519,221 @@ define({ "api": [
   },
   {
     "type": "get",
+    "url": "/employee/:id/custom-field",
+    "title": "28.Employee Custom Field",
+    "name": "getEmployeeCustomField",
+    "group": "Employee",
+    "version": "0.1.0",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Employee id.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Field id.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "name",
+            "description": "<p>Field name.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "type",
+            "description": "<p>Field type.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "screen",
+            "description": "<p>Applicable screen.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "value",
+            "description": "<p>Field value.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "Data",
+            "description": "<p>Success response.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n\n\t\t{\n\t\t  \"data\": [\n\t\t    {\n\t\t      \"id\": \"4\",\n\t\t      \"name\": \"Course\",\n\t\t      \"type\": \"Drop Down\",\n\t\t      \"screen\": \"personal\",\n\t\t      \"value\": \"Bsc\"\n\t\t    },\n\t\t    {\n\t\t      \"id\": \"3\",\n\t\t      \"name\": \"GPA\",\n\t\t      \"type\": \"Text or Number\",\n\t\t      \"screen\": \"personal\",\n\t\t      \"value\": 3.6\n\t\t    },\n\t\t    {\n\t\t      \"id\": \"2\",\n\t\t      \"name\": \"school\",\n\t\t      \"type\": \"Text or Number\",\n\t\t      \"screen\": \"dependents\",\n\t\t      \"value\": \"Prince Of Wales\"\n\t\t    },\n\t\t    {\n\t\t      \"id\": \"1\",\n\t\t      \"name\": \"University Name\",\n\t\t      \"type\": \"Text or Number\",\n\t\t      \"screen\": \"personal\",\n\t\t      \"value\": \"University Of Moratuwa\"\n\t\t    }\n\t\t  ]\n\t\t }",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "UserNotFound",
+            "description": "<p>The id of the employee was not found.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n  \"error\": \"Employee Not Found\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/28-get-employee-custom-field-end-point.php",
+    "groupTitle": "Employee"
+  },
+  {
+    "type": "get",
+    "url": "/employee/:id/education",
+    "title": "25.Employee Education",
+    "name": "getEmployeeEducation",
+    "group": "Employee",
+    "version": "0.1.0",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Employee id.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "level",
+            "description": "<p>Education level id.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "seqId",
+            "description": "<p>Education record id.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "institute",
+            "description": "<p>Institute of studying.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Date",
+            "optional": false,
+            "field": "fromDate",
+            "description": "<p>Start date.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Date",
+            "optional": false,
+            "field": "toDate",
+            "description": "<p>End date.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "specialization",
+            "description": "<p>Specialization.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "year",
+            "description": "<p>Year of study.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "gpa",
+            "description": "<p>Gpa/score.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "Data",
+            "description": "<p>Success response.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n\n\t\t{\n\t\t  \"data\": [\n\t\t    {\n\t\t      \"seqId\": \"1\",\n\t\t      \"level\": \"Graduate\",\n\t\t      \"institute\": \"\",\n\t\t      \"specialization\": \"batsmen\",\n\t\t      \"year\": \"2014\",\n\t\t      \"fromDate\": \"2014-05-16\",\n\t\t      \"toDate\": \"2024-05-09\",\n\t\t      \"gpa\": \"4.0\"\n\t\t    }\n\t\t  ]\n\t\t}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "UserNotFound",
+            "description": "<p>The id of the employee was not found.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n  \"error\": \"Employee Not Found\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/25-get-employee-education-end-point.php",
+    "groupTitle": "Employee"
+  },
+  {
+    "type": "get",
     "url": "/employee/:id/supervisor",
     "title": "16.Supervisor Details",
     "name": "getEmployeeSupervisor",
@@ -1209,6 +1820,110 @@ define({ "api": [
       ]
     },
     "filename": "symfony/plugins/orangehrmRESTPlugin/doc/16-get-employee-supervisor-detail-end-point.php",
+    "groupTitle": "Employee"
+  },
+  {
+    "type": "get",
+    "url": "/employee/:id/work-experience",
+    "title": "21.Employee Work Experience",
+    "name": "getEmployeeWorkExperience",
+    "group": "Employee",
+    "version": "0.1.0",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Employee id.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "company",
+            "description": "<p>Company name.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Work experience id.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "jobTitle",
+            "description": "<p>job Title.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Date",
+            "optional": false,
+            "field": "fromDate",
+            "description": "<p>Experience from date.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Date",
+            "optional": false,
+            "field": "toDate",
+            "description": "<p>Experience to date.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "comment",
+            "description": "<p>Work experience comment.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "Data",
+            "description": "<p>Success response.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n\n\t\t{\n\t\t  \"data\": [\n\t\t    {\n\t\t      \"id\": \"2\",\n\t\t      \"company\": \"Aniline pvt ltd\",\n\t\t      \"jobTitle\": \"Craft Worker\",\n\t\t      \"fromDate\": \"2016-02-09 00:00:00\",\n\t\t      \"toDate\": \"2017-02-12 00:00:00\",\n\t\t      \"comment\": \"sample comment\"\n\t\t    },\n\t\t    {\n\t\t      \"id\": \"1\",\n\t\t      \"company\": \"NSR 11\",\n\t\t      \"jobTitle\": \"Craft Worker123\",\n\t\t      \"fromDate\": \"2014-02-09 00:00:00\",\n\t\t      \"toDate\": \"2016-02-12 00:00:00\",\n\t\t      \"comment\": \"test\"\n\t\t    }\n\t\t  ]\n\n\t\t}\n*   }",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "UserNotFound",
+            "description": "<p>The id of the employee was not found.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n  \"error\": \"Employee Not Found\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/21-get-employee-work-Experience-end-point.php",
     "groupTitle": "Employee"
   },
   {
@@ -1347,7 +2062,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/20-get-employee-envent-end-point.php",
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/20-get-employee-event-end-point.php",
     "groupTitle": "Employee"
   },
   {
@@ -1581,6 +2296,215 @@ define({ "api": [
   },
   {
     "type": "post",
+    "url": "/employee/:id/custom-field",
+    "title": "29.Save Employee Custom Field",
+    "name": "saveEmployeeCustomField",
+    "group": "Employee",
+    "version": "0.1.0",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Employee id.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "value",
+            "description": "<p>Field value.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "Data",
+            "description": "<p>Success response.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "  HTTP/1.1 200 OK\n\n{\n\n\"success\":\"Successfully Saved\",\n\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "UserNotFound",
+            "description": "<p>The id of the employee was not found.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "CustomFieldNotFound",
+            "description": "<p>The id of the custom field was not found.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "InvalidParameter",
+            "description": "<p>Invalid parameter.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n  \"error\": \"Employee Not Found\"\n}",
+          "type": "json"
+        },
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n  \"error\": \"Custom Field Not Found\"\n}",
+          "type": "json"
+        },
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 202 Invalid Parameter\n{\n  \"error\": \"Field Value Must Not Be Empty\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/29-save-employee-custom-field-end-point.php",
+    "groupTitle": "Employee"
+  },
+  {
+    "type": "post",
+    "url": "/employee/:id/education",
+    "title": "26.Save Employee Education",
+    "name": "saveEmployeeEducation",
+    "group": "Employee",
+    "version": "0.1.0",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Employee id.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "level",
+            "description": "<p>Education level id.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "seqId",
+            "description": "<p>Education record id.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "institute",
+            "description": "<p>Institute of studying.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Date",
+            "optional": false,
+            "field": "startDate",
+            "description": "<p>Start date.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Date",
+            "optional": false,
+            "field": "endDate",
+            "description": "<p>End date.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "specialization",
+            "description": "<p>Specialization.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "year",
+            "description": "<p>Year of study.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "gpa",
+            "description": "<p>Gpa/score.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "Data",
+            "description": "<p>Success response.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "  HTTP/1.1 200 OK\n\n{\n\n\"success\":\"Successfully Saved\",\n\"seqId\":3\n\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "UserNotFound",
+            "description": "<p>The id of the employee was not found.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n  \"error\": \"Employee Not Found\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/26-save-employee-education-end-point.php",
+    "groupTitle": "Employee"
+  },
+  {
+    "type": "post",
     "url": "/employee/:id/supervisor",
     "title": "17.Save Supervisor Details",
     "name": "saveEmployeeSupervisor",
@@ -1658,6 +2582,103 @@ define({ "api": [
       ]
     },
     "filename": "symfony/plugins/orangehrmRESTPlugin/doc/17-save-employee-supervisor-detail-end-point.php",
+    "groupTitle": "Employee"
+  },
+  {
+    "type": "post",
+    "url": "/employee/:id/work-experience",
+    "title": "22.Save Employee Work Experience",
+    "name": "saveEmployeeWorkExperience",
+    "group": "Employee",
+    "version": "0.1.0",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Employee id.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "company",
+            "description": "<p>Company name.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "jobTitle",
+            "description": "<p>job Title.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Date",
+            "optional": false,
+            "field": "fromDate",
+            "description": "<p>Experience from date.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Date",
+            "optional": false,
+            "field": "toDate",
+            "description": "<p>Experience to date.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "comment",
+            "description": "<p>Work experience comment.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "Data",
+            "description": "<p>Success response.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "  HTTP/1.1 200 OK\n\n{\n\n\"success\":\"Successfully Saved\",\n\"seqId\":3\n\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "UserNotFound",
+            "description": "<p>The id of the employee was not found.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n  \"error\": \"Employee Not Found\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/22-save-employee-work-Experience-end-point.php",
     "groupTitle": "Employee"
   },
   {
@@ -1977,6 +2998,97 @@ define({ "api": [
   },
   {
     "type": "put",
+    "url": "/employee/:id/custom-field",
+    "title": "30.Update Employee Custom Field",
+    "name": "updateEmployeeCustomField",
+    "group": "Employee",
+    "version": "0.1.0",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Employee id.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "value",
+            "description": "<p>Field value.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "Data",
+            "description": "<p>Success response.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "  HTTP/1.1 200 OK\n\n{\n\n\"success\":\"Successfully Saved\",\n\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "UserNotFound",
+            "description": "<p>The id of the employee was not found.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "CustomFieldNotFound",
+            "description": "<p>The id of the custom field was not found.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "InvalidParameter",
+            "description": "<p>Invalid parameter.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n  \"error\": \"Employee Not Found\"\n}",
+          "type": "json"
+        },
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n  \"error\": \"Custom Field Not Found\"\n}",
+          "type": "json"
+        },
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 202 Invalid Parameter\n{\n  \"error\": \"Field Value Must Not Be Empty\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/30-update-employee-custom-field-end-point.php",
+    "groupTitle": "Employee"
+  },
+  {
+    "type": "put",
     "url": "/employee/:id/dependent",
     "title": "11.Update Employee Dependents",
     "name": "updateEmployeeDependents",
@@ -2068,6 +3180,135 @@ define({ "api": [
       ]
     },
     "filename": "symfony/plugins/orangehrmRESTPlugin/doc/11-update-employee-dependents-end-point.php",
+    "groupTitle": "Employee"
+  },
+  {
+    "type": "put",
+    "url": "/employee/:id/education",
+    "title": "27.Update Employee Education",
+    "name": "updateEmployeeEducation",
+    "group": "Employee",
+    "version": "0.1.0",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Employee id.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "level",
+            "description": "<p>Education level id.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "seqId",
+            "description": "<p>Education record id.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "institute",
+            "description": "<p>Institute of studying.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Date",
+            "optional": false,
+            "field": "startDate",
+            "description": "<p>Start date.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Date",
+            "optional": false,
+            "field": "endDateDate",
+            "description": "<p>End date.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "specialization",
+            "description": "<p>Specialization.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "year",
+            "description": "<p>Year of study.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "gpa",
+            "description": "<p>Gpa/score.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "Data",
+            "description": "<p>Success response.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "  HTTP/1.1 200 OK\n\n{\n\n\"success\":\"Successfully Updated\",\n\"seqId\":3\n\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "UserNotFound",
+            "description": "<p>The id of the employee was not found.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "RecordNotFound",
+            "description": "<p>The id of the record was not found.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n  \"error\": \"Employee Not Found\"\n}",
+          "type": "json"
+        },
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n  \"error\": \"Employee Education Record Not Found\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/27-update-employee-education-end-point.php",
     "groupTitle": "Employee"
   },
   {
@@ -2279,6 +3520,121 @@ define({ "api": [
       ]
     },
     "filename": "symfony/plugins/orangehrmRESTPlugin/doc/19-update-employee-supervisor-detail-end-point.php",
+    "groupTitle": "Employee"
+  },
+  {
+    "type": "put",
+    "url": "/employee/:id/work-experience",
+    "title": "23.Update Employee Work Experience",
+    "name": "updateEmployeeWorkExperience",
+    "group": "Employee",
+    "version": "0.1.0",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Employee id.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "seqId",
+            "description": "<p>Work experience record id.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "company",
+            "description": "<p>Company name.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "jobTitle",
+            "description": "<p>job Title.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Date",
+            "optional": false,
+            "field": "fromDate",
+            "description": "<p>Experience from date.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Date",
+            "optional": false,
+            "field": "toDate",
+            "description": "<p>Experience to date.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "comment",
+            "description": "<p>Work experience comment.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "Data",
+            "description": "<p>Success response.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "  HTTP/1.1 200 OK\n\n{\n\n\"success\":\"Successfully Updated\"\n\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "UserNotFound",
+            "description": "<p>The id of the employee was not found.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "RecordNotFound",
+            "description": "<p>The id of the record was not found.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n  \"error\": \"Employee Not Found\"\n}",
+          "type": "json"
+        },
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n  \"error\": \"Work Experience Record Not Found\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/23-update-employee-work-Experience-end-point.php",
     "groupTitle": "Employee"
   },
   {
