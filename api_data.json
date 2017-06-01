@@ -97,7 +97,7 @@
     "groupTitle": "Admin"
   },
   {
-    "type": "get",
+    "type": "post",
     "url": "/login",
     "title": "2.User Login",
     "name": "userLogin",
@@ -149,6 +149,13 @@
           },
           {
             "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "employeeId",
+            "description": "<p>Employee id.</p>"
+          },
+          {
+            "group": "Success 200",
             "type": "String",
             "optional": false,
             "field": "userRole",
@@ -166,7 +173,7 @@
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "    HTTP/1.1 200 OK\n\n\t\t{\n\t\t  \"login\": true,\n\t\t  \"user\": {\n\t\t    \"userName\": \"Admin\",\n\t\t    \"userRole\": \"Admin\",\n\t\t    \"status\": \"Enabled\",\n\t\t    \"employeeName\": \"\"\n\t\t  }\n\t\t}",
+          "content": "    HTTP/1.1 200 OK\n\n\t\t{\n\t\t  \"login\": true,\n\t\t  \"user\": {\n\t\t    \"userName\": \"Admin\",\n\t\t    \"userRole\": \"Admin\",\n\t\t    \"status\": \"Enabled\",\n\t\t    \"employeeName\": \"\"\n          \"employeeId\": \"\"\n\t\t  }\n\t\t}",
           "type": "json"
         }
       ]
@@ -949,6 +956,13 @@
             "optional": false,
             "field": "id",
             "description": "<p>Employee id.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "fieldId",
+            "description": "<p>Field id.</p>"
           }
         ]
       }
@@ -1083,7 +1097,7 @@
   {
     "type": "del",
     "url": "/employee/:id/education",
-    "title": "28.Delete Employee Education",
+    "title": "27.Delete Employee Education",
     "name": "deleteEmployeeEducation",
     "group": "Employee",
     "version": "0.1.0",
@@ -1864,7 +1878,7 @@
             "type": "String",
             "optional": false,
             "field": "jobTitle",
-            "description": "<p>job Title.</p>"
+            "description": "<p>Job title.</p>"
           },
           {
             "group": "Success 200",
@@ -2313,6 +2327,13 @@
           },
           {
             "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "fieldId",
+            "description": "<p>Field id.</p>"
+          },
+          {
+            "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "value",
@@ -2612,7 +2633,7 @@
             "group": "Parameter",
             "type": "String",
             "optional": false,
-            "field": "jobTitle",
+            "field": "title",
             "description": "<p>job Title.</p>"
           },
           {
@@ -3015,6 +3036,13 @@
           },
           {
             "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "fieldId",
+            "description": "<p>Field id.</p>"
+          },
+          {
+            "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "value",
@@ -3185,7 +3213,7 @@
   {
     "type": "put",
     "url": "/employee/:id/education",
-    "title": "27.Update Employee Education",
+    "title": "33.Update Employee Education",
     "name": "updateEmployeeEducation",
     "group": "Employee",
     "version": "0.1.0",
@@ -3308,7 +3336,7 @@
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/27-update-employee-education-end-point.php",
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/33-update-employee-education-end-point.php",
     "groupTitle": "Employee"
   },
   {
@@ -3557,7 +3585,7 @@
             "group": "Parameter",
             "type": "String",
             "optional": false,
-            "field": "jobTitle",
+            "field": "title",
             "description": "<p>job Title.</p>"
           },
           {
