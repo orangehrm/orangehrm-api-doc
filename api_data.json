@@ -1,6 +1,151 @@
 [
   {
     "type": "get",
+    "url": "/organization",
+    "title": "3.Get Organization Information",
+    "name": "getOrganization",
+    "group": "Admin",
+    "version": "0.1.0",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "int",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Record id.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "name",
+            "description": "<p>Employee name.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "taxId",
+            "description": "<p>Tax id.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "registrationNumber",
+            "description": "<p>Registration number.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "phone",
+            "description": "<p>Company phone number.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "fax",
+            "description": "<p>Company fax .</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "email",
+            "description": "<p>Company email.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "country",
+            "description": "<p>Country Code.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "province",
+            "description": "<p>Province.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "city",
+            "description": "<p>City.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "zipCode",
+            "description": "<p>Zip code.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "street1",
+            "description": "<p>Street 1.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "street2",
+            "description": "<p>Street 2.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "note",
+            "description": "<p>Notes.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n\n\t\t{\n\t\t  \"data\": {\n\t\t    \"id\": \"1\",\n\t\t    \"name\": \"Beacon Test\",\n\t\t    \"taxId\": \"234\",\n\t\t    \"registraionNumber\": \"Errt1\",\n\t\t    \"phone\": \"097645362\",\n\t\t    \"fax\": \"07647364\",\n\t\t    \"email\": \"Orange@live.com\",\n\t\t    \"country\": \"UK\",\n\t\t    \"province\": \"Western\",\n\t\t    \"city\": \"London\",\n\t\t    \"zipCode\": \"12345\",\n\t\t    \"street1\": \"No 56 Wellington street \",\n\t\t    \"street2\": \"grand central london\",\n\t\t    \"note\": \"sample note\"\n\t\t  },\n\t\t  \"rels\": []\n\t\t}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "No-Records",
+            "description": "<p>Found.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Record Not Found\n{\n  \"error\": [\"Employee Picture Not Found\"]\n}",
+          "type": "json"
+        },
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Record Not Found\n{\n  \"error\": [\"Employee Not Found\"]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/get-organization-info-end-point.php",
+    "groupTitle": "Admin"
+  },
+  {
+    "type": "get",
     "url": "/user",
     "title": "1.Get Users",
     "name": "getUsers",
@@ -115,7 +260,7 @@
           },
           {
             "group": "Parameter",
-            "type": "Number",
+            "type": "String",
             "optional": false,
             "field": "password",
             "description": "<p>User password.</p>"
@@ -192,7 +337,7 @@
       "examples": [
         {
           "title": "Error-Response:",
-          "content": "HTTP/1.1 404 Invalid Parameter\n{\n  \"error\": [\"Credentials Are Wrong Please Try Again\"]\n}",
+          "content": "HTTP/1.1 202 Invalid Parameter\n{\n  \"error\": [\"Credentials Are Wrong Please Try Again\"]\n}",
           "type": "json"
         },
         {
@@ -204,6 +349,180 @@
     },
     "filename": "symfony/plugins/orangehrmRESTPlugin/doc/user-login-end-point.php",
     "groupTitle": "Admin"
+  },
+  {
+    "type": "post",
+    "url": "/punch-in",
+    "title": "1.Punch In",
+    "name": "punchIn",
+    "group": "Attendance",
+    "version": "0.1.0",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Employee id.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "timezone",
+            "description": "<p>Time zone ( ex: Europe/London ).</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "note",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n\n       {\n       \"success\": \"Successfully Punched In\",\n       \"id\": \"004\"\n       }",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "InvalidParameter",
+            "description": "<p>Found.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "Employee",
+            "description": "<p>Not Found Found.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "Invalid",
+            "description": "<p>Action.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 202 Invalid Parameter\n{\n  \"error\": [\"Invalid Time Zone\"]\n}",
+          "type": "json"
+        },
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 202 Invalid Parameter\n{\n  \"error\": [\"Employee Id  Not Found\"]\n}",
+          "type": "json"
+        },
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 202 Invalid Parameter\n{\n  \"error\": [\"Cannot Proceed Punch In Employee Already Punched In\"]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/punch-in-end-point.php",
+    "groupTitle": "Attendance"
+  },
+  {
+    "type": "post",
+    "url": "/punch-out",
+    "title": "2.Punch Out",
+    "name": "punchOut",
+    "group": "Attendance",
+    "version": "0.1.0",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Employee id.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "timezone",
+            "description": "<p>Time zone ( ex: Europe/London ).</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "note",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n\n       {\n       \"success\": \"Successfully Punched Out\",\n       \"id\": \"004\"\n       }",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "InvalidParameter",
+            "description": "<p>Found.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "Employee",
+            "description": "<p>Not Found Found.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "Invalid",
+            "description": "<p>Action.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 202 Invalid Parameter\n{\n  \"error\": [\"Invalid Time Zone\"]\n}",
+          "type": "json"
+        },
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 202 Invalid Parameter\n{\n  \"error\": [\"Employee Id  Not Found\"]\n}",
+          "type": "json"
+        },
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 202 Invalid Parameter\n{\n  \"error\": [\"Cannot Proceed Punch Out Employee Already Punched Out\"]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/punch-out-end-point.php",
+    "groupTitle": "Attendance"
   },
   {
     "type": "get",
@@ -1748,6 +2067,55 @@
   },
   {
     "type": "get",
+    "url": "/photo",
+    "title": "34.Employee Picture",
+    "name": "getEmployeePicture",
+    "group": "Employee",
+    "version": "0.1.0",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "base64",
+            "description": "<p>Base64 encoded employee picture details.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n\n\t\t{\n\t\t  \"data\": [\n\t\t    {\n\t\t     \"base64\": \"/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgICAgMCAgIDAwMDBAY\"\n\t\t    }\n\t\t  ]\n\t\t }",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "Employee",
+            "description": "<p>Picture Not Found.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Employee Picture Not Found\n{\n  \"error\": [\"Employee Not Found\"]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/34-get-employee-picture-end-point.php",
+    "groupTitle": "Employee"
+  },
+  {
+    "type": "get",
     "url": "/employee/:id/supervisor",
     "title": "16.Supervisor Details",
     "name": "getEmployeeSupervisor",
@@ -3144,7 +3512,7 @@
             "type": "String",
             "optional": false,
             "field": "relationship",
-            "description": "<p>relationship of the dependent.</p>"
+            "description": "<p>Relationship of the dependent.</p>"
           },
           {
             "group": "Parameter",
@@ -3178,7 +3546,7 @@
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "HTTP/1.1 200 OK\n\n {\n   \"success\": \"Successfully Deleted\"\n }",
+          "content": "HTTP/1.1 200 OK\n\n {\n   \"success\": \"Successfully Updated\"\n }",
           "type": "json"
         }
       ]
@@ -4085,10 +4453,10 @@
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "Number",
             "optional": false,
             "field": "leaveType",
-            "description": "<p>Leave type.</p>"
+            "description": "<p>Leave type id.</p>"
           },
           {
             "group": "Parameter",
@@ -4328,7 +4696,7 @@
             "group": "Parameter",
             "type": "Number",
             "optional": false,
-            "field": "empId",
+            "field": "id",
             "description": "<p>Employee id.</p>"
           },
           {
@@ -4370,28 +4738,28 @@
             "group": "Parameter",
             "type": "String",
             "optional": false,
-            "field": "startType",
+            "field": "startDayType",
             "description": "<p>Start day leave applying type ('half_day','full_day','specify_time').</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
-            "field": "startAMPM",
+            "field": "startDayAMPM",
             "description": "<p>Half day morning or evening ( 'AM','PM') required for  start day 'half_day'.</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
-            "field": "startFromTime",
+            "field": "startDayFromTime",
             "description": "<p>Start day from time for specify time(required for start day specifying time ).</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
-            "field": "startToTime",
+            "field": "startDayToTime",
             "description": "<p>Start day to time for specify time(required for start day specifying time ).</p>"
           },
           {
@@ -4696,5 +5064,362 @@
     },
     "filename": "symfony/plugins/orangehrmRESTPlugin/doc/search-leave-requests-end-point.php",
     "groupTitle": "Leave"
+  },
+  {
+    "type": "get",
+    "url": "/kpis",
+    "title": "2.Get KPIS",
+    "name": "getKPIS",
+    "group": "Performance",
+    "version": "0.1.0",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Job titile id.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "jobTitileCode",
+            "optional": false,
+            "field": "Titile",
+            "description": "<p>code.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "JobTitileName",
+            "description": "<p>Title name.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "jobDescription",
+            "description": "<p>Job description.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "note",
+            "description": "<p>Note.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "isDeleted",
+            "description": "<p>Is deleted or not.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "kpi",
+            "description": "<p>User status.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "minRating",
+            "description": "<p>Min Rating.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "maxRating",
+            "description": "<p>Max rating.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n\n\t\t{\n\t\t  \"data\": [\n\t\t    {\n\t\t      \"id\": \"1\",\n\t\t      \"jobTitleCode\": {},\n\t\t      \"jobTitle\": {\n\t\t\t\"id\": \"1\",\n\t\t\t\"jobTitleName\": \"marketing\",\n\t\t\t\"jobDescription\": \"\",\n\t\t\t\"note\": \"\",\n\t\t\t\"isDeleted\": \"0\"\n\t\t      },\n\t\t      \"kpi\": \"Test\",\n\t\t      \"minRating\": \"0\",\n\t\t      \"maxRating\": \"5\"\n\t\t    }\n\t\t  ],\n\t\t  \"rels\": []\n\t\t}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/get_kpis-end-point.php",
+    "groupTitle": "Performance"
+  },
+  {
+    "type": "get",
+    "url": "/activity",
+    "title": "1.Get Activities",
+    "name": "getActivities",
+    "group": "Time",
+    "version": "0.1.0",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "activityId",
+            "description": "<p>Activity Id.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "projectId",
+            "description": "<p>Project Id.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "name",
+            "description": "<p>Activity name.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "is_deleted",
+            "description": "<p>Is deleted( 1 = true /0 = false).</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n\n\t\t{\n\t\t  \"data\": [\n\t\t    {\n\t\t      \"activityId\": \"2\",\n\t\t      \"projectId\": \"1\",\n\t\t      \"is_deleted\": \"0\",\n\t\t      \"name\": \"test activity\"\n\t\t    },\n\t\t    {\n\t\t      \"activityId\": \"3\",\n\t\t      \"projectId\": \"1\",\n\t\t      \"is_deleted\": \"0\",\n\t\t      \"name\": \"test activity2\"\n\t\t    }\n\n\t\t  ],\n\t\t  \"rels\": []\n\t\t}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "RecordNotFound",
+            "description": "<p>.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 No Customers Found\n{\n  \"error\": [\"No Customers Found\"]\n}",
+          "type": "json"
+        },
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 204 No Project Found\n{\n  \"error\": [\"No Projects Found\"]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/get-activity-end-point.php",
+    "groupTitle": "Time"
+  },
+  {
+    "type": "get",
+    "url": "/customer",
+    "title": "1.Get Customers",
+    "name": "getCustomers",
+    "group": "Time",
+    "version": "0.1.0",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "customerId",
+            "description": "<p>Customer Id.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "is_deleted",
+            "description": "<p>Is deleted( 1 = true /0 = false).</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "name",
+            "description": "<p>Customer name.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "description",
+            "description": "<p>Description.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n\n\t\t{\n\t\t  \"data\": [\n\t\t    {\n\t\t      \"customerId\": \"1\",\n\t\t      \"is_deleted\": \"0\",\n\t\t      \"name\": \"Aus Trading\",\n\t\t      \"description\": \"\"\n\t\t    },\n\t\t    {\n\t\t      \"customerId\": \"2\",\n\t\t      \"is_deleted\": \"0\",\n\t\t      \"name\": \"Test11\",\n\t\t      \"description\": \"Defsg\"\n\t\t    }\n\t\t  ],\n\t\t  \"rels\": []\n\t\t}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "RecordNotFound",
+            "description": "<p>.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 No Customers Found\n{\n  \"error\": [\"No Customers Found\"]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/get-customers-end-point.php",
+    "groupTitle": "Time"
+  },
+  {
+    "type": "post",
+    "url": "/activity",
+    "title": "1.Save Activity",
+    "name": "saveActivity",
+    "group": "Time",
+    "version": "0.1.0",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "projectId",
+            "description": "<p>Project Id.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "name",
+            "description": "<p>Activity name.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n\n {\n   \"success\": \"Successfully Saved\"\n }",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "RecordNotFound",
+            "description": "<p>.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 No Customers Found\n{\n  \"error\": [\"No Customers Found\"]\n}",
+          "type": "json"
+        },
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 204 No Project Found\n{\n  \"error\": [\"No Projects Found\"]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/save-activity-end-point.php",
+    "groupTitle": "Time"
+  },
+  {
+    "type": "post",
+    "url": "/customer",
+    "title": "1.Save Customers",
+    "name": "saveCustomers",
+    "group": "Time",
+    "version": "0.1.0",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "customerId",
+            "description": "<p>Customer Id.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "name",
+            "description": "<p>Customer name.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "description",
+            "description": "<p>Description.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n\n {\n   \"success\": \"Successfully Saved\"\n }",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "Invalid",
+            "description": "<p>Parameter.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Customer Already Exists\n{\n  \"error\": [\"Customer Already Exists\"]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/save-customers-end-point.php",
+    "groupTitle": "Time"
   }
 ]
