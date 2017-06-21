@@ -2459,13 +2459,6 @@
         "Parameter": [
           {
             "group": "Parameter",
-            "type": "Number",
-            "optional": false,
-            "field": "employee",
-            "description": "<p>Employee id.</p>"
-          },
-          {
-            "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "firstName",
@@ -3849,13 +3842,6 @@
           },
           {
             "group": "Parameter",
-            "type": "String",
-            "optional": false,
-            "field": "name",
-            "description": "<p>Supervisor name.</p>"
-          },
-          {
-            "group": "Parameter",
             "type": "Number",
             "optional": false,
             "field": "supervisorId",
@@ -4052,10 +4038,10 @@
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "Number",
             "optional": true,
             "field": "leaveType",
-            "description": "<p>Leave type.</p>"
+            "description": "<p>Leave type id.</p>"
           },
           {
             "group": "Parameter",
@@ -4537,10 +4523,10 @@
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "Number",
             "optional": false,
             "field": "type",
-            "description": "<p>Mandatory leave type name.</p>"
+            "description": "<p>Mandatory leave type id.</p>"
           },
           {
             "group": "Parameter",
@@ -4701,7 +4687,7 @@
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "Number",
             "optional": false,
             "field": "type",
             "description": "<p>Mandatory leave type name.</p>"
@@ -4732,7 +4718,7 @@
             "type": "String",
             "optional": false,
             "field": "partialOption",
-            "description": "<p>Partial day option ( required ) ('all','start','end',start_end ). Note : If partial option is 'all'  start day fields must be filled. If partial option is 'end'  end day fields must be filed. If partial option is 'start'  start day fields must be filed. If partial option is 'start_end'  start and end day fields must be filed.</p>"
+            "description": "<p>Partial day option ( required ) ('all','start','end','start_end','none' ). Note : If partial option is 'all'  start day fields must be filled. If partial option is 'end'  end day fields must be filed. If partial option is 'start'  start day fields must be filed. If partial option is 'start_end'  start and end day fields must be filed. If partial option is 'none'  No partial option.</p>"
           },
           {
             "group": "Parameter",
@@ -5027,7 +5013,7 @@
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "HTTP/1.1 200 OK\n\n {\n      \"employeeName\" : \"Shane Warne\",\n      \"employeeId\"   :'34',\n      \"id\": \"2\",\n      \"fromDate\": \"2017-03-31\",\n      \"toDate\": \"2017-03-31\",\n      \"leaveBalance\": 9,\n      \"numberOfDays\": \"1.00\",\n          \"comments\": [\n               {\n               \"user\": \"Admin\",\n               \"date\": \"2017-03-16\",\n               \"time\": \"14:20:27\",\n               \"comment\": \"Test\"\n               },\n               {\n               \"author\": \"Admin\",\n               \"date\": \"2017-03-16\",\n               \"time\": \"14:18:10\",\n               \"comment\": \"Test\"\n               }\n    \"days\": [\n         {\n           \"date\": \"2017-05-25\",\n           \"status\": \"SCHEDULED\",\n           \"type\": \"Short Leave\",\n           \"duration\": \"8.00\",\n           \"comments\": \"\"\n       },\n       {\n           \"date\": \"2017-05-24\",\n           \"status\": \"SCHEDULED\",\n           \"type\": \"Short Leave\",\n           \"duration\": \"8.00\",\n           \"comments\": \"\"\n       }\n           ]\n\n }",
+          "content": "HTTP/1.1 200 OK\n\n {\n      \"employeeName\" : \"Shane Warne\",\n      \"employeeId\"   :'34',\n      \"id\": \"2\",\n      \"fromDate\": \"2017-03-31\",\n      \"toDate\": \"2017-03-31\",\n      \"leaveBalance\": 9,\n      \"numberOfDays\": \"1.00\",\n          \"comments\": [\n               {\n               \"user\": \"Admin\",\n               \"date\": \"2017-03-16\",\n               \"time\": \"14:20:27\",\n               \"comment\": \"Test\"\n               },\n               {\n               \"user\": \"Admin\",\n               \"date\": \"2017-03-16\",\n               \"time\": \"14:18:10\",\n               \"comment\": \"Test\"\n               }\n    \"days\": [\n         {\n           \"date\": \"2017-05-25\",\n           \"status\": \"SCHEDULED\",\n           \"type\": \"Short Leave\",\n           \"duration\": \"8.00\",\n           \"comments\": \"\"\n       },\n       {\n           \"date\": \"2017-05-24\",\n           \"status\": \"SCHEDULED\",\n           \"type\": \"Short Leave\",\n           \"duration\": \"8.00\",\n           \"comments\": \"\"\n       }\n           ]\n\n }",
           "type": "json"
         }
       ]
@@ -5297,6 +5283,83 @@
     "groupTitle": "Time"
   },
   {
+    "type": "get",
+    "url": "/project",
+    "title": "1.Get Projects",
+    "name": "getProjects",
+    "group": "Time",
+    "version": "0.1.0",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "projectId",
+            "description": "<p>Project id.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "customerId",
+            "description": "<p>Customer id.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "is_deleted",
+            "description": "<p>Is deleted or not.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "name",
+            "description": "<p>Project name.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "description",
+            "description": "<p>Description.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n\n\t\t{\n\t\t  \"data\": [\n\t\t    {\n\t\t      \"projectId\": \"1\",\n\t\t      \"customerId\": \"1\",\n\t\t      \"is_deleted\": \"0\",\n\t\t      \"name\": \"Trading time sheets\",\n\t\t      \"description\": \"\"\n\t\t    },\n\t\t    {\n\t\t      \"projectId\": \"2\",\n\t\t      \"customerId\": \"1\",\n\t\t      \"is_deleted\": \"0\",\n\t\t      \"name\": \"ed\",\n\t\t      \"description\": \"Test\"\n\t\t    }\n\t\t  ],\n\t\t  \"rels\": []\n\t\t}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "RecordNotFound",
+            "description": "<p>.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 No Projects Found\n{\n  \"error\": [\"No Projects Found\"]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/get-projects-end-point.php",
+    "groupTitle": "Time"
+  },
+  {
     "type": "post",
     "url": "/activity",
     "title": "1.Save Activity",
@@ -5420,6 +5483,74 @@
       ]
     },
     "filename": "symfony/plugins/orangehrmRESTPlugin/doc/save-customers-end-point.php",
+    "groupTitle": "Time"
+  },
+  {
+    "type": "post",
+    "url": "/project",
+    "title": "1.Save Project",
+    "name": "saveProjects",
+    "group": "Time",
+    "version": "0.1.0",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "customerId",
+            "description": "<p>Customer id.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "name",
+            "description": "<p>Project name.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "description",
+            "description": "<p>Description.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n\n {\n   \"success\": \"Successfully Saved\"\n }",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "Invalid",
+            "description": "<p>Parameter.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 202 Invalid Parameter\n{\n  \"error\": [\"Customer Id Needed\"]\n}",
+          "type": "json"
+        },
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 202 Invalid Parameter\n{\n  \"error\": [\"Project Name Needed\"]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/save-project-end-point.php",
     "groupTitle": "Time"
   }
 ]
