@@ -105,7 +105,14 @@ define({ "api": [
             "type": "String",
             "optional": false,
             "field": "note",
-            "description": "<p>Notes.</p>"
+            "description": "<p>Note.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "numberOfEmployees",
+            "description": "<p>Number of employees.</p>"
           }
         ]
       },
@@ -141,7 +148,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/get-organization-info-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/get-organization-info-end-point.php",
     "groupTitle": "Admin"
   },
   {
@@ -172,8 +179,8 @@ define({ "api": [
             "group": "Parameter",
             "type": "Number",
             "optional": false,
-            "field": "userType",
-            "description": "<p>User type.</p>"
+            "field": "userRole",
+            "description": "<p>User role id.</p>"
           }
         ]
       }
@@ -238,7 +245,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/get-users-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/get-users-end-point.php",
     "groupTitle": "Admin"
   },
   {
@@ -347,12 +354,12 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/user-login-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/user-login-end-point.php",
     "groupTitle": "Admin"
   },
   {
     "type": "post",
-    "url": "/punch-in",
+    "url": "/employee/:id/punch-in",
     "title": "1.Punch In",
     "name": "punchIn",
     "group": "Attendance",
@@ -379,7 +386,7 @@ define({ "api": [
             "type": "String",
             "optional": false,
             "field": "note",
-            "description": ""
+            "description": "<p>Punch in note</p>"
           }
         ]
       }
@@ -434,12 +441,12 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/punch-in-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/punch-in-end-point.php",
     "groupTitle": "Attendance"
   },
   {
     "type": "post",
-    "url": "/punch-out",
+    "url": "/employee/:id/punch-out",
     "title": "2.Punch Out",
     "name": "punchOut",
     "group": "Attendance",
@@ -466,7 +473,7 @@ define({ "api": [
             "type": "String",
             "optional": false,
             "field": "note",
-            "description": ""
+            "description": "<p>Punch out note</p>"
           }
         ]
       }
@@ -521,7 +528,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/punch-out-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/punch-out-end-point.php",
     "groupTitle": "Attendance"
   },
   {
@@ -604,7 +611,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/9-employee-dependent-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/9-employee-dependent-end-point.php",
     "groupTitle": "Employee"
   },
   {
@@ -778,7 +785,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/2-employee-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/2-employee-end-point.php",
     "groupTitle": "Employee"
   },
   {
@@ -889,7 +896,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/13-employee-job-detail-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/13-employee-job-detail-end-point.php",
     "groupTitle": "Employee"
   },
   {
@@ -1001,7 +1008,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/14-save-employee-job-detail-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/14-save-employee-job-detail-end-point.php",
     "groupTitle": "Employee"
   },
   {
@@ -1112,7 +1119,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/5.employee-search-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/5.employee-search-end-point.php",
     "groupTitle": "Employee"
   },
   {
@@ -1256,7 +1263,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/3-update-employee-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/3-update-employee-end-point.php",
     "groupTitle": "Employee"
   },
   {
@@ -1336,7 +1343,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/31-delete-employee-custom-field-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/31-delete-employee-custom-field-end-point.php",
     "groupTitle": "Employee"
   },
   {
@@ -1410,7 +1417,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/10-delete-employee-dependents-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/10-delete-employee-dependents-end-point.php",
     "groupTitle": "Employee"
   },
   {
@@ -1479,7 +1486,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/27-delete-employee-education-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/27-delete-employee-education-end-point.php",
     "groupTitle": "Employee"
   },
   {
@@ -1560,7 +1567,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/18-delete-employee-supervisor-detail-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/18-delete-employee-supervisor-detail-end-point.php",
     "groupTitle": "Employee"
   },
   {
@@ -1629,7 +1636,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/24-delete-employee-work-Experience-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/24-delete-employee-work-Experience-end-point.php",
     "groupTitle": "Employee"
   },
   {
@@ -1694,7 +1701,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/32-get-custom-field-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/32-get-custom-field-end-point.php",
     "groupTitle": "Employee"
   },
   {
@@ -1847,7 +1854,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/6-employee-contact-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/6-employee-contact-end-point.php",
     "groupTitle": "Employee"
   },
   {
@@ -1944,7 +1951,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/28-get-employee-custom-field-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/28-get-employee-custom-field-end-point.php",
     "groupTitle": "Employee"
   },
   {
@@ -2062,16 +2069,29 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/25-get-employee-education-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/25-get-employee-education-end-point.php",
     "groupTitle": "Employee"
   },
   {
     "type": "get",
-    "url": "/photo",
+    "url": "employee/id/photo",
     "title": "34.Employee Picture",
     "name": "getEmployeePicture",
     "group": "Employee",
     "version": "0.1.0",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Employee id.</p>"
+          }
+        ]
+      }
+    },
     "success": {
       "fields": {
         "Success 200": [
@@ -2111,7 +2131,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/34-get-employee-picture-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/34-get-employee-picture-end-point.php",
     "groupTitle": "Employee"
   },
   {
@@ -2201,7 +2221,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/16-get-employee-supervisor-detail-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/16-get-employee-supervisor-detail-end-point.php",
     "groupTitle": "Employee"
   },
   {
@@ -2305,7 +2325,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/21-get-employee-work-Experience-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/21-get-employee-work-Experience-end-point.php",
     "groupTitle": "Employee"
   },
   {
@@ -2444,7 +2464,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/20-get-employee-event-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/20-get-employee-event-end-point.php",
     "groupTitle": "Employee"
   },
   {
@@ -2527,7 +2547,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/1-save-employee-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/1-save-employee-end-point.php",
     "groupTitle": "Employee"
   },
   {
@@ -2666,7 +2686,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/7-save-employee-contact-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/7-save-employee-contact-end-point.php",
     "groupTitle": "Employee"
   },
   {
@@ -2764,7 +2784,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/29-save-employee-custom-field-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/29-save-employee-custom-field-end-point.php",
     "groupTitle": "Employee"
   },
   {
@@ -2882,7 +2902,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/26-save-employee-education-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/26-save-employee-education-end-point.php",
     "groupTitle": "Employee"
   },
   {
@@ -2963,7 +2983,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/17-save-employee-supervisor-detail-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/17-save-employee-supervisor-detail-end-point.php",
     "groupTitle": "Employee"
   },
   {
@@ -3060,7 +3080,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/22-save-employee-work-Experience-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/22-save-employee-work-Experience-end-point.php",
     "groupTitle": "Employee"
   },
   {
@@ -3148,7 +3168,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/12-save-employee-dependents-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/12-save-employee-dependents-end-point.php",
     "groupTitle": "Employee"
   },
   {
@@ -3236,7 +3256,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/4-terminate-employee-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/4-terminate-employee-end-point.php",
     "groupTitle": "Employee"
   },
   {
@@ -3375,7 +3395,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/8-update-employee-contact-details-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/8-update-employee-contact-details-end-point.php",
     "groupTitle": "Employee"
   },
   {
@@ -3473,7 +3493,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/30-update-employee-custom-field-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/30-update-employee-custom-field-end-point.php",
     "groupTitle": "Employee"
   },
   {
@@ -3568,7 +3588,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/11-update-employee-dependents-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/11-update-employee-dependents-end-point.php",
     "groupTitle": "Employee"
   },
   {
@@ -3697,7 +3717,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/33-update-employee-education-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/33-update-employee-education-end-point.php",
     "groupTitle": "Employee"
   },
   {
@@ -3820,7 +3840,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/15-update-employee-job-detail-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/15-update-employee-job-detail-end-point.php",
     "groupTitle": "Employee"
   },
   {
@@ -3901,7 +3921,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/19-update-employee-supervisor-detail-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/19-update-employee-supervisor-detail-end-point.php",
     "groupTitle": "Employee"
   },
   {
@@ -4016,7 +4036,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/23-update-employee-work-Experience-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/23-update-employee-work-Experience-end-point.php",
     "groupTitle": "Employee"
   },
   {
@@ -4138,7 +4158,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/employee-leave-entitlement-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/employee-leave-entitlement-end-point.php",
     "groupTitle": "Leave"
   },
   {
@@ -4323,7 +4343,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/employee-leave-requests-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/employee-leave-requests-end-point.php",
     "groupTitle": "Leave"
   },
   {
@@ -4361,7 +4381,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/get-leave-period-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/get-leave-period-end-point.php",
     "groupTitle": "Leave"
   },
   {
@@ -4417,7 +4437,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/leave-types-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/leave-types-end-point.php",
     "groupTitle": "Leave"
   },
   {
@@ -4501,7 +4521,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/save-employee-leave-entitlement-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/save-employee-leave-entitlement-end-point.php",
     "groupTitle": "Leave"
   },
   {
@@ -4576,6 +4596,13 @@ define({ "api": [
             "optional": false,
             "field": "singleToTime",
             "description": "<p>Single day to time for specify time ( required if specifying time ).</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "action",
+            "description": "<p>Leave action type ( &quot;SCHEDULED&quot;&quot;PENDING&quot;&quot;REJECTED&quot;&quot;CANCELLED&quot;).</p>"
           }
         ]
       }
@@ -4608,7 +4635,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/save-leave-request-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/save-leave-request-end-point.php",
     "groupTitle": "Leave"
   },
   {
@@ -4665,7 +4692,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/save-leave-type-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/save-leave-type-end-point.php",
     "groupTitle": "Leave"
   },
   {
@@ -4690,7 +4717,7 @@ define({ "api": [
             "type": "Number",
             "optional": false,
             "field": "type",
-            "description": "<p>Mandatory leave type name.</p>"
+            "description": "<p>Mandatory leave type id.</p>"
           },
           {
             "group": "Parameter",
@@ -4775,6 +4802,13 @@ define({ "api": [
             "optional": false,
             "field": "endDayToTime",
             "description": "<p>End day to time for specify time (required for end day specifying time ).</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "action",
+            "description": "<p>Leave action type ( &quot;SCHEDULED&quot;&quot;PENDING&quot;&quot;REJECTED&quot;&quot;CANCELLED&quot;).</p>"
           }
         ]
       }
@@ -4807,7 +4841,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/save-multiple-day-leave-request-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/save-multiple-day-leave-request-end-point.php",
     "groupTitle": "Leave"
   },
   {
@@ -5048,13 +5082,13 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/search-leave-requests-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/search-leave-requests-end-point.php",
     "groupTitle": "Leave"
   },
   {
     "type": "get",
     "url": "/kpis",
-    "title": "2.Get KPIS",
+    "title": "1.Get KPIS",
     "name": "getKPIS",
     "group": "Performance",
     "version": "0.1.0",
@@ -5066,20 +5100,20 @@ define({ "api": [
             "type": "Number",
             "optional": false,
             "field": "id",
-            "description": "<p>Job titile id.</p>"
+            "description": "<p>Job title id.</p>"
           },
           {
             "group": "Success 200",
-            "type": "jobTitileCode",
+            "type": "jobTitleCode",
             "optional": false,
-            "field": "Titile",
+            "field": "Title",
             "description": "<p>code.</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
             "optional": false,
-            "field": "JobTitileName",
+            "field": "JobTitleName",
             "description": "<p>Title name.</p>"
           },
           {
@@ -5134,7 +5168,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/get_kpis-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/get_kpis-end-point.php",
     "groupTitle": "Performance"
   },
   {
@@ -5144,6 +5178,19 @@ define({ "api": [
     "name": "getActivities",
     "group": "Time",
     "version": "0.1.0",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "activityId",
+            "description": "<p>Activity id.</p>"
+          }
+        ]
+      }
+    },
     "success": {
       "fields": {
         "Success 200": [
@@ -5152,14 +5199,14 @@ define({ "api": [
             "type": "Number",
             "optional": false,
             "field": "activityId",
-            "description": "<p>Activity Id.</p>"
+            "description": "<p>Activity id.</p>"
           },
           {
             "group": "Success 200",
             "type": "Number",
             "optional": false,
             "field": "projectId",
-            "description": "<p>Project Id.</p>"
+            "description": "<p>Project id.</p>"
           },
           {
             "group": "Success 200",
@@ -5209,7 +5256,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/get-activity-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/get-activity-end-point.php",
     "groupTitle": "Time"
   },
   {
@@ -5279,7 +5326,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/get-customers-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/get-customers-end-point.php",
     "groupTitle": "Time"
   },
   {
@@ -5326,13 +5373,20 @@ define({ "api": [
             "optional": false,
             "field": "description",
             "description": "<p>Description.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "admins",
+            "description": "<p>Project admin names.</p>"
           }
         ]
       },
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "    HTTP/1.1 200 OK\n\n\t\t{\n\t\t  \"data\": [\n\t\t    {\n\t\t      \"projectId\": \"1\",\n\t\t      \"customerId\": \"1\",\n\t\t      \"is_deleted\": \"0\",\n\t\t      \"name\": \"Trading time sheets\",\n\t\t      \"description\": \"\"\n\t\t    },\n\t\t    {\n\t\t      \"projectId\": \"2\",\n\t\t      \"customerId\": \"1\",\n\t\t      \"is_deleted\": \"0\",\n\t\t      \"name\": \"ed\",\n\t\t      \"description\": \"Test\"\n\t\t    }\n\t\t  ],\n\t\t  \"rels\": []\n\t\t}",
+          "content": "    HTTP/1.1 200 OK\n\n\t\t{\n\t\t  \"data\": [\n\t\t    {\n\t\t      \"projectId\": \"1\",\n\t\t      \"customerId\": \"1\",\n\t\t      \"is_deleted\": \"0\",\n\t\t      \"name\": \"Trading time sheets\",\n\t\t      \"description\": \"\"\n            \"admins\": \"Ninattttttt Jane Lewis (Past Employee),Hameesh Von Johnson,\n\t\t    },\n\t\t    {\n\t\t      \"projectId\": \"2\",\n\t\t      \"customerId\": \"1\",\n\t\t      \"is_deleted\": \"0\",\n\t\t      \"name\": \"ed\",\n\t\t      \"description\": \"Test\"\n\t\t    }\n\t\t  ],\n\t\t  \"rels\": []\n\t\t}",
           "type": "json"
         }
       ]
@@ -5356,7 +5410,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/get-projects-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/get-projects-end-point.php",
     "groupTitle": "Time"
   },
   {
@@ -5374,7 +5428,7 @@ define({ "api": [
             "type": "Number",
             "optional": false,
             "field": "projectId",
-            "description": "<p>Project Id.</p>"
+            "description": "<p>Project id.</p>"
           },
           {
             "group": "Success 200",
@@ -5417,7 +5471,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/save-activity-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/save-activity-end-point.php",
     "groupTitle": "Time"
   },
   {
@@ -5482,7 +5536,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/save-customers-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/save-customers-end-point.php",
     "groupTitle": "Time"
   },
   {
@@ -5492,32 +5546,41 @@ define({ "api": [
     "name": "saveProjects",
     "group": "Time",
     "version": "0.1.0",
-    "success": {
+    "parameter": {
       "fields": {
-        "Success 200": [
+        "Parameter": [
           {
-            "group": "Success 200",
+            "group": "Parameter",
             "type": "Number",
             "optional": false,
             "field": "customerId",
             "description": "<p>Customer id.</p>"
           },
           {
-            "group": "Success 200",
+            "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "name",
             "description": "<p>Project name.</p>"
           },
           {
-            "group": "Success 200",
+            "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "description",
             "description": "<p>Description.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "adminIds",
+            "description": "<p>project admin ids ( add up to 5 admin ids with comma separated ex 1,2,45,)</p>"
           }
         ]
-      },
+      }
+    },
+    "success": {
       "examples": [
         {
           "title": "Success-Response:",
@@ -5550,7 +5613,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/save-project-end-point.php",
+    "filename": "plugins/orangehrmRESTPlugin/doc/save-project-end-point.php",
     "groupTitle": "Time"
   }
 ] });
