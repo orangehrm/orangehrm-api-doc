@@ -601,7 +601,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "HTTP/1.1 200 OK\n\n  {\n    \"data\":[\n     {\n        \"name\": \"Inu Lim\",\n        \"relationship\": \"Daughter\",\n        \"dob\": \"1989-09-02\"\n     },\n     {\n        \"name\": \"Sam Lim\",\n        \"relationship\": \"Daughter\",\n        \"dob\": \"2009-09-02\"\n     }\n    ],\n  \"rels\": {\n  }\n}",
+          "content": "HTTP/1.1 200 OK\n\n  {\n    \"data\":[\n     {\n        \"name\": \"Inu Lim\",\n        \"relationship\": \"Daughter\",\n        \"dob\": \"1989-09-02\",\n        \"sequenceNumber\": \"5\"\n     },\n     {\n        \"name\": \"Sam Lim\",\n        \"relationship\": \"Daughter\",\n        \"dob\": \"2009-09-02\"\n        \"sequenceNumber\": \"5\"\n     }\n    ],\n  \"rels\": {\n  }\n}",
           "type": "json"
         }
       ]
@@ -1525,14 +1525,14 @@ define({ "api": [
             "type": "Number",
             "optional": false,
             "field": "supervisorId",
-            "description": "<p>Supervisor id.</p>"
+            "description": "<p>Supervisor id (Mandatory).</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
             "field": "reportingMethod",
-            "description": "<p>Reporting method to the supervisor.</p>"
+            "description": "<p>Reporting method to the supervisor (Mandatory).</p>"
           }
         ]
       }
@@ -4886,7 +4886,7 @@ define({ "api": [
             "group": "Parameter",
             "type": "String",
             "optional": true,
-            "field": "reject",
+            "field": "rejected",
             "description": "<p>Leave status rejected ( 'true' / 'false' ).</p>"
           },
           {
@@ -5188,7 +5188,7 @@ define({ "api": [
   {
     "type": "get",
     "url": "/activity",
-    "title": "1.Get Activities",
+    "title": "5.Get Activities",
     "name": "getActivities",
     "group": "Time",
     "version": "0.1.0",
@@ -5346,7 +5346,7 @@ define({ "api": [
   {
     "type": "get",
     "url": "/project",
-    "title": "1.Get Projects",
+    "title": "3.Get Projects",
     "name": "getProjects",
     "group": "Time",
     "version": "0.1.0",
@@ -5430,7 +5430,7 @@ define({ "api": [
   {
     "type": "post",
     "url": "/activity",
-    "title": "1.Save Activity",
+    "title": "6.Save Activity",
     "name": "saveActivity",
     "group": "Time",
     "version": "0.1.0",
@@ -5491,7 +5491,7 @@ define({ "api": [
   {
     "type": "post",
     "url": "/customer",
-    "title": "1.Save Customers",
+    "title": "2.Save Customers",
     "name": "saveCustomers",
     "group": "Time",
     "version": "0.1.0",
@@ -5556,7 +5556,7 @@ define({ "api": [
   {
     "type": "post",
     "url": "/project",
-    "title": "1.Save Project",
+    "title": "4.Save Project",
     "name": "saveProjects",
     "group": "Time",
     "version": "0.1.0",
