@@ -4137,7 +4137,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "HTTP/1.1 200 OK\n\n\n   {\n   \"data\": [\n   {\n   \"id\": \"2\",\n   \"type\": \"Annual\",\n   \"validFrom\": \"2017-01-01 \",\n   \"validTo\": \"2018-02-28 \",\n   \"days\": \"10.0\"\n   }\n   ],\n   \"rels\": []\n   }",
+          "content": "HTTP/1.1 200 OK\n\n\n   {\n   \"data\": [\n   {\n   \"id\": \"1\",\n   \"type\": \"Casual\",\n   \"validFrom\": \"2017-01-01\",\n   \"validTo\": \"2017-12-31\",\n   \"days\": \"5.0\"\n   },\n   {\n   \"id\": \"2\",\n   \"type\": \"Annual\",\n   \"validFrom\": \"2017-01-01 \",\n   \"validTo\": \"2018-02-28 \",\n   \"days\": \"10.0\"\n   }\n   ],\n   \"rels\": []\n   }",
           "type": "json"
         }
       ]
@@ -5186,6 +5186,267 @@ define({ "api": [
     "groupTitle": "Performance"
   },
   {
+    "type": "delete",
+    "url": "/activity",
+    "title": "8.Delete Activity",
+    "name": "delete",
+    "group": "Time",
+    "version": "0.1.0",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "projectId",
+            "description": "<p>Project id.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "activityId",
+            "description": "<p>Activity id.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "name",
+            "description": "<p>Activity name.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n\n {\n   \"success\": \"Successfully Updated\"\n }",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "Invalid",
+            "description": "<p>Parameter.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "RecordNotFound.",
+            "description": ""
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 202 Activity Name Already Exists\n{\n  \"error\": [\"Activity Name Already Exists\"]\n}",
+          "type": "json"
+        },
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 204 No Project Found\n{\n  \"error\": [\"No Projects Found\"]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/delete-activity-end-point.php",
+    "groupTitle": "Time"
+  },
+  {
+    "type": "delete",
+    "url": "/customer",
+    "title": "4.Delete Customer",
+    "name": "deleteCustomer",
+    "group": "Time",
+    "version": "0.1.0",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "customerId",
+            "description": "<p>Customer Id.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n\n {\n   \"success\": \"Successfully Deleted\"\n }",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "Record",
+            "description": "<p>Not Found.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Customer Not Found\n{\n  \"error\": [\"Customer Not Found\"]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/delete-customer-end-point.php",
+    "groupTitle": "Time"
+  },
+  {
+    "type": "delete",
+    "url": "/project",
+    "title": "12.Delete Project",
+    "name": "deleteProject",
+    "group": "Time",
+    "version": "0.1.0",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "projectId",
+            "description": "<p>Project id.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n\n {\n   \"success\": \"Successfully Deleted\"\n }",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "Invalid",
+            "description": "<p>Parameter.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "Record",
+            "description": "<p>Not Found.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 202 Invalid Parameter\n{\n  \"error\": [\"Project ID Needed\"]\n}",
+          "type": "json"
+        },
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Project Not Found\n{\n  \"error\": [\"Project Not Found\"]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/delete-project-end-point.php",
+    "groupTitle": "Time"
+  },
+  {
+    "type": "delete",
+    "url": "/employee/:id/timesheet/row_delete",
+    "title": "16.Delete Timesheet Row",
+    "name": "deleteTimesheetRow",
+    "group": "Time",
+    "version": "0.1.0",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "projectId",
+            "description": "<p>Project id.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Employee id.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "timesheetId",
+            "description": "<p>Project id.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "activityId",
+            "description": "<p>Project id.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n\n {\n   \"success\": \"Successfully Deleted\"\n }",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "Bad",
+            "description": "<p>Request.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 400 Unable To Delete Timesheet Rows\n{\n  \"error\": [\"Unable To Delete Timesheet Rows\"]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/delete-timesheetRow-end-point.php",
+    "groupTitle": "Time"
+  },
+  {
     "type": "get",
     "url": "/activity",
     "title": "5.Get Activities",
@@ -5217,13 +5478,6 @@ define({ "api": [
           },
           {
             "group": "Success 200",
-            "type": "Number",
-            "optional": false,
-            "field": "projectId",
-            "description": "<p>Project id.</p>"
-          },
-          {
-            "group": "Success 200",
             "type": "String",
             "optional": false,
             "field": "name",
@@ -5233,39 +5487,24 @@ define({ "api": [
             "group": "Success 200",
             "type": "String",
             "optional": false,
-            "field": "is_deleted",
-            "description": "<p>Is deleted( 1 = true /0 = false).</p>"
+            "field": "isDeleted",
+            "description": "<p>Is deleted(1,0).</p>"
           }
         ]
       },
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "    HTTP/1.1 200 OK\n\n\t\t{\n\t\t  \"data\": [\n\t\t    {\n\t\t      \"activityId\": \"2\",\n\t\t      \"projectId\": \"1\",\n\t\t      \"is_deleted\": \"0\",\n\t\t      \"name\": \"test activity\"\n\t\t    },\n\t\t    {\n\t\t      \"activityId\": \"3\",\n\t\t      \"projectId\": \"1\",\n\t\t      \"is_deleted\": \"0\",\n\t\t      \"name\": \"test activity2\"\n\t\t    }\n\n\t\t  ],\n\t\t  \"rels\": []\n\t\t}",
+          "content": "    HTTP/1.1 200 OK\n\n\t\t{\n\t\t  \"data\": [\n\t\t    {\n\t\t      \"activityId\": \"2\",\n\t\t      \"isDeleted\": \"0\",\n\t\t      \"name\": \"test activity\"\n\t\t    },\n\t\t    {\n\t\t      \"activityId\": \"3\",\n\t\t      \"isDeleted\": \"0\",\n\t\t      \"name\": \"test activity2\"\n\t\t    }\n\n\t\t  ],\n\t\t  \"rels\": []\n\t\t}",
           "type": "json"
         }
       ]
     },
     "error": {
-      "fields": {
-        "Error 4xx": [
-          {
-            "group": "Error 4xx",
-            "optional": false,
-            "field": "RecordNotFound",
-            "description": "<p>.</p>"
-          }
-        ]
-      },
       "examples": [
         {
           "title": "Error-Response:",
-          "content": "HTTP/1.1 404 No Customers Found\n{\n  \"error\": [\"No Customers Found\"]\n}",
-          "type": "json"
-        },
-        {
-          "title": "Error-Response:",
-          "content": "HTTP/1.1 204 No Project Found\n{\n  \"error\": [\"No Projects Found\"]\n}",
+          "content": "HTTP/1.1 404 No Records Found\n{\n  \"error\": [\"No Records Found\"]\n}",
           "type": "json"
         }
       ]
@@ -5294,8 +5533,8 @@ define({ "api": [
             "group": "Success 200",
             "type": "String",
             "optional": false,
-            "field": "is_deleted",
-            "description": "<p>Is deleted( 1 = true /0 = false).</p>"
+            "field": "isDeleted",
+            "description": "<p>Is deleted( 1,0).</p>"
           },
           {
             "group": "Success 200",
@@ -5316,7 +5555,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "    HTTP/1.1 200 OK\n\n\t\t{\n\t\t  \"data\": [\n\t\t    {\n\t\t      \"customerId\": \"1\",\n\t\t      \"is_deleted\": \"0\",\n\t\t      \"name\": \"Aus Trading\",\n\t\t      \"description\": \"\"\n\t\t    },\n\t\t    {\n\t\t      \"customerId\": \"2\",\n\t\t      \"is_deleted\": \"0\",\n\t\t      \"name\": \"Test11\",\n\t\t      \"description\": \"Defsg\"\n\t\t    }\n\t\t  ],\n\t\t  \"rels\": []\n\t\t}",
+          "content": "    HTTP/1.1 200 OK\n\n\t\t{\n\t\t  \"data\": [\n\t\t    {\n\t\t      \"customerId\": \"1\",\n\t\t      \"isDeleted\": \"0\",\n\t\t      \"name\": \"Aus Trading\",\n\t\t      \"description\": \"Description\"\n\t\t    },\n\t\t    {\n\t\t      \"customerId\": \"2\",\n\t\t      \"isDeleted\": \"0\",\n\t\t      \"name\": \"Test11\",\n\t\t      \"description\": \"Test Description\"\n\t\t    }\n\t\t  ],\n\t\t  \"rels\": []\n\t\t}",
           "type": "json"
         }
       ]
@@ -5346,7 +5585,7 @@ define({ "api": [
   {
     "type": "get",
     "url": "/project",
-    "title": "3.Get Projects",
+    "title": "9.Get Projects",
     "name": "getProjects",
     "group": "Time",
     "version": "0.1.0",
@@ -5369,17 +5608,24 @@ define({ "api": [
           },
           {
             "group": "Success 200",
-            "type": "String",
+            "type": "Number",
             "optional": false,
-            "field": "is_deleted",
-            "description": "<p>Is deleted or not.</p>"
+            "field": "isDeleted",
+            "description": "<p>Is deleted status values (0,1).</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
             "optional": false,
-            "field": "name",
+            "field": "projectName",
             "description": "<p>Project name.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "customerName",
+            "description": "<p>Customer name.</p>"
           },
           {
             "group": "Success 200",
@@ -5390,17 +5636,59 @@ define({ "api": [
           },
           {
             "group": "Success 200",
-            "type": "String",
+            "type": "Object",
             "optional": false,
             "field": "admins",
-            "description": "<p>Project admin names.</p>"
+            "description": "<p>Project admins.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "activities",
+            "description": "<p>Project activities.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "employeeId",
+            "description": "<p>Project admin employee id.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "name",
+            "description": "<p>Project admin name.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "activities.id",
+            "description": "<p>Project Activity id.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "activities.name",
+            "description": "<p>Project activity name.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "activities.isDeleted",
+            "description": "<p>Project is deleted status (1,0).</p>"
           }
         ]
       },
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "    HTTP/1.1 200 OK\n\n\t\t{\n\t\t  \"data\": [\n\t\t    {\n\t\t      \"projectId\": \"1\",\n\t\t      \"customerId\": \"1\",\n\t\t      \"is_deleted\": \"0\",\n\t\t      \"name\": \"Trading time sheets\",\n\t\t      \"description\": \"\"\n            \"admins\": \"Ninattttttt Jane Lewis (Past Employee),Hameesh Von Johnson,\n\t\t    },\n\t\t    {\n\t\t      \"projectId\": \"2\",\n\t\t      \"customerId\": \"1\",\n\t\t      \"is_deleted\": \"0\",\n\t\t      \"name\": \"ed\",\n\t\t      \"description\": \"Test\"\n\t\t    }\n\t\t  ],\n\t\t  \"rels\": []\n\t\t}",
+          "content": "    HTTP/1.1 200 OK\n\n\t\t{\n\t\t    \"data\": [\n\t\t\t{\n\t\t\t    \"projectId\": \"1\",\n\t\t\t    \"projectName\": \"Manage Sub Units\",\n\t\t\t    \"customerId\": \"2\",\n\t\t\t    \"customerName\": \"customer\",\n\t\t\t    \"description\": \"description\",\n\t\t\t    \"isDeleted\": \"0\",\n\t\t\t    \"admins\": {\n\t\t\t\t\"employeeId\": \"3\",\n\t\t\t\t\"name\": \"Hameesh Marshall\"\n\t\t\t    },\n\t\t\t    \"activities\": [\n\t\t\t\t{\n\t\t\t\t    \"id\": \"1\",\n\t\t\t\t    \"name\": \"unit1\",\n\t\t\t\t    \"isDeleted\": \"0\"\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t    \"id\": \"2\",\n\t\t\t\t    \"name\": \"planning\",\n\t\t\t\t    \"isDeleted\": \"0\"\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t    \"id\": \"3\",\n\t\t\t\t    \"name\": \"Electrical\",\n\t\t\t\t    \"isDeleted\": \"0\"\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t    \"id\": \"4\",\n\t\t\t\t    \"name\": \"Testing\",\n\t\t\t\t    \"isDeleted\": \"0\"\n\t\t\t\t}\n\t\t\t    ]\n\t\t\t}\n\t\t  \"rels\": []\n\t\t}",
           "type": "json"
         }
       ]
@@ -5428,12 +5716,32 @@ define({ "api": [
     "groupTitle": "Time"
   },
   {
-    "type": "post",
-    "url": "/activity",
-    "title": "6.Save Activity",
-    "name": "saveActivity",
+    "type": "get",
+    "url": "/employee/:id/timesheet",
+    "title": "13.Get TimeSheets",
+    "name": "getTimesheets",
     "group": "Time",
     "version": "0.1.0",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Employee id.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Date",
+            "optional": false,
+            "field": "startDate",
+            "description": "<p>Timesheet start date.</p>"
+          }
+        ]
+      }
+    },
     "success": {
       "fields": {
         "Success 200": [
@@ -5441,22 +5749,99 @@ define({ "api": [
             "group": "Success 200",
             "type": "Number",
             "optional": false,
-            "field": "projectId",
-            "description": "<p>Project id.</p>"
+            "field": "timeSheetId",
+            "description": "<p>Timesheet id.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "employeeId",
+            "description": "<p>Employee id.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Date",
+            "optional": false,
+            "field": "startDate",
+            "description": "<p>Start date.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Date",
+            "optional": false,
+            "field": "endDate",
+            "description": "<p>End date.</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
             "optional": false,
-            "field": "name",
-            "description": "<p>Activity name.</p>"
+            "field": "state",
+            "description": "<p>State.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "timeSheetItemId",
+            "description": "<p>Timesheet item id.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "projectName",
+            "description": "<p>Project name.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "projectId",
+            "description": "<p>Project id.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "activityName",
+            "description": "<p>Project activity name.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "activityId",
+            "description": "<p>Project activity id.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "date",
+            "description": "<p>Timesheet item date.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "duration",
+            "description": "<p>Timesheet item duration.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "comment",
+            "description": "<p>Timesheet state change comment.</p>"
           }
         ]
       },
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "HTTP/1.1 200 OK\n\n {\n   \"success\": \"Successfully Saved\"\n }",
+          "content": "    HTTP/1.1 200 OK\n\n\t\t{\n\t\t    \"data\": [\n\t\t\t{\n\t\t\t    \"timeSheetId\": \"1\",\n\t\t\t    \"employeeId\": \"1\",\n\t\t\t    \"startDate\": \"2017-06-26\",\n\t\t\t    \"endDate\": \"2017-07-02\",\n\t\t\t    \"state\": \"REJECTED\",\n\t\t\t    \"timeSheetItems\": [\n\t\t\t\t{\n                  \"timesheetItemId\": \"1\",\n\t\t\t\t    \"projectName\": \"4\",\n\t\t\t\t    \"projectId\": \"4\",\n\t\t\t\t    \"activityName\": \"Tournement\",\n\t\t\t\t    \"activityId\": \"6\",\n\t\t\t\t    \"date\": \"2017-06-26\",\n\t\t\t\t    \"duration\": \"21600\",\n\t\t\t\t    \"comment\": null\n\t\t\t\t},\n\t\t\t\t{\n                  \"timesheetItemId\": \"2\",\n\t\t\t\t    \"projectName\": \"4\",\n\t\t\t\t    \"projectId\": \"4\",\n\t\t\t\t    \"activityName\": \"Tournement\",\n\t\t\t\t    \"activityId\": \"6\",\n\t\t\t\t    \"date\": \"2017-06-27\",\n\t\t\t\t    \"duration\": \"25200\",\n\t\t\t\t    \"comment\": null\n\t\t\t\t},\n\t\t\t\t{\n                  \"timesheetItemId\": \"3\",\n\t\t\t\t    \"projectName\": \"4\",\n\t\t\t\t    \"projectId\": \"4\",\n\t\t\t\t    \"activityName\": \"Tournement\",\n\t\t\t\t    \"activityId\": \"6\",\n\t\t\t\t    \"date\": \"2017-06-28\",\n\t\t\t\t    \"duration\": \"21600\",\n\t\t\t\t    \"comment\": null\n\t\t\t\t},\n\t\t\t\t{\n                  \"timesheetItemId\": \"4\",\n\t\t\t\t    \"projectName\": \"4\",\n\t\t\t\t    \"projectId\": \"4\",\n\t\t\t\t    \"activityName\": \"Tournement\",\n\t\t\t\t    \"activityId\": \"6\",\n\t\t\t\t    \"date\": \"2017-06-29\",\n\t\t\t\t    \"duration\": \"21600\",\n\t\t\t\t    \"comment\": null\n\t\t\t\t}\n\n\t\t\t    ]\n\t\t\t}\n\t\t    ],\n\t\t    \"rels\": []\n\t\t}",
           "type": "json"
         }
       ]
@@ -5475,7 +5860,71 @@ define({ "api": [
       "examples": [
         {
           "title": "Error-Response:",
-          "content": "HTTP/1.1 404 No Customers Found\n{\n  \"error\": [\"No Customers Found\"]\n}",
+          "content": "HTTP/1.1 404 No Projects Found\n{\n  \"error\": [\"No TimeSheets Found\"]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/get-timesheet-end-point.php",
+    "groupTitle": "Time"
+  },
+  {
+    "type": "post",
+    "url": "/activity",
+    "title": "6.Save Activity",
+    "name": "saveActivity",
+    "group": "Time",
+    "version": "0.1.0",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "projectId",
+            "description": "<p>Project id.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "name",
+            "description": "<p>Activity name.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n\n {\n   \"success\": \"Successfully Saved\"\n }",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "Invalid",
+            "description": "<p>Parameter.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "RecordNotFound.",
+            "description": ""
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 202 Activity Name Already Exists\n{\n  \"error\": [\"Activity Name Already Exists\"]\n}",
           "type": "json"
         },
         {
@@ -5491,20 +5940,13 @@ define({ "api": [
   {
     "type": "post",
     "url": "/customer",
-    "title": "2.Save Customers",
-    "name": "saveCustomers",
+    "title": "2.Save Customer",
+    "name": "saveCustomer",
     "group": "Time",
     "version": "0.1.0",
     "parameter": {
       "fields": {
         "Parameter": [
-          {
-            "group": "Parameter",
-            "type": "Number",
-            "optional": false,
-            "field": "customerId",
-            "description": "<p>Customer Id.</p>"
-          },
           {
             "group": "Parameter",
             "type": "String",
@@ -5545,7 +5987,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Error-Response:",
-          "content": "HTTP/1.1 404 Customer Already Exists\n{\n  \"error\": [\"Customer Already Exists\"]\n}",
+          "content": "HTTP/1.1 202 Customer Already Exists\n{\n  \"error\": [\"Customer Already Exists\"]\n}",
           "type": "json"
         }
       ]
@@ -5556,8 +5998,8 @@ define({ "api": [
   {
     "type": "post",
     "url": "/project",
-    "title": "4.Save Project",
-    "name": "saveProjects",
+    "title": "10.Save Project",
+    "name": "saveProject",
     "group": "Time",
     "version": "0.1.0",
     "parameter": {
@@ -5628,6 +6070,492 @@ define({ "api": [
       ]
     },
     "filename": "symfony/plugins/orangehrmRESTPlugin/doc/save-project-end-point.php",
+    "groupTitle": "Time"
+  },
+  {
+    "type": "post",
+    "url": "/employee/:id/timesheet",
+    "title": "14.Save Timesheet",
+    "name": "saveTimesheet",
+    "group": "Time",
+    "version": "0.1.0",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Date",
+            "optional": false,
+            "field": "startDate",
+            "description": "<p>Timesheet start date.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Employee id.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n\n {\n   \"success\": \"Successfully Created\"\n }",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "Invalid",
+            "description": "<p>Parameter.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 202 No Accessible Timesheets\n{\n  \"error\": [\"No Accessible Timesheets\"]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/save-timesheet-end-point.php",
+    "groupTitle": "Time"
+  },
+  {
+    "type": "put",
+    "url": "/activity",
+    "title": "7.Update Activity",
+    "name": "updateActivity",
+    "group": "Time",
+    "version": "0.1.0",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "projectId",
+            "description": "<p>Project id.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "activityId",
+            "description": "<p>Activity id.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "name",
+            "description": "<p>Activity name.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n\n {\n   \"success\": \"Successfully Updated\"\n }",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "Invalid",
+            "description": "<p>Parameter.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "RecordNotFound.",
+            "description": ""
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 202 Activity Name Already Exists\n{\n  \"error\": [\"Activity Name Already Exists\"]\n}",
+          "type": "json"
+        },
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 204 No Project Found\n{\n  \"error\": [\"No Projects Found\"]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/update-activity-end-point.php",
+    "groupTitle": "Time"
+  },
+  {
+    "type": "put",
+    "url": "/customer",
+    "title": "3.Update Customer",
+    "name": "updateCustomer",
+    "group": "Time",
+    "version": "0.1.0",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "customerId",
+            "description": "<p>Customer Id.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "name",
+            "description": "<p>Customer name.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "description",
+            "description": "<p>Description.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n\n {\n   \"success\": \"Successfully Updated\"\n }",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "Invalid",
+            "description": "<p>Parameter.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "Record",
+            "description": "<p>Not Found.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 202 Customer Already Exists\n{\n  \"error\": [\"Customer Already Exists\"]\n}",
+          "type": "json"
+        },
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Customer Not Found\n{\n  \"error\": [\"Customer Not Found\"]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/update-customers-end-point.php",
+    "groupTitle": "Time"
+  },
+  {
+    "type": "put",
+    "url": "/project",
+    "title": "11.Update Project",
+    "name": "updateProject",
+    "group": "Time",
+    "version": "0.1.0",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "projectId",
+            "description": "<p>Project id.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "customerId",
+            "description": "<p>Customer id.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "name",
+            "description": "<p>Project name.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "description",
+            "description": "<p>Description.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "adminIds",
+            "description": "<p>project admin ids ( add up to 5 admin ids with comma separated ex 1,2,45,)</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n\n {\n   \"success\": \"Successfully Updated\"\n }",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "Invalid",
+            "description": "<p>Parameter.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 202 Invalid Parameter\n{\n  \"error\": [\"Customer Id Needed\"]\n}",
+          "type": "json"
+        },
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 202 Invalid Parameter\n{\n  \"error\": [\"Project Name Needed\"]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/update-project-end-point.php",
+    "groupTitle": "Time"
+  },
+  {
+    "type": "put",
+    "url": "/employee/:id/timesheet",
+    "title": "15.Update Timesheet",
+    "name": "updateTimesheet",
+    "group": "Time",
+    "version": "0.1.0",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Date",
+            "optional": false,
+            "field": "startDate",
+            "description": "<p>Timesheet start date.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Employee id.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "state",
+            "description": "<p>Timesheet status (NOT SUBMITTED,SUBMITTED,APPROVED,REJECTED).</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "comment",
+            "description": "<p>Comment when changing the timesheet status.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "projectId",
+            "description": "<p>Project id.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "activityId",
+            "description": "<p>Activity id.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "TimesheetItemId0",
+            "description": "<p>First timesheet item value should be timesheet item ID.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Time",
+            "optional": false,
+            "field": "0",
+            "description": "<p>First timesheet item duration.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "TimesheetItemId1",
+            "description": "<p>Second timesheet item value should be timesheet item ID.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Time",
+            "optional": false,
+            "field": "1",
+            "description": "<p>Second timesheet item duration.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "TimesheetItemId2",
+            "description": "<p>Third timesheet item value should be timesheet item ID.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Time",
+            "optional": false,
+            "field": "2",
+            "description": "<p>Third timesheet item duration.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "TimesheetItemId3",
+            "description": "<p>4th timesheet item value should be timesheet item ID.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Time",
+            "optional": false,
+            "field": "3",
+            "description": "<p>4th timesheet item duration.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "TimesheetItemId4",
+            "description": "<p>5th timesheet item value should be timesheet item ID.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Time",
+            "optional": false,
+            "field": "4",
+            "description": "<p>5th timesheet item duration.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "TimesheetItemId5",
+            "description": "<p>6th timesheet item value should be timesheet item ID.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Time",
+            "optional": false,
+            "field": "5",
+            "description": "<p>6th timesheet item duration.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "TimesheetItemId6",
+            "description": "<p>7th timesheet item value should be timesheet item ID.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Time",
+            "optional": false,
+            "field": "6",
+            "description": "<p>7th timesheet item duration.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": ":",
+          "content": "{\n\"startDate\":\"2017-06-26\",\n\"state\":\"INITIAL\",\n\"comment\":\"Initial update\",\n\"timeSheetItems\":[\n   {\n      \"projectId\":\"1\",\n      \"projectActivityId\":\"1\",\n      \"0\":\"4:00\",\n      \"TimesheetItemId0\":\"1\",\n      \"1\":\"4:00\",\n      \"TimesheetItemId1\":\"2\",\n      \"2\":\"5:00\",\n      \"TimesheetItemId2\":\"3\",\n      \"3\":\"5:00\",\n      \"TimesheetItemId3\":\"4\",\n      \"4\":\"5:00\",\n      \"TimesheetItemId4\":\"5\",\n      \"5\":\"\",\n      \"TimesheetItemId5\":\"\",\n      \"6\":\"\",\n      \"TimesheetItemId6\":\"\"\n   }",
+          "type": "json"
+        }
+      ]
+    },
+    "description": "<p>NOTE data should be row Json and should be formatted as following given example,Sample Data Input Timesheet items TimesheetItemId0-TimesheetItemId6 should be presented and values should be given as [0 -6] in time format ex 8:00 ( duration ),To add a new row project id and activity id needed and timesheet item values should be empty (&quot;&quot;)..</p>",
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n\n {\n   \"success\": \"Successfully Updated\"\n }",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "Invalid",
+            "description": "<p>Parameter.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 202 No Accessible Timesheets\n{\n  \"error\": [\"No Accessible Timesheets\"]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "symfony/plugins/orangehrmRESTPlugin/doc/update-timesheet-end-point.php",
     "groupTitle": "Time"
   }
 ] });
