@@ -148,7 +148,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/get-organization-info-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/get-organization-info-end-point.php",
     "groupTitle": "Admin",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -246,7 +246,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/get-users-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/get-users-end-point.php",
     "groupTitle": "Admin",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -356,7 +356,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/user-login-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/user-login-end-point.php",
     "groupTitle": "Admin",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -451,7 +451,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/punch-in-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/punch-in-end-point.php",
     "groupTitle": "Attendance",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -546,7 +546,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/punch-out-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/punch-out-end-point.php",
     "groupTitle": "Attendance",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -630,7 +630,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/9-employee-dependent-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/9-employee-dependent-end-point.php",
     "groupTitle": "Employee",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -805,7 +805,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/2-employee-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/2-employee-end-point.php",
     "groupTitle": "Employee",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -917,7 +917,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/13-employee-job-detail-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/13-employee-job-detail-end-point.php",
     "groupTitle": "Employee",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -1030,7 +1030,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/14-save-employee-job-detail-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/14-save-employee-job-detail-end-point.php",
     "groupTitle": "Employee",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -1142,7 +1142,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/5.employee-search-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/5.employee-search-end-point.php",
     "groupTitle": "Employee",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -1287,7 +1287,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/3-update-employee-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/3-update-employee-end-point.php",
     "groupTitle": "Employee",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -1368,7 +1368,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/31-delete-employee-custom-field-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/31-delete-employee-custom-field-end-point.php",
     "groupTitle": "Employee",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -1443,7 +1443,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/10-delete-employee-dependents-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/10-delete-employee-dependents-end-point.php",
     "groupTitle": "Employee",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -1513,7 +1513,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/27-delete-employee-education-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/27-delete-employee-education-end-point.php",
     "groupTitle": "Employee",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -1595,7 +1595,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/18-delete-employee-supervisor-detail-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/18-delete-employee-supervisor-detail-end-point.php",
     "groupTitle": "Employee",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -1665,7 +1665,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/24-delete-employee-work-Experience-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/24-delete-employee-work-Experience-end-point.php",
     "groupTitle": "Employee",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -1731,7 +1731,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/32-get-custom-field-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/32-get-custom-field-end-point.php",
     "groupTitle": "Employee",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -1885,7 +1885,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/6-employee-contact-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/6-employee-contact-end-point.php",
     "groupTitle": "Employee",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -1983,7 +1983,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/28-get-employee-custom-field-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/28-get-employee-custom-field-end-point.php",
     "groupTitle": "Employee",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -2102,7 +2102,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/25-get-employee-education-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/25-get-employee-education-end-point.php",
     "groupTitle": "Employee",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -2165,7 +2165,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/34-get-employee-picture-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/34-get-employee-picture-end-point.php",
     "groupTitle": "Employee",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -2256,7 +2256,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/16-get-employee-supervisor-detail-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/16-get-employee-supervisor-detail-end-point.php",
     "groupTitle": "Employee",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -2361,7 +2361,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/21-get-employee-work-Experience-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/21-get-employee-work-Experience-end-point.php",
     "groupTitle": "Employee",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -2501,7 +2501,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/20-get-employee-event-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/20-get-employee-event-end-point.php",
     "groupTitle": "Employee",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -2585,7 +2585,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/1-save-employee-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/1-save-employee-end-point.php",
     "groupTitle": "Employee",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -2725,7 +2725,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/7-save-employee-contact-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/7-save-employee-contact-end-point.php",
     "groupTitle": "Employee",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -2824,7 +2824,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/29-save-employee-custom-field-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/29-save-employee-custom-field-end-point.php",
     "groupTitle": "Employee",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -2943,7 +2943,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/26-save-employee-education-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/26-save-employee-education-end-point.php",
     "groupTitle": "Employee",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -3025,7 +3025,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/17-save-employee-supervisor-detail-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/17-save-employee-supervisor-detail-end-point.php",
     "groupTitle": "Employee",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -3123,7 +3123,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/22-save-employee-work-Experience-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/22-save-employee-work-Experience-end-point.php",
     "groupTitle": "Employee",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -3212,7 +3212,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/12-save-employee-dependents-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/12-save-employee-dependents-end-point.php",
     "groupTitle": "Employee",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -3301,7 +3301,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/4-terminate-employee-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/4-terminate-employee-end-point.php",
     "groupTitle": "Employee",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -3441,7 +3441,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/8-update-employee-contact-details-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/8-update-employee-contact-details-end-point.php",
     "groupTitle": "Employee",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -3540,7 +3540,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/30-update-employee-custom-field-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/30-update-employee-custom-field-end-point.php",
     "groupTitle": "Employee",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -3636,7 +3636,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/11-update-employee-dependents-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/11-update-employee-dependents-end-point.php",
     "groupTitle": "Employee",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -3766,7 +3766,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/33-update-employee-education-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/33-update-employee-education-end-point.php",
     "groupTitle": "Employee",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -3890,7 +3890,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/15-update-employee-job-detail-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/15-update-employee-job-detail-end-point.php",
     "groupTitle": "Employee",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -3972,7 +3972,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/19-update-employee-supervisor-detail-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/19-update-employee-supervisor-detail-end-point.php",
     "groupTitle": "Employee",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -4088,7 +4088,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/23-update-employee-work-Experience-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/23-update-employee-work-Experience-end-point.php",
     "groupTitle": "Employee",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -4211,7 +4211,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/employee-leave-entitlement-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/employee-leave-entitlement-end-point.php",
     "groupTitle": "Leave",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -4397,7 +4397,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/employee-leave-requests-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/employee-leave-requests-end-point.php",
     "groupTitle": "Leave",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -4436,7 +4436,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/get-leave-period-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/get-leave-period-end-point.php",
     "groupTitle": "Leave",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -4493,7 +4493,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/leave-types-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/leave-types-end-point.php",
     "groupTitle": "Leave",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -4578,7 +4578,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/save-employee-leave-entitlement-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/save-employee-leave-entitlement-end-point.php",
     "groupTitle": "Leave",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -4693,7 +4693,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/save-leave-request-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/save-leave-request-end-point.php",
     "groupTitle": "Leave",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -4751,7 +4751,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/save-leave-type-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/save-leave-type-end-point.php",
     "groupTitle": "Leave",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -4901,7 +4901,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/save-multiple-day-leave-request-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/save-multiple-day-leave-request-end-point.php",
     "groupTitle": "Leave",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -5157,7 +5157,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/search-leave-requests-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/search-leave-requests-end-point.php",
     "groupTitle": "Leave",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -5244,7 +5244,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/get_kpis-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/get_kpis-end-point.php",
     "groupTitle": "Performance",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -5321,7 +5321,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/delete-activity-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/delete-activity-end-point.php",
     "groupTitle": "Time",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -5373,7 +5373,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/delete-customer-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/delete-customer-end-point.php",
     "groupTitle": "Time",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -5436,7 +5436,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/delete-project-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/delete-project-end-point.php",
     "groupTitle": "Time",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -5509,7 +5509,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/delete-timesheetRow-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/delete-timesheetRow-end-point.php",
     "groupTitle": "Time",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -5576,7 +5576,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/get-activity-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/get-activity-end-point.php",
     "groupTitle": "Time",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -5647,7 +5647,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/get-customers-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/get-customers-end-point.php",
     "groupTitle": "Time",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -5781,7 +5781,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/get-projects-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/get-projects-end-point.php",
     "groupTitle": "Time",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -5935,7 +5935,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/get-timesheet-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/get-timesheet-end-point.php",
     "groupTitle": "Time",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -6005,7 +6005,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/save-activity-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/save-activity-end-point.php",
     "groupTitle": "Time",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -6064,7 +6064,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/save-customers-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/save-customers-end-point.php",
     "groupTitle": "Time",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -6142,7 +6142,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/save-project-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/save-project-end-point.php",
     "groupTitle": "Time",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -6201,7 +6201,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/save-timesheet-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/save-timesheet-end-point.php",
     "groupTitle": "Time",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -6278,7 +6278,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/update-activity-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/update-activity-end-point.php",
     "groupTitle": "Time",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -6355,7 +6355,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/update-customers-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/update-customers-end-point.php",
     "groupTitle": "Time",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -6440,7 +6440,7 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/update-project-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/update-project-end-point.php",
     "groupTitle": "Time",
     "description": "<p>Support access using OAuth2 access token created with <code>client_credentials</code> and <code>password</code> grant type</p> <p>Required scope: <code>admin</code></p> <p>Required scope by grant type;</p> <ul> <li><code>client_credentials</code>: No need to request scopes. By default grant only for <code>admin</code> scope</li> <li><code>password</code>: Required <code>admin</code> scope <code>Since OrangeHRM 4.5</code></li> </ul>"
   },
@@ -6633,15 +6633,775 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/update-timesheet-end-point.php",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/update-timesheet-end-point.php",
     "groupTitle": "Time"
+  },
+  {
+    "type": "post",
+    "url": "/attendance/punch-in",
+    "title": "02.Save Employee Punch In",
+    "name": "EmployeePunchIn",
+    "group": "User-Attendance",
+    "version": "1.2.0",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "timezoneOffset",
+            "description": "<p>Time Zone Offset ( ex: 5.5 ).</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "note",
+            "description": "<p>Punch In Note. ( ex: &quot;Successfully Punched In&quot; )</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Date",
+            "optional": false,
+            "field": "datetime",
+            "description": "<p>Date and Time Required If Current Time Editable ( ex: &quot;2020-12-28 08:30&quot; )</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n\n       {\n           \"id\": \"1\",\n           \"datetime\": \"2020-12-28 08:30\",\n           \"timezoneOffset\": 5.5,\n           \"note\": \"PUNCH IN NOTE\"\n       }",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "InvalidParameter",
+            "description": "<p>Found.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "Invalid",
+            "description": "<p>Action.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 202 Invalid Parameter\n{\n  \"error\": [\"Invalid Time Zone\"]\n}",
+          "type": "json"
+        },
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 202 Invalid Parameter\n{\n  \"error\": [\"Cannot Proceed Punch In Employee Already Punched In\"]\n}",
+          "type": "json"
+        },
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 202 Invalid Parameter\n{\n  \"error\": [\"Overlapping Records Found\"]\n}",
+          "type": "json"
+        },
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 202 Invalid Parameter\n{\n  \"error\": [\"You Are Not Allowed To Change Current Date & Time\"]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/user-attendance/02-save-employee-punch-in-end-point.php",
+    "groupTitle": "User-Attendance",
+    "description": "<p>Required access using OAuth2 access token created with <code>password</code> grant type</p> <p>Required scope: <code>user</code></p> <p><code>Since OrangeHRM 4.7</code></p>"
+  },
+  {
+    "type": "post",
+    "url": "/attendance/punch-out",
+    "title": "03.Save Employee Punch Out",
+    "name": "EmployeePunchOut",
+    "group": "User-Attendance",
+    "version": "1.2.0",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "timezoneOffset",
+            "description": "<p>Time Zone Offset ( ex: 5.5 ).</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "note",
+            "description": "<p>Punch Out Note. ( ex: &quot;Successfully Punched Out&quot; )</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Date",
+            "optional": false,
+            "field": "datetime",
+            "description": "<p>Date and Time Required If Current Time Editable ( ex: &quot;2020-12-28 18:30&quot; )</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n\n       {\n           \"id\": \"1\",\n           \"punchInDateTime\": \"2020-12-28 08:30\",\n           \"punchInTimeZone\": 5.5,\n           \"punchInNote\": \"PUNCH IN NOTE\",\n           \"punchOutDateTime\": \"2020-12-28 18:30\",\n           \"punchOutTimeZone\": 5.5,\n           \"punchOutNote\": \"PUNCH OUT NOTE\"\n       }",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "InvalidParameter",
+            "description": "<p>Found.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "Invalid",
+            "description": "<p>Action.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 202 Invalid Parameter\n{\n  \"error\": [\"Invalid Time Zone\"]\n}",
+          "type": "json"
+        },
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 202 Invalid Parameter\n{\n  \"error\": [\"Cannot Proceed Punch Out Employee Already Punched Out\"]\n}",
+          "type": "json"
+        },
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 202 Invalid Parameter\n{\n  \"error\": [\"Overlapping Records Found\"]\n}",
+          "type": "json"
+        },
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 202 Invalid Parameter\n{\n  \"error\": [\"Datetime Cannot Be Empty\"]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/user-attendance/03-save-employee-punch-out-end-point.php",
+    "groupTitle": "User-Attendance",
+    "description": "<p>Required access using OAuth2 access token created with <code>password</code> grant type</p> <p>Required scope: <code>user</code></p> <p><code>Since OrangeHRM 4.7</code></p>"
+  },
+  {
+    "type": "get",
+    "url": "/attendance/punch-status",
+    "title": "01.Get Employee Punch Status",
+    "name": "EmployeePunchStatus",
+    "group": "User-Attendance",
+    "version": "1.2.0",
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n\n       {\n           \"data\": {\n               \"punchTime\": \"2021-01-31 19:31:00\",\n               \"punchNote\": \"PUNCH IN NOTE\",\n               \"punchTimeZoneOffset\": 5.5,\n               \"dateTimeEditable\": true,\n               \"currentUtcDateTime\": \"2020-11-12 05:25\",\n               \"punchState\": \"PUNCHED IN\"\n           },\n\n           \"rels\": []\n        }",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/user-attendance/01-get-employee-punch-status-end-point.php",
+    "groupTitle": "User-Attendance",
+    "description": "<p>Required access using OAuth2 access token created with <code>password</code> grant type</p> <p>Required scope: <code>user</code></p> <p><code>Since OrangeHRM 4.7</code></p>"
+  },
+  {
+    "type": "get",
+    "url": "/attendance/records",
+    "title": "04.Get Attendance Records",
+    "name": "getAttendance",
+    "group": "User-Attendance",
+    "version": "1.2.0",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "fromDate",
+            "description": "<p>From date (Default: Timesheet Period start date, Format: Y-m-d H:i:s, e.g. 2020-05-20 00:00:00)</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "toDate",
+            "description": "<p>To date (Default: Timesheet Period end date, Format: Y-m-d H:i:s, e.g. 2020-05-26 23:59:59)</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "empNumber",
+            "description": "<p>Employee Number</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object[]",
+            "optional": false,
+            "field": "data",
+            "description": "<p>Attendance array</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.id",
+            "description": "<p>Attendance Id</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.punchInUtcTime",
+            "description": "<p>Punch In UTC Time</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.punchInNote",
+            "description": "<p>Punch In Note</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.punchInTimeOffset",
+            "description": "<p>Punch In Time Offset</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.punchInUserTime",
+            "description": "<p>Punch In User Time</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.punchOutUtcTime",
+            "description": "<p>Punch Out UTC Time</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.punchOutNote",
+            "description": "<p>Punch Out Note</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.punchOutTimeOffset",
+            "description": "<p>Punch Out Time Offset</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.punchOutUserTime",
+            "description": "<p>Punch Out User Time</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.state",
+            "description": "<p>Punch Status</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n\n{\n  \"data\": [\n      {\n          \"id\": \"18\",\n          \"punchInUtcTime\": \"2020-11-26 10:05:00\",\n          \"punchInNote\": \"PUNCH IN NOTE\",\n          \"punchInTimeOffset\": \"5.5\",\n          \"punchInUserTime\": \"2020-11-26 15:35:00\",\n          \"punchOutUtcTime\": \"2020-11-26 12:29:00\",\n          \"punchOutNote\": \"PUNCH OUT NOTE\",\n          \"punchOutTimeOffset\": \"5.5\",\n          \"punchOutUserTime\": \"2020-11-26 17:59:00\",\n          \"state\": \"PUNCHED OUT\"\n      },\n      {\n          \"id\": \"19\",\n          \"punchInUtcTime\": \"2020-11-26 10:05:00\",\n          \"punchInNote\": \"PUNCH IN NOTE\",\n          \"punchInTimeOffset\": \"5.5\",\n          \"punchInUserTime\": \"2020-11-26 15:35:00\",\n          \"punchOutUtcTime\": \"2020-11-26 12:29:00\",\n          \"punchOutNote\": \"PUNCH OUT NOTE\",\n          \"punchOutTimeOffset\": \"5.5\",\n          \"punchOutUserTime\": \"2020-11-26 17:59:00\",\n          \"state\": \"PUNCHED OUT\"\n       }\n    ]\n  ],\n  \"rels\": []\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "No-Records",
+            "description": "<p>Found.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "Access",
+            "description": "<p>Denied For Requested Employee.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Record Not Found\n{\n  \"error\": [\"No Records Found\"]\n}",
+          "type": "json"
+        },
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 400 Access Denied\n{\n  \"error\": [\"Access Denied\"]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/user-attendance/04-attendance.php",
+    "groupTitle": "User-Attendance",
+    "description": "<p>Required access using OAuth2 access token created with <code>password</code> grant type</p> <p>Required scope: <code>user</code></p> <p><code>Since OrangeHRM 4.7</code></p>"
+  },
+  {
+    "type": "get",
+    "url": "/attendance/attendance-list",
+    "title": "06.Get Attendance List",
+    "name": "getAttendanceList",
+    "group": "User-Attendance",
+    "version": "1.2.0",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Date",
+            "optional": true,
+            "field": "fromDate",
+            "description": "<p>From date (Default: Timesheet Period start date, Format: Y-m-d H:i:s, e.g. 2020-05-20 00:00:00)</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Date",
+            "optional": true,
+            "field": "toDate",
+            "description": "<p>To date (Default: Timesheet Period end date, Format: Y-m-d H:i:s, e.g. 2020-05-26 23:59:59)</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "empNumber",
+            "description": "<p>Employee number</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "allowedValues": [
+              "'true'",
+              "'false'"
+            ],
+            "optional": true,
+            "field": "pastEmployee",
+            "description": "<p>Past employee results</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "allowedValues": [
+              "'true'",
+              "'false'"
+            ],
+            "optional": true,
+            "field": "all",
+            "description": "<p>With Zero duration results</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "allowedValues": [
+              "'true'",
+              "'false'"
+            ],
+            "optional": true,
+            "field": "includeSelf",
+            "description": "<p>Include self when getting list. This parameter ignore when <code>empNumber</code> parameter passed</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object[]",
+            "optional": false,
+            "field": "data",
+            "description": "<p>Leave requests array</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.employeeId",
+            "description": "<p>Employee id</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.employeeName",
+            "description": "<p>Employee name</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.code",
+            "description": "<p>Employee code</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.jobTitle",
+            "description": "<p>Job title</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.unit",
+            "description": "<p>Sub unit</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.status",
+            "description": "<p>Employment status</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.duration",
+            "description": "<p>Work duration</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n\n{\n  \"data\": [\n      {\n        \"employeeId\": \"4\",\n        \"employeeName\": \"Kevin Mathews\",\n        \"code\": \"0004\",\n        \"jobTitle\": \"SE\",\n        \"unit\": \"Development\",\n        \"status\": \"Full Time\",\n        \"duration\": \"8:40\",\n      },\n      {\n        \"employeeId\": \"5\",\n        \"employeeName\": \"Linda Jane\",\n        \"code\": \"0005\",\n        \"jobTitle\": null,\n        \"unit\": null,\n        \"status\": null,\n        \"duration\": \"4:00\",\n      }\n    ]\n  ],\n  \"rels\": []\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "No-Records",
+            "description": "<p>Found.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "Employee",
+            "description": "<p>Not Found.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Record Not Found\n{\n  \"error\": [\"No Records Found\"]\n}",
+          "type": "json"
+        },
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 400 Employee Not Found\n{\n  \"error\": [\"Employee Not Found\"]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/user-attendance/06-attendance-list.php",
+    "groupTitle": "User-Attendance",
+    "description": "<p>Required access using OAuth2 access token created with <code>password</code> grant type</p> <p>Required scope: <code>user</code></p> <p><code>Since OrangeHRM 4.7</code></p>"
+  },
+  {
+    "type": "get",
+    "url": "/attendance/summary",
+    "title": "05.Get Attendance Summary",
+    "name": "getAttendanceSummary",
+    "group": "User-Attendance",
+    "version": "1.2.0",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Date",
+            "optional": true,
+            "field": "fromDate",
+            "description": "<p>From date (Default: Timesheet Period start date, Format: Y-m-d H:i:s, e.g. 2020-05-20 00:00:00)</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Date",
+            "optional": true,
+            "field": "toDate",
+            "description": "<p>To date (Default: Timesheet Period end date, Format: Y-m-d H:i:s, e.g. 2020-05-26 23:59:59)</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "empNumber",
+            "description": "<p>Employee Number</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "pendingApproval",
+            "description": "<p>True or False</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "scheduled",
+            "description": "<p>True or False</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "taken",
+            "description": "<p>True or False</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "rejected",
+            "description": "<p>True or False</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "cancelled",
+            "description": "<p>True or False</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.totalWorkHours",
+            "description": "<p>Total Work Duration Of The Week</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.totalLeaveHours",
+            "description": "<p>Total Leave Duration Of The Week</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object[]",
+            "optional": false,
+            "field": "data.totalLeaveTypeHours",
+            "description": "<p>Total Leave Duration of Each Leave Type</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "totalLeaveTypeHours.typeId",
+            "description": "<p>Leave Type Id of totalLeaveTypeHours</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "totalLeaveTypeHours.type:",
+            "description": "<p>Leave Type Name of totalLeaveTypeHours</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "totalLeaveTypeHours.hours",
+            "description": "<p>Leave duration of totalLeaveTypeHours</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object[]",
+            "optional": false,
+            "field": "data.workSummary",
+            "description": "<p>Work Summary of the Week</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object[]",
+            "optional": false,
+            "field": "workSummary.sunday",
+            "description": "<p>Work Summary of Sunday</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object[]",
+            "optional": false,
+            "field": "workSummary.monday",
+            "description": "<p>Work Summary of Monday</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object[]",
+            "optional": false,
+            "field": "workSummary.tuesday",
+            "description": "<p>Work Summary of Tuesday</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object[]",
+            "optional": false,
+            "field": "workSummary.wednesday",
+            "description": "<p>Work Summary of Wednesday</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object[]",
+            "optional": false,
+            "field": "workSummary.thursday",
+            "description": "<p>Work Summary of Thursday</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object[]",
+            "optional": false,
+            "field": "workSummary.friday",
+            "description": "<p>Work Summary of Friday</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object[]",
+            "optional": false,
+            "field": "workSummary.saturday",
+            "description": "<p>Work Summary of Saturday</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "tuesday.workHours",
+            "description": "<p>Work Hours of each day</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object[]",
+            "optional": false,
+            "field": "tuesday.leave",
+            "description": "<p>Leaves Leave Records of each day</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "leave.typeId",
+            "description": "<p>Leave Id of each Leave Record</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "leave.type",
+            "description": "<p>Leave Type of each Leave Record</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "leave.hours",
+            "description": "<p>Leave Duration of each Leave Record</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n\n{\n  \"data\": [\n      \"totalWorkHours\": \"6.80\",\n       \"totalLeaveHours\": \"24.00\",\n      \"totalLeaveTypeHours\": [\n          {\n              \"typeId\": \"1\",\n              \"type\": \"Medical\",\n              \"hours\": \"16.00\"\n          },\n          {\n              \"typeId\": \"2\",\n              \"type\": \"Casual\",\n              \"hours\": \"8.00\"\n          }\n      ],\n       \"workSummary\": {\n          \"sunday\": {\n              \"workHours\": 0,\n              \"leave\": []\n          },\n          \"monday\": {\n              \"workHours\": 0,\n              \"leave\": [\n                  {\n                     \"typeId\": \"1\",\n                      \"type\": \"Medical\",\n                      \"hours\": \"8.00\"\n                  }\n              ]\n          },\n          \"tuesday\": {\n              \"workHours\": 0,\n              \"leave\": []\n          },\n          \"wednesday\": {\n              \"workHours\": 0,\n              \"leave\": []\n          },\n          \"thursday\": {\n              \"workHours\": \"2.40\",\n              \"leave\": [\n                   {\n                      \"typeId\": \"1\",\n                      \"type\": \"Medical\",\n                      \"hours\": \"4.00\"\n                  }\n              ]\n          },\n          \"friday\": {\n              \"workHours\": 0,\n              \"leave\": [\n                  {\n                      \"typeId\": \"2\",\n                      \"type\": \"Casual\",\n                      \"hours\": \"8.00\"\n                  }\n              ]\n          },\n          \"saturday\": {\n              \"workHours\": \"4.40\",\n              \"leave\": [\n                  {\n                      \"typeId\": \"1\",\n                      \"type\": \"Medical\",\n                      \"hours\": \"4.00\"\n                  }\n              ]\n          }\n      }\n  ],\n  \"rels\": []\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "Access",
+            "description": "<p>Denied For Requested Employee.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 400 Access Denied\n{\n  \"error\": [\"Access Denied\"]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/user-attendance/05-attendance-summary.php",
+    "groupTitle": "User-Attendance",
+    "description": "<p>Required access using OAuth2 access token created with <code>password</code> grant type</p> <p>Required scope: <code>user</code></p> <p><code>Since OrangeHRM 4.7</code></p>"
   },
   {
     "type": "post",
     "url": "/leave/leave-request/:id",
     "title": "07.Change Leave Request Status",
     "name": "changeLeaveRequestStatus",
-    "group": "User",
+    "group": "User-Leave",
     "version": "1.1.0",
     "parameter": {
       "fields": {
@@ -6714,17 +7474,17 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/user/7-change-leave-request-status-end-point.php",
-    "groupTitle": "User",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/user-leave/7-change-leave-request-status-end-point.php",
+    "groupTitle": "User-Leave",
     "description": "<p>Required access using OAuth2 access token created with <code>password</code> grant type</p> <p>Required scope: <code>user</code></p> <p><code>Since OrangeHRM 4.5</code></p>"
   },
   {
     "type": "get",
-    "url": "/employees",
-    "title": "11.Get Accessible Employees",
-    "name": "getAccessibleEmployees",
-    "group": "User",
-    "version": "1.1.0",
+    "url": "/leave/leaves",
+    "title": "11.Get Leaves",
+    "name": "getLeave",
+    "group": "User-Leave",
+    "version": "1.2.0",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -6732,35 +7492,147 @@
             "group": "Parameter",
             "type": "String",
             "optional": true,
-            "field": "actionName",
-            "description": "<p>Action name. e.g. <code>assign_leave</code>, <code>view_leave_list</code></p>"
-          },
-          {
-            "group": "Parameter",
-            "type": "String[]",
-            "optional": true,
-            "field": "properties[]",
-            "description": "<p>Employee properties array. e.g. <code>employeeId</code>, <code>firstName</code>, <code>lastName</code>, <code>termination_id</code>.</p> <pre class=\"prettyprint\">/api/v1/employees?properties[]=firstName&properties[]=lastName&properties[]=termination_id </code></pre>"
+            "field": "fromDate",
+            "description": "<p>From date (Default: Current leave period from date, Format: Y-m-d, e.g. 2020-01-01)</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
-            "allowedValues": [
-              "'true'",
-              "'false'"
-            ],
             "optional": true,
-            "field": "pastEmployee",
-            "description": "<p>Specify whether with past employee. Default <code>false</code></p>"
+            "field": "toDate",
+            "description": "<p>To date (Default: Current leave period to date, Format: Y-m-d, e.g. 2020-12-31)</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "empNumber",
+            "description": "<p>Employee Number</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "pendingApproval",
+            "description": "<p>True or False</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "scheduled",
+            "description": "<p>True or False</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "taken",
+            "description": "<p>True or False</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "rejected",
+            "description": "<p>True or False</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "cancelled",
+            "description": "<p>True or False</p>"
           }
         ]
       }
     },
     "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object[]",
+            "optional": false,
+            "field": "data",
+            "description": "<p>Leave array</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.id",
+            "description": "<p>Leave id</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.date",
+            "description": "<p>Leave Date</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.lengthHours",
+            "description": "<p>Leave Length in hours</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.lengthDays",
+            "description": "<p>Leave Length in days</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object[]",
+            "optional": false,
+            "field": "data.leaveType",
+            "description": "<p>Leave Type</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "leaveType.id",
+            "description": "<p>Leave Type id</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "leaveType.type",
+            "description": "<p>Leave Type Name</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.startTime",
+            "description": "<p>Leave Start Time</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.endTime",
+            "description": "<p>Leave End Time</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.status",
+            "description": "<p>Leave Status</p>"
+          }
+        ]
+      },
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "HTTP/1.1 200 OK\n\n{\n  \"data\": [\n      {\n        \"employeeId\": \"4\",\n        \"firstName\": \"Kevin\",\n        \"lastName\": \"Mathews\",\n        \"employeeId\": \"004\",\n      },\n      {\n        \"employeeId\": \"5\",\n        \"firstName\": \"Linda\",\n        \"lastName\": \"Jane\",\n        \"employeeId\": \"005\",\n      }\n    ]\n  ],\n  \"rels\": []\n}",
+          "content": "HTTP/1.1 200 OK\n\n{\n  \"data\": [\n      {\n          \"id\": \"10\",\n          \"date\": \"2020-12-06\",\n          \"lengthHours\": \"8.00\",\n          \"lengthDays\": \"1.0000\",\n          \"leaveType\": {\n             \"id\": \"3\",\n             \"type\": \"Annual\"\n          },\n          \"startTime\": \"00:00:00\",\n          \"endTime\": \"00:00:00\",\n          \"status\": \"TAKEN\"\n      },\n      {\n          \"id\": \"11\",\n          \"date\": \"2020-12-08\",\n          \"lengthHours\": \"4.00\",\n          \"lengthDays\": \"0.5000\",\n          \"leaveType\": {\n             \"id\": \"3\",\n             \"type\": \"Medical\"\n          },\n          \"startTime\": \"09:00:00\",\n          \"endTime\": \"13:00:00\",\n          \"status\": \"TAKEN\"\n      }\n    ]\n  ],\n  \"rels\": []\n}",
           "type": "json"
         }
       ]
@@ -6771,21 +7643,61 @@
           {
             "group": "Error 4xx",
             "optional": false,
-            "field": "InvalidParameter",
-            "description": "<p>Found</p>"
+            "field": "No-Records",
+            "description": "<p>Found.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "Access",
+            "description": "<p>Denied For Requested Employee.</p>"
           }
         ]
       },
       "examples": [
         {
           "title": "Error-Response:",
-          "content": "HTTP/1.1 202 Invalid Parameter\n{\n  \"error\": {\n    \"status\": \"202\",\n    \"text\": \"Invalid `<param>` Value\"\n  }\n}",
+          "content": "HTTP/1.1 404 Record Not Found\n{\n  \"error\": [\"No Records Found\"]\n}",
+          "type": "json"
+        },
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 400 Access Denied\n{\n  \"error\": [\"Access Denied\"]\n}",
           "type": "json"
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/user/11-get-accessible-employees-end-point.php",
-    "groupTitle": "User",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/user-leave/11-leave.php",
+    "groupTitle": "User-Leave",
+    "description": "<p>Required access using OAuth2 access token created with <code>password</code> grant type</p> <p>Required scope: <code>user</code></p> <p><code>Since OrangeHRM 4.7</code></p>"
+  },
+  {
+    "type": "get",
+    "url": "/leave/holidays",
+    "title": "12.Get Holidays",
+    "name": "getLeaveHolidays",
+    "group": "User-Leave",
+    "version": "1.1.0",
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n{\n  \"data\": [\n     {\n         \"id\": \"1\",\n         \"recurring\": \"0\",\n         \"description\": \"Holiday1\",\n         \"date\": \"2020-08-05\",\n         \"length\": \"4\"\n     },\n     {\n         \"id\": \"2\",\n         \"recurring\": \"1\",\n         \"description\": \"Holiday2\",\n         \"date\": \"2020-08-06\",\n         \"length\": \"8\"\n     }\n  ],\n  \"rels\": []\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 400 No Bound User\n{\n  \"error\": [\"No Bound User\"]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/user-leave/12-get-leave-holidays.php",
+    "groupTitle": "User-Leave",
     "description": "<p>Required access using OAuth2 access token created with <code>password</code> grant type</p> <p>Required scope: <code>user</code></p> <p><code>Since OrangeHRM 4.5</code></p>"
   },
   {
@@ -6793,7 +7705,7 @@
     "url": "/leave/leave-list",
     "title": "05.Get Leave List",
     "name": "getLeaveList",
-    "group": "User",
+    "group": "User-Leave",
     "version": "1.1.0",
     "parameter": {
       "fields": {
@@ -7043,8 +7955,37 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/user/5-leave-list-end-point.php",
-    "groupTitle": "User",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/user-leave/5-leave-list-end-point.php",
+    "groupTitle": "User-Leave",
+    "description": "<p>Required access using OAuth2 access token created with <code>password</code> grant type</p> <p>Required scope: <code>user</code></p> <p><code>Since OrangeHRM 4.5</code></p>"
+  },
+  {
+    "type": "get",
+    "url": "/leave/leave-periods",
+    "title": "13.Get Leave Periods",
+    "name": "getLeavePeriods",
+    "group": "User-Leave",
+    "version": "1.1.0",
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n{\n     \"data\": [\n         {\n             \"startDate\": \"2020-01-01\",\n             \"endDate\": \"2020-12-31\"\n         }\n     ],\n     \"rels\": []\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 400 No Bound User\n{\n  \"error\": [\"No Bound User\"]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/user-leave/13-get-leave-periods.php",
+    "groupTitle": "User-Leave",
     "description": "<p>Required access using OAuth2 access token created with <code>password</code> grant type</p> <p>Required scope: <code>user</code></p> <p><code>Since OrangeHRM 4.5</code></p>"
   },
   {
@@ -7052,7 +7993,7 @@
     "url": "/leave/leave-request/:id",
     "title": "06.Get Leave Request",
     "name": "getLeaveRequestById",
-    "group": "User",
+    "group": "User-Leave",
     "version": "1.1.0",
     "parameter": {
       "fields": {
@@ -7327,16 +8268,16 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/user/6-leave-request-end-point.php",
-    "groupTitle": "User",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/user-leave/6-leave-request-end-point.php",
+    "groupTitle": "User-Leave",
     "description": "<p>Required access using OAuth2 access token created with <code>password</code> grant type</p> <p>Required scope: <code>user</code></p> <p><code>Since OrangeHRM 4.5</code></p>"
   },
   {
     "type": "get",
-    "url": "/myinfo",
-    "title": "12.Employee Info",
-    "name": "getMyInfo",
-    "group": "User",
+    "url": "/leave/leave-types",
+    "title": "15.Get Leave Types",
+    "name": "getLeaveTypes",
+    "group": "User-Leave",
     "version": "1.1.0",
     "parameter": {
       "fields": {
@@ -7349,57 +8290,22 @@
               "'false'"
             ],
             "optional": true,
-            "field": "withPhoto",
-            "description": "<p>Specify whether with employee photo. Default <code>false</code></p>"
+            "field": "all",
+            "description": "<p>Get all leave types. Only allowed to perform supervisors and admins</p>"
           }
         ]
       }
     },
     "success": {
-      "fields": {
-        "Success 200": [
-          {
-            "group": "Success 200",
-            "type": "Object",
-            "optional": false,
-            "field": "employee",
-            "description": "<p>Employee details.</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "String",
-            "optional": false,
-            "field": "employeePhoto",
-            "description": "<p>Base64 encoded employee picture.</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "Object",
-            "optional": false,
-            "field": "user",
-            "description": "<p>User details.</p>"
-          }
-        ]
-      },
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "HTTP/1.1 200 OK\n\n   {\n     \"data\": {\n       \"employee\": {\n         \"firstName\": \"Nina\",\n         \"middleName\": \"Jane\",\n         \"lastName\": \"Lewis\",\n         \"code\": \"0014\",\n         \"id\": \"1\",\n         \"fullName\": \"Nina Jane Lewis\",\n         \"status\": \"Active\",\n         \"dob\": \"2016-05-04\",\n         \"driversLicenseNumber\": \"444555124223\",\n         \"licenseExpiryDate\": \"2017-02-09\",\n         \"maritalStatus\": \"Married\",\n         \"gender\": \"2\",\n         \"otherId\": \"4646522\",\n         \"nationality\": \"Armenian\",\n         \"unit\": \"Marketing Unit\",\n         \"jobTitle\": \"marketing\"\n       },\n       \"employeePhoto\": \"/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgICAgMCAgIDAwMDBAY\",\n       \"user\": {\n         \"userName\":\"Nina\",\n         \"userRole\":\"ESS\",\n         \"isSupervisor\":true,\n         \"isProjectAdmin\":false,\n         \"isManager\":false,\n         \"isDirector\":false,\n         \"isAcceptor\":false,\n         \"isOfferer\":false,\n         \"isHiringManager\":false,\n         \"isInterviewer\":false,\n       }\n     }\n    }",
+          "content": "HTTP/1.1 200 OK\n{\n    \"data\": [\n         {\n             \"id\": \"1\",\n             \"type\": \"Casual\",\n             \"deleted\": \"0\",\n             \"situational\": false\n         },\n         {\n             \"id\": \"2\",\n             \"type\": \"Medical\",\n             \"deleted\": \"0\",\n             \"situational\": false\n         }\n    ],\n    \"rels\": []\n}",
           "type": "json"
         }
       ]
     },
     "error": {
-      "fields": {
-        "Error 4xx": [
-          {
-            "group": "Error 4xx",
-            "optional": false,
-            "field": "User",
-            "description": "<p>Not Found.</p>"
-          }
-        ]
-      },
       "examples": [
         {
           "title": "Error-Response:",
@@ -7408,8 +8314,66 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/user/12-get-my-info-end-point.php",
-    "groupTitle": "User",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/user-leave/15-leave-types.php",
+    "groupTitle": "User-Leave",
+    "description": "<p>Required access using OAuth2 access token created with <code>password</code> grant type</p> <p>Required scope: <code>user</code></p> <p><code>Since OrangeHRM 4.5</code></p>"
+  },
+  {
+    "type": "get",
+    "url": "/leave/work-week",
+    "title": "14.Get Work Week",
+    "name": "getLeaveWorkWeek",
+    "group": "User-Leave",
+    "version": "1.1.0",
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n{\n  \"data\": {\n     \"mon\": \"0\",\n     \"tue\": \"0\",\n     \"wed\": \"0\",\n     \"thu\": \"0\",\n     \"fri\": \"0\",\n     \"sat\": \"4\",\n     \"sun\": \"8\"\n  },\n  \"rels\": []\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 400 No Bound User\n{\n  \"error\": [\"No Bound User\"]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/user-leave/14-leave-work-week.php",
+    "groupTitle": "User-Leave",
+    "description": "<p>Required access using OAuth2 access token created with <code>password</code> grant type</p> <p>Required scope: <code>user</code></p> <p><code>Since OrangeHRM 4.5</code></p>"
+  },
+  {
+    "type": "get",
+    "url": "/leave/work-shift",
+    "title": "01.Get Work Shift",
+    "name": "getWorkShift",
+    "group": "User-Leave",
+    "version": "1.1.0",
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n{\n     \"data\": {\n         \"workShift\": \"8.00\",\n         \"startTime\": \"09:00\",\n         \"endTime\": \"17:00\"\n     },\n     \"rels\": []\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 400 No Bound User\n{\n  \"error\": [\"No Bound User\"]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/user-leave/16-leave-work-shift.php",
+    "groupTitle": "User-Leave",
     "description": "<p>Required access using OAuth2 access token created with <code>password</code> grant type</p> <p>Required scope: <code>user</code></p> <p><code>Since OrangeHRM 4.5</code></p>"
   },
   {
@@ -7417,7 +8381,7 @@
     "url": "/leave/my-leave-entitlement",
     "title": "01.Get My Leave Entitlements",
     "name": "myLeaveEntitlements",
-    "group": "User",
+    "group": "User-Leave",
     "version": "1.1.0",
     "parameter": {
       "fields": {
@@ -7439,8 +8403,8 @@
         ]
       }
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/user/1-my-leave-entitlement-end-point.php",
-    "groupTitle": "User",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/user-leave/1-my-leave-entitlement-end-point.php",
+    "groupTitle": "User-Leave",
     "description": "<p>Required access using OAuth2 access token created with <code>password</code> grant type</p> <p>Required scope: <code>user</code></p> <p><code>Since OrangeHRM 4.5</code></p>",
     "success": {
       "fields": {
@@ -7599,7 +8563,7 @@
     "url": "/leave/my-leave-request",
     "title": "02.Get My Leave Requests",
     "name": "myLeaveRequests",
-    "group": "User",
+    "group": "User-Leave",
     "version": "1.1.0",
     "parameter": {
       "fields": {
@@ -7858,8 +8822,8 @@
         }
       ]
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/user/2-my-leave-request-end-point.php",
-    "groupTitle": "User",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/user-leave/2-my-leave-request-end-point.php",
+    "groupTitle": "User-Leave",
     "description": "<p>Required access using OAuth2 access token created with <code>password</code> grant type</p> <p>Required scope: <code>user</code></p> <p><code>Since OrangeHRM 4.5</code></p>"
   },
   {
@@ -7867,10 +8831,10 @@
     "url": "/leave/my-leave-request",
     "title": "04.Save My Leave Request (Multiple Day)",
     "name": "saveMyLeaveRequestMultipleDay",
-    "group": "User",
+    "group": "User-Leave",
     "version": "1.1.0",
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/user/4-save-my-multiple-day-leave-request-end-point.php",
-    "groupTitle": "User",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/user-leave/4-save-my-multiple-day-leave-request-end-point.php",
+    "groupTitle": "User-Leave",
     "description": "<p>Required access using OAuth2 access token created with <code>password</code> grant type</p> <p>Required scope: <code>user</code></p> <p><code>Since OrangeHRM 4.5</code></p>",
     "parameter": {
       "fields": {
@@ -8028,10 +8992,10 @@
     "url": "/leave/my-leave-request",
     "title": "03.Save My Leave Request (Single Day)",
     "name": "saveMyLeaveRequestSingleDay",
-    "group": "User",
+    "group": "User-Leave",
     "version": "1.1.0",
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/user/3-save-my-single-day-leave-request-end-point.php",
-    "groupTitle": "User",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/user-leave/3-save-my-single-day-leave-request-end-point.php",
+    "groupTitle": "User-Leave",
     "description": "<p>Required access using OAuth2 access token created with <code>password</code> grant type</p> <p>Required scope: <code>user</code></p> <p><code>Since OrangeHRM 4.5</code></p>",
     "parameter": {
       "fields": {
@@ -8138,7 +9102,7 @@
     "url": "/subordinate/:id/leave-request",
     "title": "10.Save Subordinate Leave Request (Multiple Day)",
     "name": "saveSubordinateLeaveRequestMultipleDay",
-    "group": "User",
+    "group": "User-Leave",
     "version": "1.1.0",
     "parameter": {
       "fields": {
@@ -8269,8 +9233,8 @@
         ]
       }
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/user/10-save-subordinate-multiple-day-leave-request-end-point.php",
-    "groupTitle": "User",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/user-leave/10-save-subordinate-multiple-day-leave-request-end-point.php",
+    "groupTitle": "User-Leave",
     "description": "<p>Required access using OAuth2 access token created with <code>password</code> grant type</p> <p>Required scope: <code>user</code></p> <p><code>Since OrangeHRM 4.5</code></p>",
     "success": {
       "examples": [
@@ -8306,7 +9270,7 @@
     "url": "/subordinate/:id/leave-request",
     "title": "09.Save Subordinate Leave Request (Single Day)",
     "name": "saveSubordinateLeaveRequestSingleDay",
-    "group": "User",
+    "group": "User-Leave",
     "version": "1.1.0",
     "parameter": {
       "fields": {
@@ -8386,8 +9350,8 @@
         ]
       }
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/user/9-save-subordinate-single-day-leave-request-end-point.php",
-    "groupTitle": "User",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/user-leave/9-save-subordinate-single-day-leave-request-end-point.php",
+    "groupTitle": "User-Leave",
     "description": "<p>Required access using OAuth2 access token created with <code>password</code> grant type</p> <p>Required scope: <code>user</code></p> <p><code>Since OrangeHRM 4.5</code></p>",
     "success": {
       "examples": [
@@ -8423,7 +9387,7 @@
     "url": "/subordinate/:id/leave-entitlement",
     "title": "08.Get Subordinate Leave Entitlements",
     "name": "subordinateLeaveEntitlements",
-    "group": "User",
+    "group": "User-Leave",
     "version": "1.1.0",
     "parameter": {
       "fields": {
@@ -8448,12 +9412,40 @@
             "optional": true,
             "field": "toDate",
             "description": "<p>Valid leave period to date</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Date",
+            "optional": true,
+            "field": "balanceAsAtDate",
+            "description": "<p>Start date for calculate balance. Default: current date.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Date",
+            "optional": true,
+            "field": "balanceEndDate",
+            "description": "<p>End date for calculate balance. Default: end date of current leave period</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Boolean",
+            "optional": true,
+            "field": "deletedLeaveTypes",
+            "description": "<p>With deleted leave types</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Boolean",
+            "optional": true,
+            "field": "combineLeaveTypes",
+            "description": "<p>Whether combine, not entitled leave types with leave balance.</p>"
           }
         ]
       }
     },
-    "filename": "/mnt/4db39c28-207e-4dcf-87e0-00c41bff1b84/OHRM/dev-repos/orangehrm-4.4/symfony/plugins/orangehrmRESTPlugin/doc/user/8-subordinate-leave-entitlement-end-point.php",
-    "groupTitle": "User",
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/user-leave/8-subordinate-leave-entitlement-end-point.php",
+    "groupTitle": "User-Leave",
     "description": "<p>Required access using OAuth2 access token created with <code>password</code> grant type</p> <p>Required scope: <code>user</code></p> <p><code>Since OrangeHRM 4.5</code></p>",
     "success": {
       "fields": {
@@ -8606,5 +9598,185 @@
         }
       ]
     }
+  },
+  {
+    "type": "get",
+    "url": "/time/config",
+    "title": "01.Get Time Configurations",
+    "name": "getTimeConfig",
+    "group": "User-Time",
+    "version": "1.2.0",
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n\n   {\n     \"data\": {\n       \"startDate\": 1\n     }\n   }",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 400 No Bound User\n{\n  \"error\": [\"No Bound User\"]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/user-time/1-get-time-config.php",
+    "groupTitle": "User-Time",
+    "description": "<p>Required access using OAuth2 access token created with <code>password</code> grant type</p> <p>Required scope: <code>user</code></p> <p><code>Since OrangeHRM 4.7</code></p>"
+  },
+  {
+    "type": "get",
+    "url": "/employees",
+    "title": "01.Get Accessible Employees",
+    "name": "getAccessibleEmployees",
+    "group": "User",
+    "version": "1.1.0",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "actionName",
+            "description": "<p>Action name. e.g. <code>assign_leave</code>, <code>view_leave_list</code></p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String[]",
+            "optional": true,
+            "field": "properties[]",
+            "description": "<p>Employee properties array. e.g. <code>employeeId</code>, <code>firstName</code>, <code>lastName</code>, <code>termination_id</code>.</p> <pre class=\"prettyprint\">/api/v1/employees?properties[]=firstName&properties[]=lastName&properties[]=termination_id </code></pre>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "allowedValues": [
+              "'true'",
+              "'false'"
+            ],
+            "optional": true,
+            "field": "pastEmployee",
+            "description": "<p>Specify whether with past employee. Default <code>false</code></p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n\n{\n  \"data\": [\n      {\n        \"employeeId\": \"4\",\n        \"firstName\": \"Kevin\",\n        \"lastName\": \"Mathews\",\n        \"employeeId\": \"004\",\n      },\n      {\n        \"employeeId\": \"5\",\n        \"firstName\": \"Linda\",\n        \"lastName\": \"Jane\",\n        \"employeeId\": \"005\",\n      }\n    ]\n  ],\n  \"rels\": []\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "InvalidParameter",
+            "description": "<p>Found</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 202 Invalid Parameter\n{\n  \"error\": {\n    \"status\": \"202\",\n    \"text\": \"Invalid `<param>` Value\"\n  }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/user/1-get-accessible-employees-end-point.php",
+    "groupTitle": "User",
+    "description": "<p>Required access using OAuth2 access token created with <code>password</code> grant type</p> <p>Required scope: <code>user</code></p> <p><code>Since OrangeHRM 4.5</code></p>"
+  },
+  {
+    "type": "get",
+    "url": "/myinfo",
+    "title": "02.Employee Info",
+    "name": "getMyInfo",
+    "group": "User",
+    "version": "1.2.0",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "allowedValues": [
+              "'true'",
+              "'false'"
+            ],
+            "optional": true,
+            "field": "withPhoto",
+            "description": "<p>Specify whether with employee photo. Default <code>false</code></p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "employee",
+            "description": "<p>Employee details.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "employeePhoto",
+            "description": "<p>Base64 encoded employee picture.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "user",
+            "description": "<p>User details.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n\n   {\n     \"data\": {\n       \"employee\": {\n         \"firstName\": \"Nina\",\n         \"middleName\": \"Jane\",\n         \"lastName\": \"Lewis\",\n         \"code\": \"0014\",\n         \"id\": \"1\",\n         \"fullName\": \"Nina Jane Lewis\",\n         \"status\": \"Active\",\n         \"dob\": \"2016-05-04\",\n         \"driversLicenseNumber\": \"444555124223\",\n         \"licenseExpiryDate\": \"2017-02-09\",\n         \"maritalStatus\": \"Married\",\n         \"gender\": \"2\",\n         \"otherId\": \"4646522\",\n         \"nationality\": \"Armenian\",\n         \"unit\": \"Marketing Unit\",\n         \"jobTitle\": \"marketing\"\n       },\n       \"employeePhoto\": \"/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgICAgMCAgIDAwMDBAY\",\n       \"user\": {\n         \"userName\":\"Nina\",\n         \"userRole\":\"ESS\",\n         \"isSupervisor\":true,\n         \"isProjectAdmin\":false,\n         \"isManager\":false,\n         \"isDirector\":false,\n         \"isAcceptor\":false,\n         \"isOfferer\":false,\n         \"isHiringManager\":false,\n         \"isInterviewer\":false,\n       }\n     }\n    }",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "User",
+            "description": "<p>Not Found.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 400 No Bound User\n{\n  \"error\": [\"No Bound User\"]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "/home/administrator/Documents/OHRM/dev-repos/orangehrm-4.5/symfony/plugins/orangehrmRESTPlugin/doc/user/2-get-my-info-end-point.php",
+    "groupTitle": "User",
+    "description": "<p>Required access using OAuth2 access token created with <code>password</code> grant type</p> <p>Required scope: <code>user</code></p> <p><code>Since OrangeHRM 4.5</code></p>"
   }
 ]
